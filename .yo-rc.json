@@ -1,0 +1,9 @@
+{
+  "generator-igemwiki": {
+    "year": "2020",
+    "teamName": "Team:Waterloo",
+    "repo": "https://github.com/igem-waterloo/wiki2020",
+    "author": "Serena Hacker <sehacker@uwaterloo.ca>",
+    "template": "basic/"
+  }
+}
