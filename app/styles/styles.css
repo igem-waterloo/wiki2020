@@ -518,6 +518,11 @@ ul {
   flex-direction: row;
   padding: 5px; }
 
+.col {
+  float: left;
+  width: 25%;
+}
+
 .grid-selection {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 20px;
@@ -561,6 +566,20 @@ img {
   padding: 0 6em;
 }
 
+#teammate {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden; 
+  padding: 0 1em;
+}
+
+.teaminfo {
+  padding: 0 1em;
+  line-height: 1.5;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -570,18 +589,19 @@ main {
   margin: 0 auto;
   height: auto;
   position: relative;
-  background-color: #f8f8f8;
+  background-color: white;
   z-index: 1;
   overflow: hidden; }
   main h1, main h2, main h3, main h4, main h5, main h6 {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-weight: bold !important;
     font-size: medium !important;
     font-family: "OpenSans" !important; }
   main h1 {
+    text-align: center;
     margin-left: 2em;
-    font-size: 2.2em !important; }
+    font-size: 1.8em !important; }
   main h2 {
     margin-left: 2em;
     font-size: 2em !important; }
@@ -832,3 +852,89 @@ footer {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 265ms ease-in; }
+
+/* Style the element that is used to open and close the accordion class */
+div.accordion {
+  background-color: white;
+  color: black;
+  padding: 18px;
+  width: 75%;
+  text-align: left;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+
+div.accordion:after {
+  content: '\2303'; 
+  transform: rotate(180deg);
+  font-size: 26px;
+  color:black;
+  float: right;
+  margin-left: 5px;
+  font-weight: 800;
+}
+
+div.accordion.active:after {
+  content: ""; 
+  transform: rotate(360deg);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+div.panel.show:after {
+  content: "\2303"; 
+  transform: rotate(360deg);
+  font-size: 26px;
+  font-weight: 800;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Style the element that is used for the panel class */
+div.panel {
+  padding: 18px;
+  background-color: white;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 500px;
+  margin: auto;
+}
+
+div.labsubteam {
+  width: max-content;
+  padding: 12px 40px;
+  font-weight: 800;
+  font-size: 20px;
+  background-color:#DDFEE7;
+  text-align: center;
+}
+
+div.humansubteam {
+  width: max-content;
+  padding: 12px 40px;
+  font-weight: 800;
+  font-size: 20px;
+  background-color:#E5DDFE;
+  text-align: center;
+}
+
+div.mathsubteam {
+  width: max-content;
+  padding: 12px 40px;
+  font-weight: 800;
+  font-size: 20px;
+  background-color:#D2ECFE;
+  text-align: center;
+}
