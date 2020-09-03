@@ -576,8 +576,10 @@ img {
 }
 
 .teaminfo {
+  font-size: 0.9em;
   padding: 0 1em;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 main {
@@ -707,14 +709,10 @@ header {
         /* Set container height to navbar height*/
         /* dividers for easier/organized view*/
         /*a, related to link*/ }
-        header #navbar ul li .divider {
-          height: 1.5px;
-          overflow: hidden;
-          background-color: #2cc75b; }
         header #navbar ul li a, header #navbar ul li a:visited {
           display: flex;
           align-items: center;
-          padding: 0 20px;
+          padding: 0 40px;
           height: 100%;
           width: 100%;
           background: #fffefb;
@@ -725,12 +723,6 @@ header {
           /* Re-add link glow to fix animation*/
           transition: all 0.2s ease-in-out;
           /*adds the arrow to dropdowns, selects not only-child*/ }
-          header #navbar ul li a img, header #navbar ul li a:visited img {
-            display: inline-block;
-            padding: 0.5rem;
-            min-height: 100%;
-            height: auto;
-            width: auto; }
           header #navbar ul li a:hover, header #navbar ul li a:visited:hover {
             color: #2cc75b;
             text-shadow: 0px 0px 8px #2cc75b; }
@@ -908,7 +900,7 @@ div.panel {
 
 div.panel.show {
   opacity: 1;
-  max-height: 500px;
+  max-height: 700px;
   margin: auto;
 }
 
