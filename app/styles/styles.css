@@ -622,7 +622,7 @@ main {
   main p, main ul {
     margin: 3em 4em;
     line-height: 2em;
-    font-size: medium !important;
+    font-size: medium;
     font-family: "OpenSans" !important;
     color: #1a1a1a; }
   main article {
@@ -929,4 +929,12 @@ div.mathsubteam {
   font-size: 20px;
   background-color:#D2ECFE;
   text-align: center;
+}
+
+p.resizefont {
+  font-size: 20px;
+}
+
+path {
+  fill: none;
 }
