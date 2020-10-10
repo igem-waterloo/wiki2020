@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<script>
-		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
-		});
-	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
-	<!--Added MathJax hack to make inline equations work-->
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-		processEscapes: true
-	}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/dist/js/vendor.js"></script>
+  <link rel="stylesheet" href="/dist/css/vendor.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <script>
+    $(function() {
+      $('header').load('/templates/header.html');
+      $('footer').load('/templates/footer.html');
+      $('accessibility').load('/templates/accessibility.html');
+    });
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/wiki.js"></script>
+  <!--Added MathJax hack to make inline equations work-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
 });
 </script>   </head>
 
 <body>
-	<div id="igem-navbar-placeholder">
-		<p>Placeholder for iGEM Navbar</p>
-	</div>
-	<header></header>
+  <div id="igem-navbar-placeholder">
+    <p>Placeholder for iGEM Navbar</p>
+  </div>
+  <header></header>
     <main id="top">
-		<article>
-			<h1> ENGINEERING </h1>
+      <article>
+        <h1> HOME </h1>
 
-			<p> Design is the first step in the design-build-test cycle in engineering and synthetic biology. Use this page to describe the process that you used in the design of your parts. You should clearly explain the engineering principles used to design your project.
+        <div class="articulate-area">
+          <button id="speakall">Speak All</button>
+          <button id="pause">Pause</button>
+          <button id="resume">Resume</button>
+          <button id="stop">Stop</button>
+        </div>
 
-			This page is different to the "Applied Design Award" page. Please see the Applied Design page for more information on how to compete for that award. </p>
+        <input type="range" min="10" max="40">
 
-			<p> This page should contain: </p>
+        <p class="resizefont"> Testing the speaking feature now. </p>
+        
+        <img src='/images/pic.png' alt="Grey square"> 
 
-			<ul> 
-				<li> Clear and concise description of the project. </li>
-				<li> A description of why your team chose to pursue this project. </li>
-				<li> References and sources (citations). </li>
-				<li> Visuals to supplement your project description. </li>
-			</ul>
-		</article>
+        <p> It works. </p>
+        
+        <button id="colourscheme">Change Colours</button>
+      </article>
+      <accessibility></accessiblity>
     </main>
   <footer></footer>
 </body>

@@ -93,7 +93,9 @@ body {
   /* 1 */
   line-height: 1;
   /* 2 */
-  font-family: sans-serif; }
+  font-family: sans-serif; 
+  background: #CDDCDD;
+}
 
 /**
  * Lists
@@ -549,13 +551,11 @@ ul {
 a,
 a:visited {
   text-decoration: none;
-  color: #24bee4;
   transition: all 0.2s ease-in-out; }
   a:hover,
   a:visited:hover {
     text-decoration: none;
-    color: #2cc75b;
-    text-shadow: 0px 0px 8px #16ff5a; }
+  }
 
 img {
   width: auto;
@@ -586,7 +586,7 @@ main {
   display: flex;
   flex-direction: row;
   font-size: medium !important;
-  font-family: "OpenSans" !important;
+  font-family: "Nunito Sans" !important;
   height: 100%;
   margin: 0 auto;
   height: auto;
@@ -599,7 +599,7 @@ main {
     margin-bottom: 1em;
     font-weight: bold !important;
     font-size: medium !important;
-    font-family: "OpenSans" !important; }
+    font-family: "Nunito Sans" !important; }
   main h1 {
     text-align: center;
     margin-left: 2em;
@@ -623,7 +623,7 @@ main {
     margin: 3em 4em;
     line-height: 2em;
     font-size: medium;
-    font-family: "OpenSans" !important;
+    font-family: "Nunito Sans" !important;
     color: #1a1a1a; }
   main article {
     margin-top: 2em; }
@@ -659,7 +659,7 @@ header {
     margin-bottom: 2em;
     font-weight: bold;
     font-size: medium !important;
-    font-family: "OpenSans" !important; }
+    font-family: "Nunito Sans" !important; }
   header h1 {
     margin-left: 2em;
     font-size: 2.2em !important; }
@@ -682,7 +682,7 @@ header {
     margin: 3em 4em;
     line-height: 2em;
     font-size: medium !important;
-    font-family: "OpenSans" !important;
+    font-family: "Nunito Sans" !important;
     color: #1a1a1a; }
   header, header * {
     box-sizing: border-box;
@@ -693,12 +693,22 @@ header {
   header #navbar {
     height: 3em;
     display: flex;
-    justify-content: center;
+    background-color: #42748E;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     header #navbar ul {
       list-style: none;
       margin: 0px;
-      padding: 0px; }
+      padding: 0px;
+    }
+    header #navbar > ul {
+      width: 100%;
+    }
+      header #navbar ul li.logo {
+        float: left;
+      }
+      header #navbar ul li {
+        float: right;
+      }
       header #navbar ul li {
         float: left;
         position: relative;
@@ -708,27 +718,43 @@ header {
         height: 3em;
         /* Set container height to navbar height*/
         /* dividers for easier/organized view*/
-        /*a, related to link*/ }
+        /*a, related to link*/ 
+      }
         header #navbar ul li a, header #navbar ul li a:visited {
           display: flex;
           align-items: center;
-          padding: 0 40px;
+          padding: 0 25px;
           height: 100%;
           width: 100%;
-          background: #fffefb;
-          color: #1f9dbd;
+          background: #FFFFFF;
+          color: #003551;
           font-size: 1em !important;
           white-space: nowrap;
           /* Text is occlude dinstead of wrapped */
           /* Re-add link glow to fix animation*/
           transition: all 0.2s ease-in-out;
           /*adds the arrow to dropdowns, selects not only-child*/ }
+          header #navbar > ul > li > a, header #navbar > ul > li > a:visited {
+            background: #42748E;
+            color: #FFFFFF; 
+            font-weight: bold;
+          }
           header #navbar ul li a:hover, header #navbar ul li a:visited:hover {
-            color: #2cc75b;
-            text-shadow: 0px 0px 8px #2cc75b; }
+            background: #CDDCDD;
+          }
+          header #navbar > ul >  li > a:hover, header #navbar > ul > li > a:visited:hover {
+            background: #003551;
+          }
+
+          header #navbar > ul >  li:hover > a {
+            background: #003551;
+          }
+
           header #navbar ul li a:not(:only-child):after, header #navbar ul li a:visited:not(:only-child):after {
-            padding-left: 4px;
-            content: ' ▾'; }
+            padding-right: 8px;
+            content: ' ⌃ '; 
+            transform: rotate(180deg);
+            color: #FB9E36;}
         header #navbar ul li ul {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           position: absolute;
@@ -759,38 +785,73 @@ header {
                   transform: translateX(-50%) translateY(0%);
           /* Slides down */
           transition-delay: 0s, 0s, 0.3s; }
+          .logo {
+            padding-top: 10px;
+          }
 
 footer {
   /* Footer height */
   font-size: medium !important;
-  font-family: "OpenSans" !important;
+  font-family: "Nunito Sans" !important;
   box-sizing: border-box;
-  background-color: #1a1a1a;
-  color: #fffefb;
+  background-color: #002131;
+  color: #fff;
   padding: 25px;
-  positioN: relative;
+  position: relative;
   z-index: 999; }
   footer::after {
     clear: both;
     content: "";
     display: block; }
   footer div.footer-name {
-    width: calc(41.66667%);
+    width: calc(20%);
     float: left;
     margin-left: 0px;
     line-height: 6rem;
-    height: 6rem; }
+    height: 10rem; 
+  }
     footer div.footer-name * {
       float: left; }
+    .igemlogo {
+      width: 100%; 
+      height: auto; 
+    }
   footer div.spacer {
-    width: calc(33.33333%);
+    width: calc(60%);
     float: left;
     margin-left: 0px;
-    line-height: 6rem;
-    height: 6rem;
+    line-height: 1.5rem;
+    height: 10rem;
     /*text-align: center*/ }
+
+  footer h1 {
+    border-bottom: 3px solid #FB9E36;
+    display:inline-block; 
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .spacer ul li a {
+    color: #CDDCDD;
+  }
+  
+  .spacer ul li a:hover {
+    color: #FB9E36;
+  }
+
+  .linkcol {
+    float: left;
+    width: 25%;
+  }
+
+  footer div.spacer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
   footer div.social-container {
-    width: calc(25%);
+    width: calc(20%);
     float: left;
     margin-left: 0px; }
 
@@ -847,10 +908,10 @@ footer {
 
 /* Style the element that is used to open and close the accordion class */
 div.accordion {
-  background-color: white;
+  background-color: #CDDCDD;
   color: black;
   padding: 18px;
-  width: 75%;
+  width: 85%;
   text-align: left;
   border: none;
   outline: none;
@@ -886,12 +947,12 @@ div.panel.show:after {
 /* Style the element that is used for the panel class */
 div.panel {
   padding: 18px;
-  background-color: white;
+  background-color: #CDDCDD;
   color: black;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  width: 75%;
+  width: 85%;
   margin: auto;
   text-align: left;
   border: none;
@@ -905,30 +966,30 @@ div.panel.show {
 }
 
 div.labsubteam {
-  width: max-content;
+  width: 85%;
   padding: 12px 40px;
   font-weight: 800;
   font-size: 20px;
-  background-color:#DDFEE7;
-  text-align: center;
+  text-align: left;
+  margin: auto;
 }
 
 div.humansubteam {
-  width: max-content;
+  width: 85%;
   padding: 12px 40px;
   font-weight: 800;
   font-size: 20px;
-  background-color:#E5DDFE;
-  text-align: center;
+  text-align: left;
+  margin: auto;
 }
 
 div.mathsubteam {
-  width: max-content;
+  width: 85%;
   padding: 12px 40px;
   font-weight: 800;
   font-size: 20px;
-  background-color:#D2ECFE;
-  text-align: center;
+  text-align: left;
+  margin: auto;
 }
 
 p.resizefont {
@@ -937,4 +998,64 @@ p.resizefont {
 
 path {
   fill: none;
+}
+
+.fixed {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  z-index: 999px;
+}
+
+#homepage {
+  background-image: url("../images/home.svg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+#homepageDiv {
+  width: 100%;
+}
+
+main {
+  background-color: transparent;
+}
+
+.subtitleBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle {
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  font-size: 1rem;
+  color: #002F47
+}
+
+.pipecol {
+  width: 30%;
+  padding: 0 10px 0 0;
+  float:left;
+}
+
+.contentcol {
+  width: 70%;
+  padding: 0 10px 0 0;
+  float: right;
+}
+
+#mathpipe {
+
 }

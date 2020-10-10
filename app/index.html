@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="/dist/js/vendor.js"></script>
-  <link rel="stylesheet" href="/dist/css/vendor.css">
-  <script>
-    $(function() {
-      $('header').load('/templates/header.html');
-      $('footer').load('/templates/footer.html');
-    });
-  </script>
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="/js/wiki.js"></script>
-  <!--Added MathJax hack to make inline equations work-->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    processEscapes: true
-  }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/dist/js/vendor.js"></script>
+  	<link rel="stylesheet" href="/dist/css/vendor.css">
+  	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script>
+		$(function() {
+			$('header').load('/templates/header.html');
+			$('footer').load('/templates/footer.html');
+		});
+	</script>
+	<link rel="stylesheet" href="/css/styles.css">
+	<script src="/js/wiki.js"></script>
+	<!--Added MathJax hack to make inline equations work-->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		processEscapes: true
+	}
 });
 </script>   </head>
 
-<body>
-  <div id="igem-navbar-placeholder">
-    <p>Placeholder for iGEM Navbar</p>
-  </div>
+<body id="homepage">
+	<div id="igem-navbar-placeholder">
+		<p>Placeholder for iGEM Navbar</p>
+	</div>
   <header></header>
-    <main id="top">
-      <article>
-        <h1> HOME </h1>
-
-        <div class="articulate-area">
-          <button id="speakall">Speak All</button>
-          <button id="pause">Pause</button>
-          <button id="resume">Resume</button>
-          <button id="stop">Stop</button>
+  
+    <main>
+      <div id="homepageDiv">
+        <div class="subtitleBox">
+          <p class="subtitle">The electronic industry generates millions of litres of waste water polluted with heavy metal ions every year.</p>
         </div>
+        <div>
 
-        <input type="range" min="10" max="40">
+        </div> 
+        <div>
 
-        <p class="resizefont"> Testing the speaking feature now. </p>
-        
-        <img src='/images/pic.png' alt="Grey square"> 
-
-        <p> It works. </p>
-        
-        <button id="colourscheme" class="">Change Colours</button>
-        
-      </article>
+        </div>
+      </div>
     </main>
   <footer></footer>
 </body>
 </html>
-
 
