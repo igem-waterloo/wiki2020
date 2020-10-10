@@ -808,7 +808,7 @@ footer {
     float: left;
     margin-left: 0px;
     line-height: 6rem;
-    height: 10rem; 
+    height: 12rem; 
   }
     footer div.footer-name * {
       float: left; }
@@ -821,7 +821,7 @@ footer {
     float: left;
     margin-left: 0px;
     line-height: 1.5rem;
-    height: 10rem;
+    height: 12rem;
     /*text-align: center*/ }
 
   footer h1 {
@@ -853,7 +853,9 @@ footer {
   footer div.social-container {
     width: calc(20%);
     float: left;
-    margin-left: 0px; }
+    margin-left: 0px; 
+    height: 12rem;
+  }
 
 /*Code courtesy of https://codepen.io/brandondward/pen/RpyaKL*/
 /*Social media icons*/
@@ -873,12 +875,12 @@ footer {
     display: inline-block;
     margin: 0.15em;
     position: relative;
-    font-size: 1.2em !important; }
+    font-size: 1.7em !important; }
   .social-icons i {
-    color: #fff;
+    color: black;
     position: absolute;
-    top: 21px;
-    left: 21px;
+    top: 13px;
+    left: 13px;
     transition: all 265ms ease-out; }
   .social-icons a {
     display: inline-block;
@@ -887,11 +889,11 @@ footer {
       -webkit-transform: scale(1);
               transform: scale(1);
       content: " ";
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       border-radius: 100%;
       display: block;
-      background: linear-gradient(45deg, #16ff5a, #26fffa);
+      background: #fff;
       transition: all 265ms ease-out; }
     .social-icons a:hover:before {
       -webkit-transform: scale(0);
@@ -909,7 +911,7 @@ footer {
 /* Style the element that is used to open and close the accordion class */
 div.accordion {
   background-color: #CDDCDD;
-  color: black;
+  color: #003650;
   padding: 18px;
   width: 85%;
   text-align: left;
@@ -922,7 +924,7 @@ div.accordion:after {
   content: '\2303'; 
   transform: rotate(180deg);
   font-size: 26px;
-  color:black;
+  color: #FB9E36;
   float: right;
   margin-left: 5px;
   font-weight: 800;
@@ -942,13 +944,14 @@ div.panel.show:after {
   font-weight: 800;
   float: right;
   margin-left: 5px;
+  color: #FB9E36;
 }
 
 /* Style the element that is used for the panel class */
 div.panel {
   padding: 18px;
   background-color: #CDDCDD;
-  color: black;
+  color: #003650;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -968,36 +971,65 @@ div.panel.show {
 div.labsubteam {
   width: 85%;
   padding: 12px 40px;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 20px;
   text-align: left;
   margin: auto;
+  color: #003650;
 }
 
 div.humansubteam {
   width: 85%;
   padding: 12px 40px;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 20px;
   text-align: left;
   margin: auto;
+  color: #003650;
 }
 
 div.mathsubteam {
   width: 85%;
   padding: 12px 40px;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 20px;
   text-align: left;
   margin: auto;
+  color: #003650;
+}
+
+div.inspiration {
+  width: 85%;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin: auto;
+  color: #003650;
+}
+
+div.problem {
+  width: 85%;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin: auto;
+  color: #003650;
+}
+
+div.solution {
+  width: 85%;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  margin: auto;
+  color: #003650;
 }
 
 p.resizefont {
   font-size: 20px;
-}
-
-path {
-  fill: none;
 }
 
 .fixed {
@@ -1045,17 +1077,45 @@ main {
 }
 
 .pipecol {
-  width: 30%;
-  padding: 0 10px 0 0;
-  float:left;
+  width: 16%;
+  padding: 0 10px 0 100px;
+  float:left
 }
 
 .contentcol {
-  width: 70%;
-  padding: 0 10px 0 0;
+  width: 84%;
+  padding: 0 0 0 0;
   float: right;
 }
 
-#mathpipe {
+.contentcol .info {
+  margin: 50px;
+}
 
+.contentcol .info p {
+  color: #003650;
+}
+
+.pageHeader {
+  margin: 50px;
+}
+
+.pageHeader h1 {
+  float: left;
+  font-weight: bold;
+  color: #003650;
+}
+
+.pageHeader img {
+  margin-left: 70px;
+}
+
+.overview {
+  color: #003650;
+  border: 5px solid #5C89A0;
+  padding: 18px;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 2rem;
 }
