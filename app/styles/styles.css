@@ -489,6 +489,12 @@ ul {
   font-weight: normal;
   font-style: normal; }
 
+  @font-face {
+    font-family: "NunitoSans";
+    src: url("/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal; }
+
 @font-face {
   font-family: "OpenSans";
   src: url("/fonts/OpenSans/OpenSans-Bold.ttf");
@@ -598,12 +604,12 @@ main {
     margin-top: 1em;
     margin-bottom: 1em;
     font-weight: bold !important;
-    font-size: medium !important;
+    font-size: medium;
     font-family: "Nunito Sans" !important; }
   main h1 {
     text-align: center;
     margin-left: 2em;
-    font-size: 1.8em !important; }
+    font-size: 1.8em; }
   main h2 {
     margin-left: 2em;
     font-size: 2em !important; }
@@ -814,7 +820,7 @@ footer {
       float: left; }
     .igemlogo {
       width: 100%; 
-      height: auto; 
+      min-width: 200px;
     }
   footer div.spacer {
     width: calc(60%);
@@ -842,6 +848,11 @@ footer {
   .linkcol {
     float: left;
     width: 25%;
+    line-height: 24px;
+  }
+
+  .linkcol h1 {
+    line-height: 16px;
   }
 
   footer div.spacer:after {
@@ -862,10 +873,8 @@ footer {
 /*#ff003c;*/
 /*#c648c8;*/
 .social-container {
-  width: calc(25% - 25px);
   float: left;
-  margin-left: 20px;
-  width: 400px; }
+  margin-left: 20px; }
 
 .social-icons {
   padding: 0;
@@ -880,33 +889,17 @@ footer {
     color: black;
     position: absolute;
     top: 13px;
-    left: 13px;
-    transition: all 265ms ease-out; }
+    left: 13px; }
   .social-icons a {
     display: inline-block;
     /*@include grid-visual;*/ }
     .social-icons a:before {
-      -webkit-transform: scale(1);
-              transform: scale(1);
       content: " ";
       width: 50px;
       height: 50px;
       border-radius: 100%;
       display: block;
-      background: #fff;
-      transition: all 265ms ease-out; }
-    .social-icons a:hover:before {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      transition: all 265ms ease-in; }
-    .social-icons a:hover i {
-      -webkit-transform: scale(2.2);
-              transform: scale(2.2);
-      color: #16ff5a;
-      background: -webkit-linear-gradient(45deg, #16ff5a, #26fffa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 265ms ease-in; }
+      background: #fff; }
 
 /* Style the element that is used to open and close the accordion class */
 div.accordion {
@@ -1055,25 +1048,11 @@ p.resizefont {
 
 #homepageDiv {
   width: 100%;
+  text-align: center;
 }
 
 main {
   background-color: transparent;
-}
-
-.subtitleBox {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subtitle {
-  width: 65%;
-  text-align: center;
-  margin: auto;
-  font-size: 1rem;
-  color: #002F47
 }
 
 .pipecol {
@@ -1100,14 +1079,28 @@ main {
   margin: 50px;
 }
 
-.pageHeader h1 {
-  float: left;
-  font-weight: bold;
-  color: #003650;
+.pageHeader:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.pageHeader img {
-  margin-left: 70px;
+.headerCol {
+  float: left;
+  width: 20%;
+  padding: 30px;
+}
+
+.headerCol2 {
+  float: left;
+  width: 80%;
+  padding: 30px;
+}
+
+.pageHeader h1 {
+  font-weight: bold;
+  color: #003650;
+  margin: 0px;
 }
 
 .overview {
@@ -1118,4 +1111,155 @@ main {
   margin: auto;
   margin-bottom: 50px;
   line-height: 2rem;
+}
+
+#homepageDiv h1{
+  color: #003650;
+  font-size: 40px;
+}
+
+#homepageDiv p {
+  color: #003650;
+  font-size: 24px;
+}
+
+.slogan {
+  font-weight: bold;
+  position: absolute;
+  top: 3.6%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.whatif {
+  font-weight: bold;
+  color: #fff !important;
+  position: absolute;
+  top: 42.5%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  line-height: 1.6em;
+  font-size: 54px !important;
+}
+
+.interested {
+  font-weight: bold;
+  position: absolute;
+  top: 94.5%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.hp1 {
+  font-weight: bold;
+  position: absolute;
+  top: 4.9%;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  line-height: 1.6em;
+}
+
+.hp2 {
+  font-weight: bold;
+  color: #fff !important;
+  position: absolute;
+  top: 26%;
+  left: 54%;
+  width: 26%;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+.hp3 {
+  font-weight: bold;
+  color: #fff !important;
+  position: absolute;
+  top: 35%;
+  width: 47%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  line-height: 1.6em;
+  font-size: 34px !important;
+}
+
+.hp4 {
+  font-weight: bold;
+  color: #5C89A0 !important;
+  position: absolute;
+  top: 40%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  line-height: 1.6em;
+  font-size: 10px !important;
+}
+
+.hp5 {
+  font-weight: bold;
+  color: #fff !important;
+  position: absolute;
+  top: 57.7%;
+  left: 44%;
+  width: 26%;
+  line-height: 1.6em;
+  text-align: left; 
+}
+
+.hp6 {
+  font-weight: bold;
+  color: #fff !important;
+  position: absolute;
+  top: 70%;
+  left: 9%;
+  width: 24%;
+  line-height: 1.6em;
+  text-align: left; 
+}
+
+.hp7 {
+  font-weight: bold;
+  color: #fff !important;
+  position: absolute;
+  top: 76%;
+  left: 55%;
+  width: 24%;
+  line-height: 1.6em;
+  text-align: left; 
+}
+
+#learnmore {
+  position: absolute;
+  top: 96.5%;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #fff !important;
+  font-size: 34px !important;
 }
