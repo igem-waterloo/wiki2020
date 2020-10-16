@@ -157,16 +157,18 @@ window.addEventListener("resize", function(){
     length();
 });
 
-var accordions = document.getElementsByClassName('accordion');
-for (var i = 0; i < accordions.length; i++) {
-    accordions[i].onclick = function () {
-        length();
+document.addEventListener("DOMContentLoaded", function(event) { 
+    var accordions = document.getElementsByClassName('accordion');
+    for (var i = 0; i < accordions.length; i++) {
+        accordions[i].onclick = function () {
+            length();
+        }
     }
-}
 
-var panels = document.getElementsByClassName('panel');
-for (var i = 0; i < panels.length; i++) {
-    panels[i].onclick = function () {
-        length();
+    var panels = document.getElementsByClassName('panel');
+    for (var i = 0; i < panels.length; i++) {
+        panels[i].onclick = function () {
+            length();
+        }
     }
-}
+});

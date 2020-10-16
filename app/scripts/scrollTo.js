@@ -1,35 +1,26 @@
+function pipeScroll(pipeClass, headerClass) {
+    var pipes = document.getElementsByClassName(pipeClass);
+    for (var i = 0; i < pipes.length; i++) {
+        pipes[i].onclick = function() {
+            var element_to_scroll_to = $(headerClass)[0];
+            var topElement = $('.topElement')[0];
+            var topElementPosition = topElement.getBoundingClientRect().top;
+            var headerOffset = 70;
+            var elementPosition = element_to_scroll_to.getBoundingClientRect().top - topElementPosition;
+            var offsetPosition = elementPosition - headerOffset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        };
+    }
+}
+
 $(document).ready(function(){
-    var labPipes = document.getElementsByClassName("labPipe");
-    for (var i = 0; i < labPipes.length; i++) {
-        labPipes[i].onclick = function() {
-            var element_to_scroll_to = $('.labsubteam')[0];
-            element_to_scroll_to.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'nearest'
-              });
-        };
-    }
-
-    var hpPipes = document.getElementsByClassName("hpPipe");
-    for (var i = 0; i < hpPipes.length; i++) {
-        hpPipes[i].onclick = function() {
-            var element_to_scroll_to = $('.humansubteam')[0];
-            element_to_scroll_to.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-              });
-        };
-    }
-
-    var mathPipes = document.getElementsByClassName("mathPipe");
-    for (var i = 0; i < mathPipes.length; i++) {
-        mathPipes[i].onclick = function() {
-            var element_to_scroll_to = $('.mathsubteam')[0];
-            element_to_scroll_to.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-              });
-        };
-    }
+    pipeScroll("labPipe", ".labsubteam");
+    pipeScroll("hpPipe", ".humansubteam");
+    pipeScroll("mathPipe", ".mathsubteam");
+    pipeScroll("inspPipe", ".inspiration");
+    pipeScroll("probPipe", ".problem");
+    pipeScroll("solPipe", ".solution");
 });
