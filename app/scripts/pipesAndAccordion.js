@@ -103,10 +103,10 @@ function PipeLength(title1, title2, title3) {
     
     document.getElementById('pipe-three').setAttribute("d", "M139.773 " + val1.toString() + "L139.773 " 
     + val2.toString() + "C139.773 " + val3.toString() + " 153.781 " + val4.toString() +
-    " 168.937 " + val4.toString() + "H194.801V" + val5.toString() + "L168.943 " + 
-    val6.toString() + "H168.937C143.345 " + val6.toString() + " 122.5 " + val7.toString() 
-    + " 122.5 " + val8.toString() + "L122.5 " + val1.toString() +
-    + " L139.773 " + val1.toString() + "Z");
+    " 168.937 " + val4.toString() + "H194.801V" + val5.toString() + "H168.937C143.345 " 
+    + val6.toString() + " 122.5 " + val7.toString() 
+    + " 122.5 " + val8.toString() + "V" + val1.toString()
+    + "L139.773 " + val1.toString() + "Z");
 
     val1 = rect3.top - topRect.top - offset + 3005.5;
     val2 = rect3.top - topRect.top - offset + 3039.79;
@@ -158,17 +158,41 @@ window.addEventListener("resize", function(){
 });
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-    var accordions = document.getElementsByClassName('accordion');
-    for (var i = 0; i < accordions.length; i++) {
-        accordions[i].onclick = function () {
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            var setClasses = !this.classList.contains('active');
+
+            if (setClasses) {
+                setClass(acc, 'active', 'remove');
+                setClass(panel, 'show', 'remove');
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
             length();
         }
     }
 
-    var panels = document.getElementsByClassName('panel');
-    for (var i = 0; i < panels.length; i++) {
-        panels[i].onclick = function () {
+    for (var i = 0; i < panel.length; i++) {
+        panel[i].onclick = function() {
+            var setClasses = !this.classList.contains('show');
+
+            if (!setClasses) {
+                setClass(acc, 'active', 'remove');
+                setClass(panel, 'show', 'remove');
+            }
             length();
         }
     }
+
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
+
 });
