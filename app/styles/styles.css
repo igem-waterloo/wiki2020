@@ -821,6 +821,7 @@ footer {
     .igemlogo {
       width: 100%;
       padding: 0 1em;
+      max-width: 180px;
     }
   footer div.spacer {
     width: calc(60%);
@@ -831,6 +832,19 @@ footer {
     line-height: 1.5rem;
     height: 12rem;
     /*text-align: center*/ }
+
+    @media only screen and (max-width: 700px) {
+      footer div.spacer {
+        width: 0;
+        visibility: hidden;
+      }
+      footer div.social-container {
+        width: calc(50%) !important;
+      }
+      footer div.footer-name {
+        width: calc(50%) !important;
+      }
+    }
 
   footer h1 {
     border-bottom: 3px solid #FB9E36;
