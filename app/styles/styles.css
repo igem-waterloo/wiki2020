@@ -698,20 +698,26 @@ header {
             transform: translateY(-3em); }
   header #navbar {
     height: 3em;
-    display: flex;
     background-color: #42748E;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    header #navbar .logo {
+      width: calc(30%);
+      float: left;
+    }
+    header #navbar .logo > img {
+      float: left;
+      padding: 0 1em;
+    }
     header #navbar ul {
       list-style: none;
+      display: flex;
+      justify-content: space-evenly;
       margin: 0px;
       padding: 0px;
     }
     header #navbar > ul {
-      width: 100%;
+      width: calc(70%);
     }
-      header #navbar ul li.logo {
-        float: left;
-      }
       header #navbar ul li {
         float: right;
       }
@@ -729,7 +735,6 @@ header {
         header #navbar ul li a, header #navbar ul li a:visited {
           display: flex;
           align-items: center;
-          padding: 0 25px;
           height: 100%;
           width: 100%;
           background: #FFFFFF;
