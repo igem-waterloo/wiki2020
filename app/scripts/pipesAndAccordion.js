@@ -4,7 +4,8 @@ function PipeLength(title1, title2, title3) {
 
     var element = $(title1)[0];
     var rect = element.getBoundingClientRect();
-    var offset = 613;
+    var headerHeight = $('.pageHeader').height();
+    var offset = headerHeight + 523;
 
     var val1 = rect.top - topRect.top - offset + 326.813;
     var val2 = rect.top - topRect.top - offset + 327.037;
@@ -41,7 +42,7 @@ function PipeLength(title1, title2, title3) {
     var rect2 = element2.getBoundingClientRect();
 
 
-    var offset = 1825;
+    offset = headerHeight + 1732;
     val1 = rect2.top - topRect.top - offset + 1538.13;
     val2 = rect2.top - topRect.top - offset + 1538.35;
     val3 = rect2.top - topRect.top - offset + 1554.39;
@@ -91,7 +92,7 @@ function PipeLength(title1, title2, title3) {
     var element3 = $(title3)[0];
     var rect3 = element3.getBoundingClientRect();
 
-    var offset = 3270;
+    offset = headerHeight + 3180;
     val1 = rect3.top - topRect.top - offset + 1.50001;
     val2 = rect3.top - topRect.top - offset + 2983.41;
     val3 = rect3.top - topRect.top - offset + 2999.45;
@@ -101,12 +102,20 @@ function PipeLength(title1, title2, title3) {
     val7 = rect3.top - topRect.top - offset + 3011.38;
     val8 = rect3.top - topRect.top - offset + 2983.19;
     
-    document.getElementById('pipe-three').setAttribute("d", "M139.773 " + val1.toString() + "L139.773 " 
+    document.getElementById('pipe-three').setAttribute("d", "M139.773 1.50001L139.773 " 
     + val2.toString() + "C139.773 " + val3.toString() + " 153.781 " + val4.toString() +
     " 168.937 " + val4.toString() + "H194.801V" + val5.toString() + "H168.937C143.345 " 
     + val6.toString() + " 122.5 " + val7.toString() 
-    + " 122.5 " + val8.toString() + "V" + val1.toString()
-    + "L139.773 " + val1.toString() + "Z");
+    + " 122.5 " + val8.toString() + "V1.50001"
+    + "L139.773 1.50001" + "Z");
+
+    // val1 = val4 + 200;
+    // $('.pipe-three').height();
+    // val4 + 200;
+    // console.log(val1);
+
+    // $('.pipecol svg').attr('height', val1.toString());
+    // $('.pipecol svg').attr('viewbox', "0 0 227 " + val1.toString());
 
     val1 = rect3.top - topRect.top - offset + 3005.5;
     val2 = rect3.top - topRect.top - offset + 3039.79;

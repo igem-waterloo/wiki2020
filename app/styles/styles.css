@@ -813,7 +813,7 @@ footer {
   color: #fff;
   padding: 25px;
   position: relative;
-  z-index: 999; }
+  z-index: 996; }
   footer::after {
     clear: both;
     content: "";
@@ -987,7 +987,7 @@ div.panel.show {
 
 div.labsubteam {
   width: 85%;
-  padding: 12px 40px;
+  padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -997,7 +997,7 @@ div.labsubteam {
 
 div.humansubteam {
   width: 85%;
-  padding: 12px 40px;
+  padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -1007,7 +1007,7 @@ div.humansubteam {
 
 div.mathsubteam {
   width: 85%;
-  padding: 12px 40px;
+  padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -1017,7 +1017,7 @@ div.mathsubteam {
 
 div.inspiration {
   width: 85%;
-  padding: 12px 40px;
+  padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -1027,7 +1027,7 @@ div.inspiration {
 
 div.problem {
   width: 85%;
-  padding: 12px 40px;
+  padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -1037,7 +1037,7 @@ div.problem {
 
 div.solution {
   width: 85%;
-  padding: 12px 40px;
+  padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -1047,20 +1047,6 @@ div.solution {
 
 p.resizefont {
   font-size: 20px;
-}
-
-.fixed {
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 10px;
-  position: fixed;
-  bottom: 0px;
-  right: 30px;
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-  z-index: 999px;
 }
 
 #homepage {
@@ -1080,19 +1066,18 @@ main {
 }
 
 .pipecol {
-  width: 16%;
   padding: 0 10px 0 100px;
-  float:left
+  float:left;
 }
 
 .contentcol {
-  width: 84%;
   padding: 0 0 0 0;
-  float: right;
+  margin: 0px;
+  float: left;
 }
 
 .contentcol .info {
-  margin: 50px;
+  padding: 20px;
 }
 
 .contentcol .info p {
@@ -1100,7 +1085,7 @@ main {
 }
 
 .pageHeader {
-  margin: 50px;
+  margin: 50px 0px;
 }
 
 .pageHeader:after {
@@ -1110,21 +1095,22 @@ main {
 }
 
 .headerCol {
-  float: left;
-  width: 20%;
-  padding: 30px;
+  width: min-content;
+  padding-left: 100px;
+  display: inline-block;
 }
 
-.headerCol2 {
-  float: left;
-  width: 80%;
-  padding: 30px;
-}
-
-.pageHeader h1 {
+.headerCol h1 {
+  text-align: left;
+  font-size: 2.8em;
   font-weight: bold;
   color: #003650;
   margin: 0px;
+}
+
+.headerCol2 {
+  padding-left: 30px;
+  display: inline-block;
 }
 
 .overview {
@@ -1292,4 +1278,18 @@ main {
   font-weight: bold;
   color: #fff !important;
   font-size: clamp(1.25rem, 0.8125rem + 1.75vw, 2.125rem) !important;
+}
+
+.fixed {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  z-index: 999;
 }

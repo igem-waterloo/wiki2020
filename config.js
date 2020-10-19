@@ -11,8 +11,8 @@ module.exports = function(root) {
 
     // Teaminfo. Duh.
     const teaminfo = {
-        year: 2018,
-        teamName: 'Virginia'
+        year: 2020,
+        teamName: 'Waterloo'
     };
 
     const imagetypes = '{png,jpg,gif,svg}';
