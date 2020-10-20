@@ -109,14 +109,6 @@ function PipeLength(title1, title2, title3) {
     + " 122.5 " + val8.toString() + "V1.50001"
     + "L139.773 1.50001" + "Z");
 
-    // val1 = val4 + 200;
-    // $('.pipe-three').height();
-    // val4 + 200;
-    // console.log(val1);
-
-    // $('.pipecol svg').attr('height', val1.toString());
-    // $('.pipecol svg').attr('viewbox', "0 0 227 " + val1.toString());
-
     val1 = rect3.top - topRect.top - offset + 3005.5;
     val2 = rect3.top - topRect.top - offset + 3039.79;
 

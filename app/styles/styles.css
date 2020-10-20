@@ -215,12 +215,6 @@ img {
   border-style: none; }
 
 /**
- * Hide SVG overflow in IE
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/**
  * Remove the default `border-radius` that macOS Chrome adds.
  * Details at https://github.com/twbs/bootstrap/issues/24093
  */
@@ -986,7 +980,7 @@ div.panel.show {
 }
 
 div.labsubteam {
-  width: 85%;
+  width: 100%;
   padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
@@ -996,7 +990,7 @@ div.labsubteam {
 }
 
 div.humansubteam {
-  width: 85%;
+  width: 100%;
   padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
@@ -1006,7 +1000,7 @@ div.humansubteam {
 }
 
 div.mathsubteam {
-  width: 85%;
+  width: 100%;
   padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
@@ -1016,7 +1010,7 @@ div.mathsubteam {
 }
 
 div.inspiration {
-  width: 85%;
+  width: 100%;
   padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
@@ -1026,7 +1020,7 @@ div.inspiration {
 }
 
 div.problem {
-  width: 85%;
+  width: 100%;
   padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
@@ -1036,7 +1030,7 @@ div.problem {
 }
 
 div.solution {
-  width: 85%;
+  width: 100%;
   padding: 12px 0px;
   font-weight: bold;
   font-size: 20px;
@@ -1077,11 +1071,26 @@ main {
 }
 
 .contentcol .info {
-  padding: 20px;
+  padding: 0px;
 }
 
 .contentcol .info p {
   color: #003650;
+  margin: 32px 0px;
+}
+
+.contentcol .info img {
+  width: 100%;
+  margin: 30px 0px 60px 0px;
+}
+
+.overview {
+  color: #003650;
+  border: 5px solid #5C89A0;
+  padding: 18px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 2rem;
 }
 
 .pageHeader {
@@ -1111,16 +1120,6 @@ main {
 .headerCol2 {
   padding-left: 30px;
   display: inline-block;
-}
-
-.overview {
-  color: #003650;
-  border: 5px solid #5C89A0;
-  padding: 18px;
-  width: 85%;
-  margin: auto;
-  margin-bottom: 50px;
-  line-height: 2rem;
 }
 
 #homepageDiv h1{
