@@ -802,122 +802,137 @@ footer {
   /* Footer height */
   font-size: medium !important;
   font-family: "Nunito Sans" !important;
-  box-sizing: border-box;
-  background-color: #002131;
-  color: #fff;
-  padding: 25px;
-  position: relative;
-  z-index: 996; }
+  box-sizing: border-box !important;
+  background-color: #002131 !important;
+  color: #fff !important;
+  padding: 25px !important;
+  position: relative !important;
+  z-index: 996 !important; }
   footer::after {
-    clear: both;
-    content: "";
+    clear: both !important;
+    content: "" !important;
     display: block; }
   footer div.footer-name {
-    width: calc(20%);
-    float: left;
-    margin-left: 0px;
-    line-height: 6rem;
-    height: 12rem; 
+    width: calc(20%) !important;
+    float: left !important;
+    margin-left: 0px !important;
+    line-height: 6rem !important;
+    height: 12rem !important; 
   }
     footer div.footer-name * {
-      float: left; }
+      float: left !important; }
     .igemlogo {
-      width: 100%;
-      padding: 0 1em;
-      max-width: 180px;
+      width: 100% !important;
+      padding: 0 1em !important;
+      max-width: 180px !important;
+      min-width: 170px !important;
     }
   footer div.spacer {
-    width: calc(60%);
-    display: flex;
-    justify-content: space-evenly;
-    float: left;
-    margin-left: 0px;
-    line-height: 1.5rem;
-    height: 12rem;
+    width: calc(60%) !important;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    float: left !important;
+    margin-left: 0px !important;
+    line-height: 1.5rem !important;
+    height: 12rem !important;
     /*text-align: center*/ }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 900px) {
       footer div.spacer {
-        width: 0;
-        visibility: hidden;
+        width: 0 !important;
+        visibility: hidden !important;
       }
       footer div.social-container {
-        width: calc(50%) !important;
+        width: 150px !important;
+        display: inline-block !important;
       }
       footer div.footer-name {
-        width: calc(50%) !important;
+        min-width: 170px !important;
+        display: inline-block !important;
       }
     }
 
   footer h1 {
-    border-bottom: 3px solid #FB9E36;
-    display:inline-block; 
-    padding-bottom: 5px;
-    font-weight: bold;
+    border-bottom: 3px solid #FB9E36 !important;
+    display:inline-block !important; 
+    padding-bottom: 5px !important;
+    font-weight: bold !important;
   }
 
   .spacer ul li a {
-    color: #CDDCDD;
+    color: #CDDCDD !important;
   }
   
   .spacer ul li a:hover {
-    color: #FB9E36;
+    color: #FB9E36 !important;
   }
 
   .linkcol {
-    line-height: 24px;
+    line-height: 24px !important;
   }
 
   .linkcol h1 {
-    line-height: 16px;
+    line-height: 16px !important;
+    color: #fff !important;
+    font-family: "Nunito Sans" !important;
+    font-weight: bold !important;
+    font-size: 14.5px;
+  }
+
+  .linkcol ul {
+    margin-left: 0px !important;
   }
 
   footer div.spacer:after {
-    content: "";
-    display: table;
-    clear: both;
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
   }
   
   footer div.social-container {
     width: calc(20%);
-    float: right;
-    margin-left: 0px; 
-    height: 12rem;
-    max-width: 150px;
+    float: right !important;
+    margin-left: 0px !important; 
+    height: 12rem !important;
+    max-width: 150px !important;
   }
 
 /*Code courtesy of https://codepen.io/brandondward/pen/RpyaKL*/
 /*Social media icons*/
 /*#ff003c;*/
 /*#c648c8;*/
-.social-container {
-  float: left;
-  margin-left: 20px; }
+
+.social-container h1 {
+  color: #fff !important;
+  font-family: "Nunito Sans" !important;
+  font-weight: bold !important;
+  font-size: 14.5px;
+}
 
 .social-icons {
-  padding: 0;
-  list-style: none;
-  margin: 0; }
+  padding: 0 !important;
+  list-style: none !important;
+  margin: 0 !important; }
   .social-icons li {
-    display: inline-block;
-    margin: 0.15em;
-    position: relative;
+    display: inline-block !important;
+    margin: 0.15em !important;
+    position: relative !important;
     font-size: 1.7em !important; }
   .social-icons i {
-    color: black;
-    position: absolute;
-    top: 13px;
-    left: 13px; }
+    color: black !important;
+    position: absolute !important;
+    top: 13px !important;
+    left: 13px !important; }
   .social-icons a {
-    display: inline-block;
+    display: inline-block !important;
     /*@include grid-visual;*/ }
     .social-icons a:before {
-      content: " ";
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      display: block;
-      background: #fff; }
+      content: " " !important;
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 100% !important;
+      display: block !important;
+      background: #fff !important; }
 
 /* Style the element that is used to open and close the accordion class */
 div.accordion {
@@ -1043,16 +1058,13 @@ p.resizefont {
   font-size: 20px;
 }
 
-#homepage {
-  background-image: url("../images/home.svg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 100%;
-}
-
 #homepageDiv {
-  width: 100%;
-  text-align: center;
+  width: 100% !important;
+  text-align: center !important;
+  background-image: url("https://2020.igem.org/wiki/images/f/f4/T--Waterloo--2020_home.svg") !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-size: 100% !important;
 }
 
 main {
@@ -1122,161 +1134,165 @@ main {
   display: inline-block;
 }
 
-#homepageDiv h1{
-  color: #003650;
-  font-size: clamp(.94rem, 0.16rem + 3.12vw, 2.5rem);
-}
-
-#homepageDiv p {
-  color: #003650;
-  font-size: clamp(0.75rem, 0.375rem + 1.5vw, 1.5rem);
-}
-
 .slogan {
-  font-weight: bold;
-  position: absolute;
-  top: 3.6%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.5em;
-  left: 0;
-  right: 0;
+  color: #003650 !important;
+  font-weight: bold !important;
+  position: absolute !important;
+  top: 4.3% !important;
+  width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 0.5em !important;
+  left: 0 !important;
+  right: 0 !important;
+  line-height: 130% !important;
+  font-size: clamp(.5rem, 0.16rem + 3vw, 2.5rem) !important;
 }
 
 .whatif {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #fff !important;
-  position: absolute;
-  top: 42.5%;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  line-height: 1.6em;
-  font-size: clamp(1.8125rem, 1.03125rem + 3.125vw, 3.375rem) !important;
+  position: absolute !important;
+  top: 41.1% !important;
+  width: 55% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  line-height: 1.6em !important;
+  font-size: clamp(0.5rem, 0.33125rem + 2.625vw, 3.275rem) !important;
 }
 
 .interested {
-  font-weight: bold;
-  position: absolute;
-  top: 94.5%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  font-weight: bold !important;
+  position: absolute !important;
+  top: 94.5% !important;
+  width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  font-size: clamp(0.3rem, 0.2rem + 1.3vw, 2.9rem) !important;
 }
 
 .hp1 {
-  font-weight: bold;
-  position: absolute;
-  top: 4.9%;
-  width: 65%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  line-height: 1.6em;
+  color: #003650 !important;
+  font-weight: bold !important;
+  position: absolute !important;
+  top: 4.7% !important;
+  width: 65% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  line-height: 1.6em !important;
+  text-align: center !important;
+  font-size: clamp(0.3rem, 0.2rem + 1.2vw, 1.8rem) !important;
 }
 
 .hp2 {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #fff !important;
-  position: absolute;
-  top: 26%;
-  left: 54%;
-  width: 26%;
-  line-height: 1.6em;
-  text-align: left;
+  position: absolute !important;
+  top: 26.5% !important;
+  left: 55.5% !important;
+  width: 29% !important;
+  line-height: 1.6em !important;
+  text-align: left !important;
+  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
 }
 
 .hp3 {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #fff !important;
-  position: absolute;
-  top: 33%;
-  width: 47%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  line-height: 1.6em;
-  font-size: clamp(0.9375rem, 0.34375rem + 2.375vw, 2.125rem) !important;
+  position: absolute !important;
+  top: 35.5% !important;
+  width: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  line-height: 1.6em !important;
+  text-align: center !important;
+  font-size: clamp(0.3rem, 0.2rem + 1.3vw, 2.9rem) !important;
 }
 
 .hp4 {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #5C89A0 !important;
-  position: absolute;
-  top: 40%;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  line-height: 1.6em;
-  font-size: clamp(0.3125rem, 0.15625rem + 0.625vw, 0.625rem) !important;
+  position: absolute !important;
+  top: 38.9% !important;
+  width: 47% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  line-height: 1.6em !important;
+  text-align: center !important;
+  font-size: clamp(0.1rem, 0.05rem + 0.625vw, 0.625rem) !important;
 }
 
 .hp5 {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #fff !important;
-  position: absolute;
-  top: 57.7%;
-  left: 44%;
-  width: 26%;
-  line-height: 1.6em;
-  text-align: left; 
+  position: absolute !important;
+  top: 58% !important;
+  left: 44% !important;
+  width: 30% !important;
+  line-height: 1.6em !important;
+  text-align: left !important; 
+  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
 }
 
 .hp6 {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #fff !important;
-  position: absolute;
-  top: 70%;
-  left: 9%;
-  width: 24%;
-  line-height: 1.6em;
-  text-align: left; 
+  position: absolute !important;
+  top: 70% !important;
+  left: 6% !important;
+  width: 26% !important;
+  line-height: 1.6em !important;
+  text-align: left !important; 
+  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
 }
 
 .hp7 {
-  font-weight: bold;
+  font-weight: bold !important;
   color: #fff !important;
-  position: absolute;
-  top: 76%;
-  left: 55%;
-  width: 24%;
-  line-height: 1.6em;
-  text-align: left; 
+  position: absolute !important;
+  top: 76% !important;
+  left: 55% !important;
+  width: 27% !important;
+  line-height: 1.6em !important;
+  text-align: left !important; 
+  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
 }
 
 #learnmore {
-  position: absolute;
-  top: 96.5%;
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  cursor: pointer;
+  position: absolute !important;
+  top: 96.5% !important;
+  width: 40% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+  cursor: pointer !important;
 }
 
 #learnmore > img {
-  padding: 0 1em;
+  padding: 0 1em !important;
+  width: 65%;
 }
 
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  font-weight: bold !important;
   color: #fff !important;
-  font-size: clamp(1.25rem, 0.8125rem + 1.75vw, 2.125rem) !important;
+  font-size: clamp(0.38rem, 0.2rem + 1.4vw, 3rem) !important;
 }
 
 .fixed {

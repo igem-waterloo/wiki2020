@@ -1,13 +1,11 @@
 function background() {
-    var home = $('#homepage');
+    var home = $('#homepageDiv');
     var width = home.width();
 
     var footer = $('footer');
     var footerHeight = footer.height();
     
-    var homeDiv = $('#homepageDiv');
-    homeDiv.css('height', width*4.1+footerHeight);
-    height = homeDiv.height();
+    home.css('height', width*4.1+footerHeight);
 };
 
 
