@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script src="https://2020.igem.org/Template:Waterloo/js/vendor?action=raw&ctype=text/javascript"></script>
+	<link rel="stylesheet" href="https://2020.igem.org/Template:Waterloo/css/vendor?action=raw&ctype=text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 	<script>
 		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
+			$('header').load('https://2020.igem.org/Template:Waterloo/header?action=raw&ctype=text/javascript');
+			$('footer').load('https://2020.igem.org/Template:Waterloo/footer?action=raw&ctype=text/javascript');
 		});
 	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
+	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
 	<!--Added MathJax hack to make inline equations work-->
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -31,16 +31,23 @@
 	<header></header>
     <main id="top">
 		<article>
-			<h1> IMPROVEMENT </h1>
+			<div class="pageHeader"> 
+				<div class="headerCol">
+					<h1> IMPROVEMENT </h1>
+				</div> 
+				<div class="headerCol2">
+					<img src='/images/buildings.svg'>
+				</div>
+			</div>
 
-			<p> A composite part is a functional unit of DNA consisting of two or more basic parts assembled together. BBa_I13507 is an example of a composite part, consisting of an RBS, a protein coding region for a red fluorescent protein, and a terminator. </p>
-
-			<p> New composite BioBrick devices can be made by combining existing BioBrick Parts (like Inverters, Amplifiers, Smell Generators, Protein Balloon Generators, Senders, Receivers, Actuators, and so on). </p>
-
+			<div class='text'>
+				<p>We improved <a href="http://parts.igem.org/Part:BBa_K863101">BBa_K863101</a> by adding a flexible linker to the cellulose-binding module that allows future iGEM teams to use it in fusion proteins. We added this new sequence under part <a href="http://parts.igem.org/Part:BBa_K3381007">BBa_K3381007</a>.</p>
+				<img src="http://parts.igem.org/wiki/images/b/be/BBa_K863101_Improvement_Waterloo2020.png" alt="3D model of the flexible linker (highlighted in green) between Mst-CopC, a copper-binding protein, and CBM2a (BBa_K863101)">
+				<div class='caption'>3D model of the flexible linker (highlighted in green) between Mst-CopC, a copper-binding protein, and CBM2a (BBa_K863101)</div>
+			</div>
 		</article>
     </main>
   <footer></footer>
 </body>
 </html>
-
 

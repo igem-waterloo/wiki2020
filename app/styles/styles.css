@@ -477,36 +477,6 @@ ul {
 .MathJax nobr > span.math > span {
   border-left-width: 0 !important; }
 
-@font-face {
-  font-family: "OpenSans";
-  src: url("/fonts/OpenSans/OpenSans-Regular.ttf");
-  font-weight: normal;
-  font-style: normal; }
-
-  @font-face {
-    font-family: "NunitoSans";
-    src: url("/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
-    font-weight: normal;
-    font-style: normal; }
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("/fonts/OpenSans/OpenSans-Bold.ttf");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("/fonts/OpenSans/OpenSans-Italic.ttf");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("/fonts/OpenSans/OpenSans-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic; }
-
 /*This CSS file is for themes (colors) and general font editing. */
 /* Current site colors, where variables are defined for easy changes to the
 /* color */
@@ -746,7 +716,7 @@ header {
           header #navbar > ul > li > a, header #navbar > ul > li > a:visited {
             background: #42748E;
             color: #FFFFFF; 
-            font-weight: bold;
+            font-weight: 600 !important;
           }
           header #navbar ul li a:hover, header #navbar ul li a:visited:hover {
             background: #CDDCDD;
@@ -856,7 +826,7 @@ footer {
     border-bottom: 3px solid #FB9E36 !important;
     display:inline-block !important; 
     padding-bottom: 5px !important;
-    font-weight: bold !important;
+    font-weight: 600 !important;
   }
 
   .spacer ul li a {
@@ -875,7 +845,7 @@ footer {
     line-height: 16px !important;
     color: #fff !important;
     font-family: "Nunito Sans" !important;
-    font-weight: bold !important;
+    font-weight: 600 !important;
     font-size: 14.5px;
   }
 
@@ -905,7 +875,7 @@ footer {
 .social-container h1 {
   color: #fff !important;
   font-family: "Nunito Sans" !important;
-  font-weight: bold !important;
+  font-weight: 600 !important;
   font-size: 14.5px;
 }
 
@@ -936,7 +906,7 @@ footer {
 
 /* Style the element that is used to open and close the accordion class */
 div.accordion {
-  background-color: #CDDCDD;
+  background-color: #fff;
   color: #003650;
   padding: 18px;
   width: 85%;
@@ -976,7 +946,7 @@ div.panel.show:after {
 /* Style the element that is used for the panel class */
 div.panel {
   padding: 18px;
-  background-color: #CDDCDD;
+  background-color: #fff;
   color: #003650;
   max-height: 0;
   overflow: hidden;
@@ -997,8 +967,8 @@ div.panel.show {
 div.labsubteam {
   width: 100%;
   padding: 12px 0px;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1007,8 +977,8 @@ div.labsubteam {
 div.humansubteam {
   width: 100%;
   padding: 12px 0px;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1017,8 +987,8 @@ div.humansubteam {
 div.mathsubteam {
   width: 100%;
   padding: 12px 0px;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1027,8 +997,8 @@ div.mathsubteam {
 div.inspiration {
   width: 100%;
   padding: 12px 0px;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1037,8 +1007,8 @@ div.inspiration {
 div.problem {
   width: 100%;
   padding: 12px 0px;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1047,8 +1017,18 @@ div.problem {
 div.solution {
   width: 100%;
   padding: 12px 0px;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+  margin: auto;
+  color: #003650;
+}
+
+div.probspace, div.considerations, div.nextsteps, div.safe, div.ourlab, div.guidelines {
+  width: 100%;
+  padding: 12px 0px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1068,7 +1048,7 @@ p.resizefont {
 }
 
 main {
-  background-color: transparent;
+  background-color: white !important;
 }
 
 .pipecol {
@@ -1082,27 +1062,91 @@ main {
   float: left;
 }
 
+.info h1 {
+  font-weight: 700 !important;
+  font-size: 19px !important;
+  text-align: left !important;
+  color: #003650 !important;
+  margin-left: 0px !important;
+}
+
+.caption {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  text-align: center !important;
+  color: #003650 !important;
+  margin-bottom: 5px !important;
+}
+
+
 .contentcol .info {
-  padding: 0px;
+  padding: 0px !important;
+}
+
+.contentcol .refs {
+  padding: 0px !important;
+  margin: 40px !important;
 }
 
 .contentcol .info p {
-  color: #003650;
-  margin: 32px 0px;
+  color: #003650 !important;
+  margin: 32px 0px !important;
+  font-size: 16px !important;
+  text-align: left !important;
+}
+
+.contentcol .refs p {
+  color: #003650 !important;
+  text-align: left !important;
+}
+
+.referencesHead {
+  font-weight: 800 !important;
+  margin: 0px !important;
+  padding-top: 60px !important;
+  font-size: 10px !important;
+}
+
+.references {
+  font-size: 10px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  word-wrap: break-word !important;
 }
 
 .contentcol .info img {
   width: 100%;
-  margin: 30px 0px 60px 0px;
+  margin: 30px 0px 10px 0px;
+}
+
+.contentcol .info ol {
+  list-style: none !important;
+  list-style-type: decimal !important;
+}
+
+li::before {
+  color: #003650 !important;
+}
+
+.contentcol .info ol li p {
+  margin-top:0px !important;
+  margin-bottom: 15px !important;
+}
+
+.contentcol .info .narrow {
+  width: 60% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .overview {
-  color: #003650;
-  border: 5px solid #5C89A0;
-  padding: 18px;
-  margin: auto;
-  margin-bottom: 50px;
-  line-height: 2rem;
+  color: #003650 !important;
+  border: 5px solid #5C89A0 !important;
+  background-color: #CDDCDD !important;
+  padding: 18px !important;
+  margin: auto !important;
+  margin-bottom: 50px !important;
+  line-height: 2rem !important;
 }
 
 .pageHeader {
@@ -1116,27 +1160,32 @@ main {
 }
 
 .headerCol {
-  width: min-content;
-  padding-left: 100px;
-  display: inline-block;
+  width: min-content !important;
+  padding-left: 100px !important;
+  display: inline-block !important;
 }
 
 .headerCol h1 {
-  text-align: left;
-  font-size: 2.8em;
-  font-weight: bold;
-  color: #003650;
-  margin: 0px;
+  text-align: left !important;
+  font-size: clamp(2rem, 0.8rem + 1.7vw, 2.9rem) !important;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+  color: #003650 !important;
+  margin: 0px !important;
 }
 
 .headerCol2 {
-  padding-left: 30px;
-  display: inline-block;
+  padding-left: 30px !important;
+  display: inline-block !important;
+}
+
+.headerCol2 img {
+  min-width: 400px !important;
 }
 
 .slogan {
   color: #003650 !important;
-  font-weight: bold !important;
+  font-weight: 800 !important;
   position: absolute !important;
   top: 4.3% !important;
   width: 80% !important;
@@ -1150,7 +1199,7 @@ main {
 }
 
 .whatif {
-  font-weight: bold !important;
+  font-weight: 700 !important;
   color: #fff !important;
   position: absolute !important;
   top: 41.1% !important;
@@ -1164,7 +1213,7 @@ main {
 }
 
 .interested {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   position: absolute !important;
   top: 94.5% !important;
   width: 80% !important;
@@ -1177,7 +1226,7 @@ main {
 
 .hp1 {
   color: #003650 !important;
-  font-weight: bold !important;
+  font-weight: 400 !important;
   position: absolute !important;
   top: 4.7% !important;
   width: 65% !important;
@@ -1191,7 +1240,7 @@ main {
 }
 
 .hp2 {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   color: #fff !important;
   position: absolute !important;
   top: 26.5% !important;
@@ -1203,7 +1252,7 @@ main {
 }
 
 .hp3 {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   color: #fff !important;
   position: absolute !important;
   top: 35.5% !important;
@@ -1218,7 +1267,7 @@ main {
 }
 
 .hp4 {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   color: #5C89A0 !important;
   position: absolute !important;
   top: 38.9% !important;
@@ -1233,7 +1282,7 @@ main {
 }
 
 .hp5 {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   color: #fff !important;
   position: absolute !important;
   top: 58% !important;
@@ -1245,7 +1294,7 @@ main {
 }
 
 .hp6 {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   color: #fff !important;
   position: absolute !important;
   top: 70% !important;
@@ -1257,7 +1306,7 @@ main {
 }
 
 .hp7 {
-  font-weight: bold !important;
+  font-weight: 400 !important;
   color: #fff !important;
   position: absolute !important;
   top: 76% !important;
@@ -1290,9 +1339,44 @@ main {
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  font-weight: bold !important;
+  font-weight: 700 !important;
   color: #fff !important;
   font-size: clamp(0.38rem, 0.2rem + 1.4vw, 3rem) !important;
+}
+
+.text {
+  margin-bottom: 50px !important;
+}
+
+.text p {
+  font-size: 16px !important;
+  color: #003650 !important;
+  margin: 0px 120px 30px 120px !important;
+}
+
+.text a {
+  color: #FB9E36 !important;
+}
+
+.text a:hover {
+  color: #003650 !important;
+}
+
+.text img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 10px !important;
+  margin-top: 30px !important;
+}
+
+.text table {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+i {
+  font-style: italic !important;
 }
 
 .fixed {

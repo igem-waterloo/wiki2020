@@ -148,6 +148,9 @@ function length() {
     else if ($('.teampage').length) {
         PipeLength('.labsubteam', '.humansubteam', '.mathsubteam');
     }
+    else if ($('.hppage').length) {
+        PipeLength('.probspace', '.considerations', '.nextsteps');
+    }
 }
 
 window.addEventListener("load", function(){

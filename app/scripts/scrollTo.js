@@ -23,4 +23,7 @@ $(document).ready(function(){
     pipeScroll("inspPipe", ".inspiration");
     pipeScroll("probPipe", ".problem");
     pipeScroll("solPipe", ".solution");
+    pipeScroll("probspacePipe", ".probspace");
+    pipeScroll("considPipe", ".considerations");
+    pipeScroll("nextPipe", ".nextsteps");
 });
