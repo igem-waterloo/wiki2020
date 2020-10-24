@@ -100,8 +100,8 @@ body {
 /**
  * Lists
  */
-ol, ul {
-  list-style: none; }
+footer ol, footer ul {
+  list-style: none !important; }
 
 /**
  * Quotes
@@ -702,7 +702,7 @@ header {
         header #navbar ul li a, header #navbar ul li a:visited {
           display: flex;
           align-items: center;
-          padding: 0 25px;
+          padding: 0 25px !important;
           height: 100%;
           width: 100%;
           background: #FFFFFF;
@@ -717,6 +717,7 @@ header {
             background: #42748E;
             color: #FFFFFF; 
             font-weight: 600 !important;
+            padding: 0 9px !important;
           }
           header #navbar ul li a:hover, header #navbar ul li a:visited:hover {
             background: #CDDCDD;
@@ -806,6 +807,10 @@ footer {
     line-height: 1.5rem !important;
     height: 12rem !important;
     /*text-align: center*/ }
+
+    footer i {
+      font-style: normal !important; 
+    }
 
     @media only screen and (max-width: 900px) {
       footer div.spacer {
@@ -1024,7 +1029,10 @@ div.solution {
   color: #003650;
 }
 
-div.probspace, div.considerations, div.nextsteps, div.safe, div.ourlab, div.guidelines {
+div.probspace, div.considerations, div.nextsteps, div.safe, div.ourlab, div.guidelines,
+div.humprac, div.labdes, div.mathmod,
+div.copper, div.cellulose, div.copperconc,
+div.molecdyna, div.prototype {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
@@ -1085,7 +1093,7 @@ main {
 
 .contentcol .refs {
   padding: 0px !important;
-  margin: 40px !important;
+  margin: 40px 0px !important;
 }
 
 .contentcol .info p {
@@ -1133,6 +1141,11 @@ li::before {
   margin-bottom: 15px !important;
 }
 
+.contentcol .info ol li, .contentcol .info ul li {
+  color: #003650 !important;
+  line-height: 32px !important;
+}
+
 .contentcol .info .narrow {
   width: 60% !important;
   margin-left: auto !important;
@@ -1149,6 +1162,16 @@ li::before {
   line-height: 2rem !important;
 }
 
+.overview a {
+  color: #FB9E36 !important;
+  padding-right: 0px !important;
+}
+
+.overview a:hover {
+  color: #003650 !important;
+}
+
+
 .pageHeader {
   margin: 50px 0px;
 }
@@ -1160,7 +1183,6 @@ li::before {
 }
 
 .headerCol {
-  width: min-content !important;
   padding-left: 100px !important;
   display: inline-block !important;
 }
@@ -1352,6 +1374,11 @@ li::before {
   font-size: 16px !important;
   color: #003650 !important;
   margin: 0px 120px 30px 120px !important;
+  text-align: left !important;
+}
+
+.text table, .text th {
+  color: #003650 !important;
 }
 
 .text a {
@@ -1360,6 +1387,19 @@ li::before {
 
 .text a:hover {
   color: #003650 !important;
+}
+
+.info a {
+  color: #FB9E36 !important;
+  padding-right: 0px !important;
+}
+
+.info a:hover {
+  color: #003650 !important;
+}
+
+.info ul {
+  list-style-position: outside !important;
 }
 
 .text img {
@@ -1379,6 +1419,14 @@ i {
   font-style: italic !important;
 }
 
+b {
+  font-weight: 800 !important;
+}
+
+.introduce {
+  font-weight: 800 !important;
+}
+
 .fixed {
   background-color: black;
   color: white;
@@ -1391,4 +1439,8 @@ i {
   height: 300px;
   border-radius: 15px;
   z-index: 999;
+}
+
+.CtxtMenu_Attached_0 {
+  display: inline !important;
 }

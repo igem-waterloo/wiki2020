@@ -88,68 +88,77 @@ function PipeLength(title1, title2, title3) {
     val1 = rect2.top - topRect.top - offset + 1577;
     document.getElementById('circle-two').setAttribute("cy", val1.toString());
 
- 
-    var element3 = $(title3)[0];
-    var rect3 = element3.getBoundingClientRect();
+    if(title3 != '') {
+        var element3 = $(title3)[0];
+        var rect3 = element3.getBoundingClientRect();
 
-    offset = headerHeight + 3180;
-    val1 = rect3.top - topRect.top - offset + 1.50001;
-    val2 = rect3.top - topRect.top - offset + 2983.41;
-    val3 = rect3.top - topRect.top - offset + 2999.45;
-    val4 = rect3.top - topRect.top - offset + 3012.2;
-    val5 = rect3.top - topRect.top - offset + 3032.11;
-    val6 = rect3.top - topRect.top - offset + 3032;
-    val7 = rect3.top - topRect.top - offset + 3011.38;
-    val8 = rect3.top - topRect.top - offset + 2983.19;
-    
-    document.getElementById('pipe-three').setAttribute("d", "M139.773 1.50001L139.773 " 
-    + val2.toString() + "C139.773 " + val3.toString() + " 153.781 " + val4.toString() +
-    " 168.937 " + val4.toString() + "H194.801V" + val5.toString() + "H168.937C143.345 " 
-    + val6.toString() + " 122.5 " + val7.toString() 
-    + " 122.5 " + val8.toString() + "V1.50001"
-    + "L139.773 1.50001" + "Z");
+        offset = headerHeight + 3180;
+        val1 = rect3.top - topRect.top - offset + 1.50001;
+        val2 = rect3.top - topRect.top - offset + 2983.41;
+        val3 = rect3.top - topRect.top - offset + 2999.45;
+        val4 = rect3.top - topRect.top - offset + 3012.2;
+        val5 = rect3.top - topRect.top - offset + 3032.11;
+        val6 = rect3.top - topRect.top - offset + 3032;
+        val7 = rect3.top - topRect.top - offset + 3011.38;
+        val8 = rect3.top - topRect.top - offset + 2983.19;
+        
+        document.getElementById('pipe-three').setAttribute("d", "M139.773 1.50001L139.773 " 
+        + val2.toString() + "C139.773 " + val3.toString() + " 153.781 " + val4.toString() +
+        " 168.937 " + val4.toString() + "H194.801V" + val5.toString() + "H168.937C143.345 " 
+        + val6.toString() + " 122.5 " + val7.toString() 
+        + " 122.5 " + val8.toString() + "V1.50001"
+        + "L139.773 1.50001" + "Z");
 
-    val1 = rect3.top - topRect.top - offset + 3005.5;
-    val2 = rect3.top - topRect.top - offset + 3039.79;
+        val1 = rect3.top - topRect.top - offset + 3005.5;
+        val2 = rect3.top - topRect.top - offset + 3039.79;
 
-    document.getElementById('pipe-three-one').setAttribute("d", "M189.5 " + val1.toString() +
-    "H194.989V" + val2.toString() + "H189.5V" + val1.toString() + "Z");
+        document.getElementById('pipe-three-one').setAttribute("d", "M189.5 " + val1.toString() +
+        "H194.989V" + val2.toString() + "H189.5V" + val1.toString() + "Z");
 
-    val1 = rect3.top - topRect.top - offset + 662.377;
-    val2 = rect3.top - topRect.top - offset + 668.318;
+        val1 = rect3.top - topRect.top - offset + 662.377;
+        val2 = rect3.top - topRect.top - offset + 668.318;
 
-    document.getElementById('pipe-three-two').setAttribute("d", "M146.902 " + val1.toString() + 
-    "L146.902 " + val2.toString() + "L114.5 " + val2.toString() + "L114.5 " + val1.toString()
-    + "L146.902 " + val1.toString() + "Z");
+        document.getElementById('pipe-three-two').setAttribute("d", "M146.902 " + val1.toString() + 
+        "L146.902 " + val2.toString() + "L114.5 " + val2.toString() + "L114.5 " + val1.toString()
+        + "L146.902 " + val1.toString() + "Z");
 
-    val1 = rect3.top - topRect.top - offset + 1975.77;
-    val2 = rect3.top - topRect.top - offset + 1981.71;
+        val1 = rect3.top - topRect.top - offset + 1975.77;
+        val2 = rect3.top - topRect.top - offset + 1981.71;
 
-    document.getElementById('pipe-three-three').setAttribute("d", "M146.902 " + val1.toString() + 
-    "L146.902 " + val2.toString() + "L114.5 " + val2.toString() + "L114.5 " + val1.toString()
-    + "L146.902 " + val1.toString() + "Z");
+        document.getElementById('pipe-three-three').setAttribute("d", "M146.902 " + val1.toString() + 
+        "L146.902 " + val2.toString() + "L114.5 " + val2.toString() + "L114.5 " + val1.toString()
+        + "L146.902 " + val1.toString() + "Z");
 
-    val1 = rect3.top - topRect.top - offset + 2958.44;
-    val2 = rect3.top - topRect.top - offset + 2964.38;
+        val1 = rect3.top - topRect.top - offset + 2958.44;
+        val2 = rect3.top - topRect.top - offset + 2964.38;
 
-    document.getElementById('pipe-three-four').setAttribute("d", "M146.902 " + val1.toString() + 
-    "L146.902 " + val2.toString() + "L114.5 " + val2.toString() + "L114.5 " + val1.toString()
-    + "L146.902 " + val1.toString() + "Z");
+        document.getElementById('pipe-three-four').setAttribute("d", "M146.902 " + val1.toString() + 
+        "L146.902 " + val2.toString() + "L114.5 " + val2.toString() + "L114.5 " + val1.toString()
+        + "L146.902 " + val1.toString() + "Z");
 
-    val1 = rect3.top - topRect.top - offset + 3022;
-    document.getElementById('circle-three').setAttribute("cy", val1.toString());
-
+        val1 = rect3.top - topRect.top - offset + 3022;
+        document.getElementById('circle-three').setAttribute("cy", val1.toString());
+    }
 };
 
 function length() {
-    if($('.descpage').length){
-        PipeLength('.inspiration', '.problem', '.solution');
-    }
-    else if ($('.teampage').length) {
+    if ($('.teampage').length) {
         PipeLength('.labsubteam', '.humansubteam', '.mathsubteam');
     }
     else if ($('.hppage').length) {
         PipeLength('.probspace', '.considerations', '.nextsteps');
+    }
+    else if ($('.safetypage').length) {
+        PipeLength('.safe', '.ourlab', '.guidelines');
+    }
+    else if ($('.edupage').length) {
+        PipeLength('.humprac', '.labdes', '.mathmod');
+    }
+    if($('.measpage').length){
+        PipeLength('.copper', '.cellulose', '.copperconc');
+    }
+    if($('.proofpage').length){
+        PipeLength('.molecdyna', '.prototype', '');
     }
 }
 

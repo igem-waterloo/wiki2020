@@ -3,43 +3,392 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script src="https://2020.igem.org/Template:Waterloo/js/vendor?action=raw&ctype=text/javascript"></script>
+	<link rel="stylesheet" href="https://2020.igem.org/Template:Waterloo/css/vendor?action=raw&ctype=text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 	<script>
 		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
+			$('header').load('https://2020.igem.org/Template:Waterloo/header?action=raw&ctype=text/javascript');
+			$('footer').load('https://2020.igem.org/Template:Waterloo/footer?action=raw&ctype=text/javascript');
 		});
 	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
-	<!--Added MathJax hack to make inline equations work-->
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-		processEscapes: true
-	}
-});
-</script>   </head>
+	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
+	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
 
 <body>
+	<div class="topElement"></div>
 	<div id="igem-navbar-placeholder">
 		<p>Placeholder for iGEM Navbar</p>
 	</div>
 	<header></header>
     <main id="top">
 		<article>
-			<h1> MODEL </h1>
+			<div class="pageHeader"> 
+				<div class="headerCol">
+					<h1 class="descpage"> MODEL </h1>
+				</div> 
+				<div class="headerCol2">
+					<img src='/images/buildings.svg'>
+				</div>
+			</div>
 
-			<p> For teams seeking to improve upon a previous part or project, you should document all of your work on this page. Please remember to include all part measurement and characterization data on the part page on the Registry. Please include a link to your improved part on this page. </p>
+			<div class="pipecol">
+				<svg width="227" height="3442" viewBox="0 0 227 3442" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+					<rect class="inspPipe" fill="#CDDCDD" fill-opacity="0" x="5" y="0" width="20" height="140"></rect>
+					<rect class="probPipe" fill="#CDDCDD" fill-opacity="0" x="50" y="0" width="20" height="110"></rect>
+					<rect class="solPipe" fill="#CDDCDD" fill-opacity="0" x="100" y="0" width="20" height="120"></rect>
+					<path id="text-one" class="inspPipe" d="M20 128.902H5.9V126.322H20V128.902ZM5.9 113.797L5.9 111.377H20V113.317L10.16 120.877H20V123.277H5.9V121.357L15.72 113.797H5.9ZM20.18 103.555C20.18 104.635 20.0333 105.649 19.74 106.595C19.4467 107.542 19.0333 108.342 18.5 108.995L16.62 108.135C17.14 107.455 17.52 106.742 17.76 105.995C18 105.235 18.12 104.415 18.12 103.535C18.12 102.562 17.9533 101.815 17.62 101.295C17.2733 100.762 16.7933 100.495 16.18 100.495C15.6467 100.495 15.24 100.742 14.96 101.235C14.68 101.715 14.4133 102.522 14.16 103.655C13.9067 104.829 13.6133 105.782 13.28 106.515C12.9467 107.249 12.52 107.802 12 108.175C11.48 108.549 10.82 108.735 10.02 108.735C9.19333 108.735 8.45333 108.509 7.8 108.055C7.14667 107.602 6.64 106.962 6.28 106.135C5.90667 105.309 5.72 104.355 5.72 103.275C5.72 102.289 5.87333 101.349 6.18 100.455C6.47333 99.5621 6.88 98.8288 7.4 98.2555L9.28 99.1155C8.28 100.369 7.78 101.755 7.78 103.275C7.78 104.182 7.96667 104.902 8.34 105.435C8.7 105.955 9.20667 106.215 9.86 106.215C10.4067 106.215 10.8267 105.982 11.12 105.515C11.4133 105.049 11.6867 104.255 11.94 103.135C12.2067 101.949 12.5067 100.989 12.84 100.255C13.16 99.5088 13.5733 98.9421 14.08 98.5555C14.5867 98.1555 15.2267 97.9555 16 97.9555C16.84 97.9555 17.58 98.1821 18.22 98.6355C18.8467 99.0755 19.3333 99.7221 19.68 100.575C20.0133 101.415 20.18 102.409 20.18 103.555ZM5.9 95.5816V89.4216C5.9 87.9149 6.28 86.7416 7.04 85.9016C7.78667 85.0616 8.84 84.6416 10.2 84.6416C11.56 84.6416 12.62 85.0616 13.38 85.9016C14.14 86.7416 14.52 87.9149 14.52 89.4216V93.0016H20V95.5816H5.9ZM12.54 89.7416C12.54 87.9682 11.7667 87.0816 10.22 87.0816C9.43333 87.0816 8.85333 87.3016 8.48 87.7416C8.09333 88.1816 7.9 88.8482 7.9 89.7416V93.0016H12.54V89.7416ZM20 82.3784H5.9V79.7984H20V82.3784ZM20 64.9334V67.7334L15.5 70.1534C15.0733 70.3801 14.7733 70.6601 14.6 70.9934C14.4267 71.3268 14.34 71.7468 14.34 72.2534V74.2134H20V76.7534H5.9V70.5134C5.9 68.9134 6.26 67.7001 6.98 66.8734C7.68667 66.0334 8.71333 65.6134 10.06 65.6134C11.14 65.6134 12.0333 65.9201 12.74 66.5334C13.4333 67.1334 13.8867 67.9868 14.1 69.0934C14.3 68.3468 14.8267 67.7468 15.68 67.2934L20 64.9334ZM12.36 70.8734C12.36 69.9001 12.18 69.1868 11.82 68.7334C11.4467 68.2801 10.88 68.0534 10.12 68.0534C9.34667 68.0534 8.78667 68.2801 8.44 68.7334C8.08 69.1868 7.9 69.9001 7.9 70.8734V74.2334H12.36V70.8734ZM20 52.2234L16.7 53.6434V60.5034L20 61.9234V64.5234L5.9 58.1434V56.0434L20 49.6634V52.2234ZM14.7 59.6634V54.5034L8.7 57.0834L14.7 59.6634ZM20 46.578H8.02V51.178H5.9V39.398H8.02V43.998H20V46.578ZM20 37.6323H5.9V35.0523H20V37.6323ZM20.18 25.7273C20.18 27.1007 19.8867 28.294 19.3 29.3073C18.7133 30.3073 17.8733 31.0807 16.78 31.6273C15.6867 32.174 14.4067 32.4473 12.94 32.4473C11.4733 32.4473 10.2 32.1807 9.12 31.6473C8.02667 31.1007 7.18667 30.3207 6.6 29.3073C6.01333 28.294 5.72 27.1007 5.72 25.7273C5.72 24.354 6.01333 23.1673 6.6 22.1673C7.18667 21.154 8.02667 20.3807 9.12 19.8473C10.2 19.3007 11.4733 19.0273 12.94 19.0273C14.4067 19.0273 15.6867 19.3007 16.78 19.8473C17.8733 20.394 18.7133 21.174 19.3 22.1873C19.8867 23.1873 20.18 24.3673 20.18 25.7273ZM18.12 25.7273C18.12 24.434 17.6733 23.4273 16.78 22.7073C15.8867 21.974 14.6067 21.6073 12.94 21.6073C11.2733 21.6073 10 21.974 9.12 22.7073C8.22667 23.4273 7.78 24.434 7.78 25.7273C7.78 27.034 8.22667 28.054 9.12 28.7873C10 29.5073 11.2733 29.8673 12.94 29.8673C14.6067 29.8673 15.8867 29.5073 16.78 28.7873C17.6733 28.054 18.12 27.034 18.12 25.7273ZM5.9 6.94141V4.52141H20V6.46141L10.16 14.0214H20V16.4214H5.9V14.5014L15.72 6.94141H5.9Z" fill="#003650"/>
+					<path id="text-two" class="probPipe" d="M53.9 97.4175V91.2575C53.9 89.7508 54.28 88.5775 55.04 87.7375C55.7867 86.8975 56.84 86.4775 58.2 86.4775C59.56 86.4775 60.62 86.8975 61.38 87.7375C62.14 88.5775 62.52 89.7508 62.52 91.2575V94.8375H68V97.4175H53.9ZM60.54 91.5775C60.54 89.8042 59.7667 88.9175 58.22 88.9175C57.4333 88.9175 56.8533 89.1375 56.48 89.5775C56.0933 90.0175 55.9 90.6842 55.9 91.5775V94.8375H60.54V91.5775ZM68 72.3944V75.1944L63.5 77.6144C63.0733 77.841 62.7733 78.121 62.6 78.4544C62.4267 78.7877 62.34 79.2077 62.34 79.7144V81.6744H68V84.2144H53.9L53.9 77.9744C53.9 76.3744 54.26 75.161 54.98 74.3344C55.6867 73.4944 56.7133 73.0744 58.06 73.0744C59.14 73.0744 60.0333 73.381 60.74 73.9944C61.4333 74.5944 61.8867 75.4477 62.1 76.5544C62.3 75.8077 62.8267 75.2077 63.68 74.7544L68 72.3944ZM60.36 78.3344C60.36 77.361 60.18 76.6477 59.82 76.1944C59.4467 75.741 58.88 75.5144 58.12 75.5144C57.3467 75.5144 56.7867 75.741 56.44 76.1944C56.08 76.6477 55.9 77.361 55.9 78.3344V81.6944H60.36V78.3344ZM68.18 64.1258C68.18 65.4991 67.8867 66.6924 67.3 67.7058C66.7133 68.7058 65.8733 69.4791 64.78 70.0258C63.6867 70.5724 62.4067 70.8458 60.94 70.8458C59.4733 70.8458 58.2 70.5791 57.12 70.0458C56.0267 69.4991 55.1867 68.7191 54.6 67.7058C54.0133 66.6924 53.72 65.4991 53.72 64.1258C53.72 62.7524 54.0133 61.5658 54.6 60.5658C55.1867 59.5524 56.0267 58.7791 57.12 58.2458C58.2 57.6991 59.4733 57.4258 60.94 57.4258C62.4067 57.4258 63.6867 57.6991 64.78 58.2458C65.8733 58.7924 66.7133 59.5724 67.3 60.5858C67.8867 61.5858 68.18 62.7658 68.18 64.1258ZM66.12 64.1258C66.12 62.8324 65.6733 61.8258 64.78 61.1058C63.8867 60.3724 62.6067 60.0058 60.94 60.0058C59.2733 60.0058 58 60.3724 57.12 61.1058C56.2267 61.8258 55.78 62.8324 55.78 64.1258C55.78 65.4324 56.2267 66.4524 57.12 67.1858C58 67.9058 59.2733 68.2658 60.94 68.2658C62.6067 68.2658 63.8867 67.9058 64.78 67.1858C65.6733 66.4524 66.12 65.4324 66.12 64.1258ZM60.72 46.1398C60.9467 45.3265 61.36 44.6998 61.96 44.2598C62.56 43.8065 63.2933 43.5798 64.16 43.5798C65.36 43.5798 66.3 44.0132 66.98 44.8798C67.66 45.7332 68 46.9132 68 48.4198V54.8198H53.9V48.6198C53.9 47.1532 54.2267 46.0065 54.88 45.1798C55.52 44.3398 56.42 43.9198 57.58 43.9198C58.3267 43.9198 58.9733 44.1198 59.52 44.5198C60.0667 44.9065 60.4667 45.4465 60.72 46.1398ZM59.84 52.2998V49.0398C59.84 47.2665 59.18 46.3798 57.86 46.3798C57.1933 46.3798 56.7 46.5998 56.38 47.0398C56.06 47.4798 55.9 48.1465 55.9 49.0398V52.2998H59.84ZM66 48.6998C66 47.7665 65.8333 47.0865 65.5 46.6598C65.1667 46.2332 64.6467 46.0198 63.94 46.0198C63.2333 46.0198 62.7067 46.2398 62.36 46.6798C62.0133 47.1065 61.84 47.7798 61.84 48.6998V52.2998H66V48.6998ZM68 41.1675H53.9V38.5875H65.88V32.0075H68V41.1675ZM68 30.0737H53.9V20.6337H55.94V27.5537H59.82V21.0338H61.84V27.5537H65.96V20.6337H68V30.0737ZM53.9 6.55641V4.53641H68V6.81641H58.68L65.72 10.5364V12.2564L58.78 15.9964L68 15.9764V18.2564H53.9V16.2164L63.12 11.3764L53.9 6.55641Z" fill="#003650"/>
+					<path id="text-three" class="solPipe" d="M116.18 98.6531C116.18 99.7331 116.033 100.746 115.74 101.693C115.447 102.64 115.033 103.44 114.5 104.093L112.62 103.233C113.14 102.553 113.52 101.84 113.76 101.093C114 100.333 114.12 99.5131 114.12 98.6331C114.12 97.6598 113.953 96.9131 113.62 96.3931C113.273 95.8598 112.793 95.5931 112.18 95.5931C111.647 95.5931 111.24 95.8398 110.96 96.3331C110.68 96.8131 110.413 97.6198 110.16 98.7531C109.907 99.9265 109.613 100.88 109.28 101.613C108.947 102.346 108.52 102.9 108 103.273C107.48 103.646 106.82 103.833 106.02 103.833C105.193 103.833 104.453 103.606 103.8 103.153C103.147 102.7 102.64 102.06 102.28 101.233C101.907 100.406 101.72 99.4531 101.72 98.3731C101.72 97.3865 101.873 96.4465 102.18 95.5531C102.473 94.6598 102.88 93.9265 103.4 93.3531L105.28 94.2131C104.28 95.4665 103.78 96.8531 103.78 98.3731C103.78 99.2798 103.967 99.9998 104.34 100.533C104.7 101.053 105.207 101.313 105.86 101.313C106.407 101.313 106.827 101.08 107.12 100.613C107.413 100.146 107.687 99.3531 107.94 98.2331C108.207 97.0465 108.507 96.0865 108.84 95.3531C109.16 94.6065 109.573 94.0398 110.08 93.6531C110.587 93.2531 111.227 93.0531 112 93.0531C112.84 93.0531 113.58 93.2798 114.22 93.7331C114.847 94.1731 115.333 94.8198 115.68 95.6731C116.013 96.5131 116.18 97.5065 116.18 98.6531ZM116.18 84.3992C116.18 85.7726 115.887 86.9659 115.3 87.9792C114.713 88.9792 113.873 89.7526 112.78 90.2992C111.687 90.8459 110.407 91.1192 108.94 91.1192C107.473 91.1192 106.2 90.8526 105.12 90.3192C104.027 89.7726 103.187 88.9926 102.6 87.9792C102.013 86.9659 101.72 85.7726 101.72 84.3992C101.72 83.0259 102.013 81.8392 102.6 80.8392C103.187 79.8259 104.027 79.0526 105.12 78.5192C106.2 77.9726 107.473 77.6992 108.94 77.6992C110.407 77.6992 111.687 77.9726 112.78 78.5192C113.873 79.0659 114.713 79.8459 115.3 80.8592C115.887 81.8592 116.18 83.0392 116.18 84.3992ZM114.12 84.3992C114.12 83.1059 113.673 82.0992 112.78 81.3792C111.887 80.6459 110.607 80.2792 108.94 80.2792C107.273 80.2792 106 80.6459 105.12 81.3792C104.227 82.0992 103.78 83.1059 103.78 84.3992C103.78 85.7059 104.227 86.7259 105.12 87.4592C106 88.1792 107.273 88.5392 108.94 88.5392C110.607 88.5392 111.887 88.1792 112.78 87.4592C113.673 86.7259 114.12 85.7059 114.12 84.3992ZM116 75.0933H101.9V72.5133H113.88V65.9333H116V75.0933ZM116.18 58.7459C116.18 60.6793 115.68 62.1459 114.68 63.1459C113.68 64.1459 112.22 64.6459 110.3 64.6459H101.9V62.1259H110.44C111.653 62.1259 112.573 61.8393 113.2 61.2659C113.813 60.6926 114.12 59.8526 114.12 58.7459C114.12 57.6526 113.807 56.8193 113.18 56.2459C112.553 55.6726 111.64 55.3859 110.44 55.3859H101.9V52.8659H110.3C112.207 52.8659 113.667 53.3659 114.68 54.3659C115.68 55.3659 116.18 56.8259 116.18 58.7459ZM116 46.578H104.02V51.178H101.9V39.398H104.02V43.998H116V46.578ZM116 37.6323H101.9V35.0523H116V37.6323ZM116.18 25.7273C116.18 27.1007 115.887 28.294 115.3 29.3073C114.713 30.3073 113.873 31.0807 112.78 31.6273C111.687 32.174 110.407 32.4473 108.94 32.4473C107.473 32.4473 106.2 32.1807 105.12 31.6473C104.027 31.1007 103.187 30.3207 102.6 29.3073C102.013 28.294 101.72 27.1007 101.72 25.7273C101.72 24.354 102.013 23.1673 102.6 22.1673C103.187 21.154 104.027 20.3807 105.12 19.8473C106.2 19.3007 107.473 19.0273 108.94 19.0273C110.407 19.0273 111.687 19.3007 112.78 19.8473C113.873 20.394 114.713 21.174 115.3 22.1873C115.887 23.1873 116.18 24.3673 116.18 25.7273ZM114.12 25.7273C114.12 24.434 113.673 23.4273 112.78 22.7073C111.887 21.974 110.607 21.6073 108.94 21.6073C107.273 21.6073 106 21.974 105.12 22.7073C104.227 23.4273 103.78 24.434 103.78 25.7273C103.78 27.034 104.227 28.054 105.12 28.7873C106 29.5073 107.273 29.8673 108.94 29.8673C110.607 29.8673 111.887 29.5073 112.78 28.7873C113.673 28.054 114.12 27.034 114.12 25.7273ZM101.9 6.94141V4.52141H116V6.46141L106.16 14.0214H116V16.4214H101.9V14.5014L111.72 6.94141H101.9Z" fill="#003650"/>
+				
+					<path id="pipe-three" class="solPipe" d="M139.773 1.50001L139.773 2983.41C139.773 2999.45 153.781 3012.2 168.937 3012.2H194.801V3032.11H168.937C143.345 3032 122.5 3011.38 122.5 2983.19V1.50011L139.773 1.50001Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-one" class="solPipe" d="M189.5 3005.5H194.989V3039.79H189.5V3005.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-two" class="solPipe" d="M146.902 662.377L146.902 668.318L114.5 668.318L114.5 662.377L146.902 662.377Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-three" class="solPipe" d="M146.902 1975.77L146.902 1981.71L114.5 1981.71L114.5 1975.77L146.902 1975.77Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-four" class="solPipe" d="M146.902 2958.44L146.902 2964.38L114.5 2964.38L114.5 2958.44L146.902 2958.44Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-two" class="probPipe" d="M74.4998 1538.13V1.5H91.7731V1538.35C91.7731 1554.39 105.781 1567.14 120.937 1567.14H191V1587.05 H120.937C95.3446 1586.94 74.4998 1566.32 74.4998 1538.13Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-one" class="probPipe" d="M98.9021 1454.5L98.9021 1460.44L66.4999 1460.44L66.4999 1454.5L98.9021 1454.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-two" class="probPipe" d="M98.9021 936.869L98.9021 942.81L66.4999 942.81L66.4999 936.869L98.9021 936.869Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-three" class="probPipe" d="M98.9021 367.066L98.9021 373.007L66.4999 373.007L66.4999 367.066L98.9021 367.066Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-four" class="probPipe" d="M189.5 1560.5H194.989V1594.79H189.5V1560.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-one" class="inspPipe" d="M26.5 326.813V1.5H43.7733V327.037C43.7733 343.081 57.7816 355.829 72.9369 355.829H191.5V376.983H72.9369C47.3448 375.628 26.5 355.006 26.5 326.813Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-one" class="inspPipe" d="M19.5 307.44V301.5H51.9022V307.44H19.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-two" class="inspPipe" d="M190.5 349.5H195.989V383.787H190.5V349.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<circle id="circle-one" cx="215" cy="367" r="12" fill="#F79D5E"/>
+					<circle id="circle-two" cx="215" cy="1577" r="12" fill="#F79D5E"/>
+					<circle id="circle-three" cx="215" cy="3022" r="12" fill="#F79D5E"/>
+				</svg>				
+			</div>
 
-			<p> Gold Medal Criterion </p>
+			<div id="contentcol" class="contentcol">
+				<div class="overview">
+					Our modelling work falls into two very different but complementary categories: process design and protein design. For protein design, we used protein modelling and molecular dynamics software to evaluate our rationally-designed copper-binding protein candidates. For process design, we use partial differential equation models to better understand our packed column reactor and optimise its design. 
+				</div>
 
-			<p> Standard Tracks: Create a new part that has a functional improvement upon an existing BioBrick part. The sequences of the new and existing parts must be different. You must perform experiments with both parts to demonstrate this improvement. Document the experimental characterization on the Part's Main Page on the Registry for both the existing and new parts. Both the new and existing Main Page of each Part’s Registry entry must reference each other. Submit a sample of the new part to the Registry. The existing part must NOT be from your 2018 part number range and must be different from the part documented in bronze #4. </p>
+				<div class="protein">
+					PROTEIN DESIGN
+				</div>
+				
+				<div class='info'>
+					<p>Several distinct modelling approaches were used as part of our rational protein design.</p>
+					<h1>Rosetta</h1>
+					<h2>Introduction to Rosetta</h2>
+					<p>To analyze the proposed design changes from the rational design process, software tools were used to provide initial analysis and modelling of the structure. Among various computational protein design platforms, Rosetta was chosen for redesigning the structure and conducting energy analyses. The Rosetta software suite offers algorithms and protocols for macromolecular structure prediction and analysis of protein structures (Leaver-Fay et al., 2011). As a unified software package, it provides a wide range of tools suited for the project: to redesign the protein structure that has an increased binding affinity for Cu<sup>2+</sup> (Kaufmann, Lemmon, DeLuca, Sheehan & Meiler, 2010). </p>
+					<p>Within the Rosetta software suite, the tasks and operations within the libraries are combined as algorithms called <b>protocols</b>. Some of protocols’ major functionalities include protein structure prediction, protein docking, protein design and energy scoring analysis. In this project, the structure of the original protein is known, therefore only energy scoring functions and the protein design protocols are used to assess how the residue-specific mutations increase stability and binding affinity (Leaver-Fay et al., 2011). Some specific functions such as Relax, a protocol for simple all-atom refinement of input structure, and Point Mutant Scan Application, a protocol for mutating the protein structure at specific residues and analyzing its stability, are used in the rational design process ("Applications for Macromolecule Design", 2020). </p>
+					<h2>Protein Mutation Procedure</h2>
+					<p>Using the Rosetta official documentation and the <a href="http://2016.igem.org/wiki/images/b/b6/TUE_Rosetta_beginners_guide.pdf">Rosetta Guide for the iGEM beginner</a> made by Team iGEM Technion and iGEM TU Eindhoven 2016, a structure analysis procedure was developed. The protocols mentioned in the following steps are written in a shell script. </p>
+					<ol>
+						<li>Obtain the original Protein Data Bank (PDB) file of the Mst-CopC structure. (It is accessible from RCSB PDB.)</li>
+						<li>
+							Prepare the structure.
+							<ol>
+								<li>Clean the PDB file while keeping the ligand. (This removes the information in PDB that Rosetta doesn’t use. (&quot;How to prepare structures for use in Rosetta&quot;, 2020))</li>
+								<li>Run Relax protocol. (This reduces minor steric clashes in the protein-ligand complex. Running this protocol ensures the structure is at its most stable form before making mutations (&quot;Relax application&quot;, 2020). ) </li>
+							</ol>
+						</li>
+						<li>Point mutant scan application. (Though the algorithm can scan for point mutants for given residues and determine the change in Gibbs free energy a mutation causes, a mutant file can be used to specify the mutants on specific residues determined in the rational design phase. )</li>
+						<li>Energy scoring analysis for the overall structure and residue-specific energy breakdown. (Residue specific energy and overall energy information will be produced as outputs along with mutated PDB files in step 3. ) </li>
+					</ol>
+					<p>At step 2.2 Relax and step 3 Point Mutation, relaxed and mutated protein structures will be produced as PDB files along with the energy score of each output. The scoring function in Rosetta is an optimized energy function that calculates the energy of all atomic interactions in a globular protein (&quot;Scoring Tutorial&quot;, 2020). The score is a weighted sum of energy terms, including some representing physical forces like electrostatics and Van der Waal’s interactions and others statistical terms that indicate if the protein structure looks like any known structures (&quot;Scoring Tutorial&quot;, 2020). A complete list of energy terms and weights used in the scoring function can be found on the <a href="https://www.rosettacommons.org/demos/latest/tutorials/scoring/scoring">Rosetta Scoring Tutorial Documentation</a>. Therefore, instead of presenting the scores in physical energy units like kcal/mol, a custom Rosetta Energy Units (REU) is used due to the presence of the statistical terms. This score allows us to compare stability between scored structures. The lower the score, the more stable a structure is, which is sufficient to evaluate the relative stability of the mutated CopC-Cu<sup>2+</sup> candidates. </p>
+					<h2>Results</h2>
+					<h3>Single Residue Mutation</h3>
+					<p>The table below shows the overall energy scores in REU and energy term breakdown for all protein candidates mutated on a single residue. The first column of the table indicates the mutation applied to the structure: 5icu is the PDB ID for Mst-CopC, and mutation code <original amino acid><residue number><new amino acid> follows the ID. </p>
+					<p>As seen below, the original score of the protein is -320.377. The mutated proteins are sorted in ascending total scores, meaning that they are ordered in decreasing stability. Among all candidates, only the mutation from histidine to aspartic acid at residue 85 (H85D) produced a lower energy score than the original structure. However, most candidate’s scores are between -320 to -290, which means most candidates are relatively stable after mutation and molecular dynamic analysis can be done to further analyze the candidates. </p>
+					<p>Table 1. Rosetta energy scores for the original Mst-CopC “5icu” and mutated candidates.</p>
+					<table>
+						<thead>
+							<tr>
+								<th>description</th>
+								<th>total_score</th>
+								<th>description</th>
+								<th>total_score</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>5icu</td>
+								<td>-320.377</td>
+								<td>5icu.L80D</td>
+								<td>-310.078</td>
+							</tr>
+							<tr>
+								<td>5icu.H85D</td>
+								<td>-327.949</td>
+								<td>5icu.L80V</td>
+								<td>-308.632</td>
+							</tr>
+							<tr>
+								<td>5icu.Y34F</td>
+								<td>-319.826</td>
+								<td>5icu.V79D</td>
+								<td>-308.15</td>
+							</tr>
+							<tr>
+								<td>5icu.F3H</td>
+								<td>-319.02</td>
+								<td>5icu.H85I</td>
+								<td>-304.996</td>
+							</tr>
+							<tr>
+								<td>5icu.S82E</td>
+								<td>-318.491</td>
+								<td>5icu.G29D</td>
+								<td>-299.658</td>
+							</tr>
+							<tr>
+								<td>5icu.V5K</td>
+								<td>-318.478</td>
+								<td>5icu.D83E</td>
+								<td>-298.052</td>
+							</tr>
+							<tr>
+								<td>5icu.I86E</td>
+								<td>-318.333</td>
+								<td>5icu.V79E</td>
+								<td>-297.659</td>
+							</tr>
+							<tr>
+								<td>5icu.I86K</td>
+								<td>-317.939</td>
+								<td>5icu.V79L</td>
+								<td>-295.35</td>
+							</tr>
+							<tr>
+								<td>5icu.I86H</td>
+								<td>-317.353</td>
+								<td>5icu.D83H</td>
+								<td>-291.52</td>
+							</tr>
+							<tr>
+								<td>5icu.H85E</td>
+								<td>-317.217</td>
+								<td>5icu.D83G</td>
+								<td>-291.469</td>
+							</tr>
+							<tr>
+								<td>5icu.I86D</td>
+								<td>-316.911</td>
+								<td>5icu.V79H</td>
+								<td>-273.441</td>
+							</tr>
+							<tr>
+								<td>5icu.V87T</td>
+								<td>-314.902</td>
+								<td>5icu.S2D</td>
+								<td>-270.366</td>
+							</tr>
+							<tr>
+								<td>5icu.G28D</td>
+								<td>-313.721</td>
+								<td>5icu.S81H</td>
+								<td>-264.303</td>
+							</tr>
+							<tr>
+								<td>5icu.L80E</td>
+								<td>-313.472</td>
+								<td>5icu.G29H</td>
+								<td>-261.843</td>
+							</tr>
+							<tr>
+								<td>5icu.S81D</td>
+								<td>-312.271</td>
+								<td>5icu.S81E</td>
+								<td>-259.4</td>
+							</tr>
+							<tr>
+								<td>5icu.R78H</td>
+								<td>-312.167</td>
+								<td>5icu.G29E</td>
+								<td>-256.144</td>
+							</tr>
+							<tr>
+								<td>5icu.L80H</td>
+								<td>-311.984</td>
+								<td>5icu.S81V</td>
+								<td>-246.804</td>
+							</tr>
+							<tr>
+								<td>5icu.G27S</td>
+								<td>-311.112</td>
+								<td>5icu.G29V</td>
+								<td>-216.733</td>
+							</tr>
+							<tr>
+								<td>5icu.G28H</td>
+								<td>-311.068</td>
+								<td>5icu.S2H</td>
+								<td>-137.613</td>
+							</tr>
+							<tr>
+								<td>5icu.G28E</td>
+								<td>-311.022</td>
+								<td>5icu.S2E</td>
+								<td>-99.242</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>The complete table of results is found <a href="https://2020.igem.org/File:T--Waterloo--Rosetta_Table.pdf">here</a></p>
+					<p>These PDB files also contain per-residue energy scores, which can be used to compare the effect each mutation has on each residue. We assembled these scores into heatmaps, where each row corresponds to either a mutation or the original protein, and each column corresponds to a certain residue. This data was difficult to visualize effectively due to the presence of outliers, so certain data transformations were applied to better analyze some aspect of our energy score results. (The heatmap can be found in our github as heatmap_single_relative.png.)</p>		
+					<img src="https://2020.igem.org/wiki/images/8/8c/T--Waterloo--heatmap-single-relative.png" alt="Figure 1. Heat map with unmutated protein energy scores subtracted.">
+					<div class="caption">Figure 1. Heat map with unmutated protein energy scores subtracted. </div>
+					<p>One such transformation is the above heatmap, which has subtracted the unmutated proteins energy scores from each mutant (and itself). The resulting scores are therefore relative to the unmutated protein, and show increases or decreases in score, aiding one in finding whether a mutation is beneficial to the energy score of each residue.</p>
+					<img src="https://2020.igem.org/wiki/images/e/e1/T--Waterloo--heatmap-single-scaled.png" alt="Figure 2. Heat map with each column scaled to itself.">
+					<div class="caption">Figure 2. Heat map with each column scaled to itself.</div>
+					<p>Seen above is another heatmap, except that each column has been scaled to the range [0, 1], highlighting changes in energy score. Unlike the previous heatmap, it does not indicate the scale of these changes.</p>
+					<p>Note that in both heatmaps the rows and columns have the same labels, and represent the same things, only the values contained within the map itself have been modified. </p>
+					<p>Using these heatmaps, it is possible to rationally select mutations to simultaneously apply in order to further reduce the overall energy scores. Possible next steps include applying a logarithmic scale to better differentiate between the values in the heatmap.</p>
+					<h3>Double Residue Mutations</h3>
+					<p>To determine a suitable combination of two mutations, it is computationally feasible to simply run all possible pairs of mutations from our set of rationally selected single mutations. The overall energy scores of each of these “double mutants” was also assembled into a heatmap, as an efficient method of comparing all of these mutants at once.</p>
+					<img src="https://2020.igem.org/File:T--Waterloo--heatmap-double.png" alt="Figure 3. Heat map of double residue mutations.">
+					<div class="caption">Figure 3. Heat map of double residue mutations.</div>
+					<p>Each row and column respond to a particular mutation, with each intersection representing both mutations applied together. The symmetry appears to be inexact, a phenomenon which was likely due to how Rosetta applies multiple mutations.</p>
+					<p>Based on the results from Rosetta and analyzing heatmaps, a list of optimal candidates is compiled. These mutated candidates will be further assessed using more detailed molecular dynamic analysis. </p>
+					<p>The list of mutations passed onto MD: </p>
+					<ul>
+						<li>D83E</li>
+						<li>F3H</li>
+						<li>G28E</li>
+						<li>H85D</li>
+						<li>I86K</li>
+						<li>S82E</li>
+						<li>S82E, F3H</li>
+						<li>F3H, V87T</li>
+						<li>H85D, S82E</li>
+						<li>Y34F, F3H, S81D</li>
+						<li>H85D, V87T, I86K, G28E</li>
+						<li>Y34F, F3H, S81D, H85D</li>
+					</ul>
+					<h1>Molecular Dynamics</h1>
+					<p>Molecular dynamics was used to test the relative binding affinities of these candidate proteins. We used GROMACS (Berendsen et al., 1999) along with the Charmm36 (Vanommeslaeghe et al., 2010) force field parameters which include parameters for copper ions in solution. This allows us to estimate the total interaction energy between the copper ion and the protein, and using the relative magnitudes of these interaction energies allows us to compare the strength of binding. Molecular dynamics provides a more rigorous method for comparing binding strength due to the fact that a molecular dynamics simulation takes into account the motion of every individual atom in the system and their interactions.</p>
+					<p>All GROMACS simulations were run on the Graham computing cluster located at the University of Waterloo and hosted by ComputeCanada.</p>
+					<p>In order to implement a molecular mechanics simulation, the protein pdb files were converted to the gromacs format using Charmm-GUI, an online tool developed in order to construct topology files and parameter files for proteins using the Charmm force field. Once the required files were attained, the system was placed in solution in a process known as solvation, and the charge in the system was balanced by introducing faraway sodium or chloride ions. The system then undergoes an energy minimization process in which the protein and copper ion are restrained while the solvent molecules settle into place. This avoids extreme behaviour that could occur due to collisions between molecules. The thermodynamics of the system is then set up using standard NVT and NPT equilibration procedures in GROMACS, and then the final simulation is run. </p>
+					<p>A typical ten nanosecond simulation was performed for each candidate protein. The results are found in the table below.</p>
+					<p>Table 2. Molecular dynamics interaction energies for the original Mst-CopC and selected mutation candidates. </p>
+					<table>
+						<thead>
+							<tr>
+									<th>Name</th>
+									<th>Total Interaction Energy</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mst-CopC</td>
+								<td>-540.6373 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>H85D</td>
+								<td>-1278.448 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>F3H</td>
+								<td>-563.9996 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>G28E</td>
+								<td>-607.4388 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>I86K</td>
+								<td>-586.829 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>S82E</td>
+								<td>-588.4093 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>D83E-V87T</td>
+								<td>-853.725 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>H85D-S82E</td>
+								<td>-1392.7281 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>H85D-V87T-I86K-G28E</td>
+								<td>-1246.7286 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>S82E-F3H</td>
+								<td>-557.0123 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>Y34F-F3H-S81D</td>
+								<td>-1145.2119 kJ/mol</td>
+							</tr>
+							<tr>
+								<td>Y34F-F3H-S81D-H85D</td>
+								<td>-1698.6439 kJ/mol</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>From the table of results we can see that candidate Y34F-F3H-S81D-H85D has the highest relative binding affinity when compared to Mst-CopC, with a 3.14 improvement in total interaction energy over the original Mst-CopC. Figure 4 shows the copper ion in the H85D mutant’s binding site. This animation was produced using VMD, a free software tool for visualizing molecular dynamics simulations.</p>
+					<img src="https://2020.igem.org/wiki/images/1/13/T--Waterloo--GROMACS_GIF.gif" alt="Animation of Cu2+ in H85D binding site">
+					<div class="caption">Figure 4. Molecular dynamics animation of Cu<sup>2+</sup> (bronze coloured sphere) in the binding site of the Mst-CopC H85D mutant.</div>
+				</div>
 
-			<p> Special Tracks: Improve the function of an existing iGEM project (that your current team did not originally create) and display your achievement on your wiki. </p>
+				<div class="process">
+					PROCESS DESIGN
+				</div>
+
+				<div class='info'>
+					<h1>Motivation For Our Treatment Process</h1>
+					<p>Our metal-removal technology will compete with a variety of other aqueous metal waste treatment processes. Some current methods for treating aqueous metal wastes include chemical precipitation, ion exchange, adsorption, and membrane filtration (Fu et al., 2011). Chemical precipitation is particularly widespread because of its relatively simplicity and low cost (Fu et al., 2011). In this method, the pH of the metal waste is increased by the addition of a base such as lime, causing the metal ions to precipitate as insoluble hydroxides that can be recovered as solid sludge. However, removing water from this sludge can be costly, and the resulting sludge is typically disposed of, so valuable metals cannot be recovered or reused. Ion exchange, membrane filtration, and membrane filtration are all relatively new technologies (Fu et al., 2011), so high costs often prohibit large scale applications. Furthermore, there are few established methods that recover metal ions from industrial wastewaters to allow recycling. We therefore aim to fill in this gap in metal waste treatment by using metal binding proteins to create a novel metal removal and recovery process. This process should quickly, selectively, and cheaply remove metal ions from wastewater, allowing metal ions to be recovered and recycled, providing economic and environmental benefits. </p>
+					<p>In order for our designed metal and cellulose binding fusion protein to have merit in the real world, it is imperative to design a suitable industrial process that can use our biotechnology to treat metal waste. </p>
+					<p>We will design a reactor to treat copper-containing metal finishing waste, at a scale relevant for a typical semiconductor manufacturing plant. Metal finishing wastes result from processes including electroplating, in which dissolved metals (copper, in this case) are deposited in thin layers onto solid surfaces using electrochemical reactions (Arán, 2017). After the process is complete, the remaining solutions must be treated before disposal. However, since dissolved metal wastes are produced by a large variety of industrial processes, the design and modelling process applied here could be used for any other waste stream and dissolve metal(s). </p>
+					<h1>Choosing Our Reactor Type</h1>
+					<p>In order to effectively treat large volumes of aqueous waste, we immobilised our cellulose and metal binding fusion protein inside an industrial bioreactor. Some advantages granted by using a bioreactor include: reactor size control and dimension tunability, continuous operation, and a wide variety of sub-types of reactors to base our design off of (Shuler &amp; Kargi, 2002). Furthermore, the bioreactors have long been used for industrial scale processes that operate based on enzymatic or cellular function, so research in this area is well developed. </p>
+					<p>Of the many varieties of bioreactors available, we chose to use a packed column reactor. A packed column reactor consists of a large container filled with some sort of porous packing material, and effluent is fed through the bed, allowing a reactor to occur (Shuler &amp; Kargi 2002). For our reactor, we will use cellulose beads as a packing material. Packed column reactors enable large volumes of waste to be treated in a continuous manner, providing much greater efficiency than batch processes that treat a fixed volume of waste at one time (Shuler &amp; Kargi 2002). For our metal removal application, all removed metal will stay trapped inside the column as waste is fed through. Thus, the metal can be removed at a convenient time, such as during off-peak waste production hours.</p>
+					<p>Since our fusion proteins include a cellulose binding domain that binds cellulose very strongly, the fusion proteins can be immobilised on the cellulose packing by simply feeding them into the column. By immobilising our fusion proteins on the surface of the cellulose packing, we are able to maximize the surface area of reactive sites, thus increasing the treatment rate of the wastewater system. </p>
+					<p>With this general design in mind, we set out to use engineering and modelling tools to decide how to build a suitable reactor to treat our waste stream of interest.</p>
+					<p>We envision that our reactor will operate in two stages: </p>
+					<ol>
+						<li>First, the metal containing wastewater will be flowed through the reactor, allowing the metal in the wastewater to bind to the proteins within. This will produce a stream of clean water that can be discharged to the environment. This is the <b>“binding”</b> stage.</li>
+						<li>Secondly, once the reactor is saturated with metal, we will rinse the reactor with another solution of a different pH, which will cause the metal ions to unbind from the reactor. This will result in a concentrated and pure solution of dissolved metal. This resulting solution could then be recycled for various applications. This is the <b>“elution”</b> stage.</li>
+					</ol>
+					<p>Below is a 3D model that provides an example of our reactor’s general construction. Wastewater will be pumped into the reactor from the bottom, passing through the cellulose packing before exiting through the top of the reactor. </p>
+					<img src="https://2020.igem.org/wiki/images/a/a0/T--Waterloo--Reactor_Column_Design.jpeg" alt="3D Model of our reactor design">
+					<div class="caption">Figure 5. 3D model of our packed column reactor created using CAD.</div>
+					<h1>Developing Equations For Modelling</h1>
+					<p>In order to model a system undergoing chemical reactions, we must first develop a kinetic rate law for the reactions. For our system, we will use a straightforward dimensional analysis approach similar to the Langmuir isotherm. This is a commonly applied model for adsorption of a reactant onto a protein. </p>
+					<p>To determine the net rate of adsorption of Cu<sup>2+</sup> onto CopC, we add the forward binding rate to the reverse binding rate. A key nuance of this model is that the concentration of CopC is given as a surface concentration. In order to relate the surface concentration to the rate of change of a volumetric concentration, a conversion factor is computed by considering the surface area per volume of BMCC cellulose that the protein is attached to.</p>
+					<p>Suppose the surface area per volume of BMCC is given by a parameter $$ a $$ and that the fraction of the reactor occupied by cellulose is $$ f $$. Let $$ m = [Cu<sup>2+</sup>] $$, let $$ Q $$ be the initial protein surface concentration, and let $$ q = Q - [CopC] $$. </p>
+					<p>Free protein + Free metal $$ \underset{k_d}{\stackrel{k_a}{\rightleftharpoons}} $$ </p>
+					<p>Protein-metal complex $$ k_a $$: adsorption rate constant, $$ k_d $$: desorption rate constant</p>
+					<p>Adsorption (forward) rate:</p>
+					<p>$$ v_a = k_a  m  N $$</p>
+					<p>Where $$ N = (Q - q) $$ So, $$ v_a = k_a m (Q - q) $$</p>
+					<p>Desorption (reverse) rate:</p>
+					<p>$$ v_d = k_d q $$</p>
+					<p>Variables:
+					$$ v $$: rate ($$ \frac{mol}{m^2  s} $$)
+					$$ m $$: free metal concentration ($$ \frac{mol}{L} $$)
+					$$ k_a $$: adsorption rate constant ($$ \frac{L}{mol s} $$)
+					$$ k_d $$: desorption rate constant ($$ \frac{1}{s} $$)
+					$$ N $$: free sites ($$ \frac{mol}{m s} $$)
+					$$ Q $$: total sites ($$ \frac{mol}{m s} $$)
+					$$ q $$: occupied sites ($$ \frac{mol}{m s} $$)</p>
+						
+				</div>
+	
+	
+				<div class="solution">
+					SOLUTION
+				</div>
+				
+				<div class='info'>
+					<p>So adolebiet nidopet aretece fatar ne hanuga ela aco, teha bi imi, moye soy eceliren va tacetir bobugi eres, se doda tir medoro eritaha de onila ewo nehaces miloval, ne rob esideqem lige: Onurag falare ademel rogosel niele? Ras ileb piliehe dasiemat perot helahe nenewiv.
+						Vanego mepepa lipasu neseto ile enuritu lelut cayaget to tus, nife adomemo rerat giedineh etimiela exi oxietot loten; ratela pin lamife. Papi cuseno tebet to mat! Teci togam yehet hew adisa, yarota iri repetu yema. Reqile pu tie. Laper saranis cacic mamedes lolo le vatitu ileresod cod nat. Ru exarepat egie nob ohe lita. Sekinos decinar dus esone his edin nul. </p>
+
+					<img src='/images/image.png'>
+				</div>
+			</div> 
+				
 		</article>
     </main>
   <footer></footer>

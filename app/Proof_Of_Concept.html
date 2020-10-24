@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script src="https://2020.igem.org/Template:Waterloo/js/vendor?action=raw&ctype=text/javascript"></script>
+	<link rel="stylesheet" href="https://2020.igem.org/Template:Waterloo/css/vendor?action=raw&ctype=text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 	<script>
 		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
+			$('header').load('https://2020.igem.org/Template:Waterloo/header?action=raw&ctype=text/javascript');
+			$('footer').load('https://2020.igem.org/Template:Waterloo/footer?action=raw&ctype=text/javascript');
 		});
 	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
+	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
 	<!--Added MathJax hack to make inline equations work-->
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -25,17 +25,112 @@
 </script>   </head>
 
 <body>
+	<div class="topElement"></div>
 	<div id="igem-navbar-placeholder">
 		<p>Placeholder for iGEM Navbar</p>
 	</div>
 	<header></header>
     <main id="top">
 		<article>
-			<h1> PROOF OF CONCEPT </h1>
+			<div class="pageHeader"> 
+				<div class="headerCol">
+					<h1 class="proofpage"> PROOF OF CONCEPT </h1>
+				</div> 
+				<div class="headerCol2">
+					<img src='/images/buildings.svg'>
+				</div>
+			</div>
 
-			<p> Teams that can show their system working under real world conditions are usually good at impressing the judges in iGEM. To achieve gold medal criterion #4, convince the judges that your project works. There are many ways in which your project working could be demonstrated, so there is more than one way to meet this requirement. This gold medal criterion was introduced in 2016, so check our what 2016 teams did to achieve their gold medals! </p>
+			<div class="pipecol">
+				<svg width="227" height="3442" viewBox="0 0 227 3442" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+					<rect class="modynPipe" fill="#CDDCDD" fill-opacity="0" x="5" y="0" width="20" height="250"></rect>
+					<rect class="prototypePipe" fill="#CDDCDD" fill-opacity="0" x="50" y="0" width="20" height="130"></rect>
+					<path id="text-one" class="modynPipe" d="M20 237.065H5.9V234.925L15.12 229.925L5.9 224.945L5.9 222.845H20V225.165H10.5L17.86 229.205V230.705L10.54 234.745H20V237.065ZM20.2 213.421C20.2 214.781 19.9 215.975 19.3 217.001C18.7 218.015 17.86 218.801 16.78 219.361C15.6867 219.921 14.4067 220.201 12.94 220.201C11.46 220.201 10.18 219.921 9.1 219.361C8.02 218.801 7.18667 218.015 6.6 217.001C6 215.988 5.7 214.795 5.7 213.421C5.7 212.048 6 210.855 6.6 209.841C7.18667 208.828 8.02 208.041 9.1 207.481C10.18 206.921 11.4533 206.641 12.92 206.641C14.4 206.641 15.6867 206.921 16.78 207.481C17.86 208.041 18.7 208.828 19.3 209.841C19.9 210.855 20.2 212.048 20.2 213.421ZM18 213.421C18 212.128 17.5533 211.121 16.66 210.401C15.7667 209.681 14.5267 209.321 12.94 209.321C11.34 209.321 10.1 209.681 9.22 210.401C8.34 211.108 7.9 212.115 7.9 213.421C7.9 214.715 8.34 215.721 9.22 216.441C10.1 217.161 11.34 217.521 12.94 217.521C14.5267 217.521 15.7667 217.161 16.66 216.441C17.5533 215.721 18 214.715 18 213.421ZM20 204.038H5.9V201.478H17.82V194.718H20V204.038ZM20 192.808H5.9V183.428H7.94V190.348H11.82L11.82 183.868H13.86L13.86 190.348H17.96V183.428H20V192.808ZM20.2 174.334C20.2 175.8 19.9067 177.06 19.32 178.114C18.72 179.154 17.88 179.954 16.8 180.514C15.7067 181.074 14.42 181.354 12.94 181.354C11.46 181.354 10.18 181.074 9.1 180.514C8.02 179.954 7.18667 179.154 6.6 178.114C6 177.06 5.7 175.8 5.7 174.334C5.7 173.387 5.84667 172.494 6.14 171.654C6.43333 170.8 6.85333 170.1 7.4 169.554L9.44 170.394C8.93333 170.994 8.56667 171.607 8.34 172.234C8.1 172.86 7.98 173.534 7.98 174.254C7.98 175.68 8.41333 176.767 9.28 177.514C10.1333 178.26 11.3533 178.634 12.94 178.634C14.5267 178.634 15.7533 178.26 16.62 177.514C17.4867 176.767 17.92 175.68 17.92 174.254C17.92 173.534 17.8067 172.86 17.58 172.234C17.34 171.607 16.9667 170.994 16.46 170.394L18.5 169.554C19.0333 170.1 19.4533 170.8 19.76 171.654C20.0533 172.494 20.2 173.387 20.2 174.334ZM20.2 161.459C20.2 163.393 19.7 164.873 18.7 165.899C17.6867 166.913 16.1933 167.419 14.22 167.419H5.9L5.9 164.859H14.2C15.4667 164.859 16.42 164.573 17.06 163.999C17.6867 163.413 18 162.566 18 161.459C18 159.206 16.7333 158.079 14.2 158.079H5.9V155.539H14.22C16.1933 155.539 17.6867 156.039 18.7 157.039C19.7 158.039 20.2 159.513 20.2 161.459ZM20 152.554H5.9L5.9 149.994H17.82V143.234H20V152.554ZM20 143.136L5.9 136.756V134.656L20 128.276V130.876L16.74 132.276V139.156L20 140.536V143.136ZM8.68 135.736L14.7 138.276V133.156L8.68 135.696V135.736ZM20 126.733H5.9L5.9 120.613C5.9 119.067 6.27333 117.873 7.02 117.033C7.75333 116.193 8.78667 115.773 10.12 115.773C11.1733 115.773 12.0467 116.047 12.74 116.593C13.42 117.14 13.88 117.927 14.12 118.953C14.3333 118.273 14.8467 117.713 15.66 117.273L20 114.913L20 117.733L15.5 120.173C15.06 120.413 14.76 120.7 14.6 121.033C14.44 121.353 14.36 121.767 14.36 122.273V124.173H20V126.733ZM12.46 124.173V121.053C12.46 119.187 11.7 118.253 10.18 118.253C8.67333 118.253 7.92 119.187 7.92 121.053L7.92 124.173H12.46ZM20 107.632H5.9V102.392C5.9 100.032 6.50667 98.2119 7.72 96.9319C8.93333 95.6385 10.6733 94.9919 12.94 94.9919C15.1933 94.9919 16.9333 95.6385 18.16 96.9319C19.3867 98.2119 20 100.032 20 102.392V107.632ZM17.88 105.072V102.552C17.88 99.2985 16.2333 97.6719 12.94 97.6719C9.66 97.6719 8.02 99.2985 8.02 102.552V105.072H17.88ZM20 89.8969H13.52L5.9 95.3169L5.9 92.3369L11.24 88.5769L5.9 84.7969V81.9369L13.54 87.3369H20V89.8969ZM20 80.1905H5.9L5.9 78.2705L15.74 70.6905H5.9V68.3105H20V70.2105L10.12 77.8105H20V80.1905ZM20 66.7495L5.9 60.3695V58.2695L20 51.8895V54.4895L16.74 55.8895L16.74 62.7695L20 64.1495V66.7495ZM8.68 59.3495L14.7 61.8895V56.7695L8.68 59.3095V59.3495ZM20 50.3067H5.9V48.1667L15.12 43.1667L5.9 38.1867L5.9 36.0867H20V38.4067H10.5L17.86 42.4467V43.9467L10.54 47.9867H20V50.3067ZM20 32.9834H5.9V30.4234H20V32.9834ZM20.2 20.7984C20.2 22.2651 19.9067 23.5251 19.32 24.5784C18.72 25.6184 17.88 26.4184 16.8 26.9784C15.7067 27.5384 14.42 27.8184 12.94 27.8184C11.46 27.8184 10.18 27.5384 9.1 26.9784C8.02 26.4184 7.18667 25.6184 6.6 24.5784C6 23.5251 5.7 22.2651 5.7 20.7984C5.7 19.8518 5.84667 18.9584 6.14 18.1184C6.43333 17.2651 6.85333 16.5651 7.4 16.0184L9.44 16.8584C8.93333 17.4584 8.56667 18.0718 8.34 18.6984C8.1 19.3251 7.98 19.9984 7.98 20.7184C7.98 22.1451 8.41333 23.2318 9.28 23.9784C10.1333 24.7251 11.3533 25.0984 12.94 25.0984C14.5267 25.0984 15.7533 24.7251 16.62 23.9784C17.4867 23.2318 17.92 22.1451 17.92 20.7184C17.92 19.9984 17.8067 19.3251 17.58 18.6984C17.34 18.0718 16.9667 17.4584 16.46 16.8584L18.5 16.0184C19.0333 16.5651 19.4533 17.2651 19.76 18.1184C20.0533 18.9584 20.2 19.8518 20.2 20.7984ZM20.2 9.21719C20.2 10.3239 20.06 11.3505 19.78 12.2972C19.4867 13.2439 19.0933 14.0439 18.6 14.6972L16.58 13.9172C17.0467 13.2639 17.4067 12.5505 17.66 11.7772C17.9133 10.9905 18.04 10.1372 18.04 9.21719C18.04 8.16385 17.8667 7.39719 17.52 6.91719C17.16 6.43719 16.7 6.19719 16.14 6.19719C15.6733 6.19719 15.3067 6.37052 15.04 6.71719C14.7733 7.05052 14.5533 7.63052 14.38 8.45719L13.92 10.6572C13.3867 13.1639 12.1 14.4172 10.06 14.4172C9.18 14.4172 8.41333 14.1839 7.76 13.7172C7.10667 13.2505 6.6 12.6039 6.24 11.7772C5.88 10.9505 5.7 9.99719 5.7 8.91719C5.7 7.95719 5.84667 7.05719 6.14 6.21719C6.42 5.37719 6.82 4.67719 7.34 4.11719L9.26 4.89719C8.32667 6.00385 7.86 7.35052 7.86 8.93719C7.86 9.85719 8.05333 10.5772 8.44 11.0972C8.82667 11.6172 9.33333 11.8772 9.96 11.8772C10.44 11.8772 10.8267 11.7172 11.12 11.3972C11.4 11.0772 11.62 10.5305 11.78 9.75719L12.24 7.57719C12.52 6.25719 12.96 5.27719 13.56 4.63719C14.16 3.98385 14.96 3.65719 15.96 3.65719C16.8 3.65719 17.54 3.88385 18.18 4.33719C18.82 4.79052 19.32 5.43719 19.68 6.27719C20.0267 7.10385 20.2 8.08385 20.2 9.21719Z" fill="#003650"/>
+					<path id="text-two" class="prototypePipe" d="M68 120.093H53.9V113.973C53.9 112.426 54.2867 111.233 55.06 110.393C55.8333 109.553 56.9133 109.133 58.3 109.133C59.6867 109.133 60.7733 109.553 61.56 110.393C62.3333 111.233 62.72 112.426 62.72 113.973V117.533H68V120.093ZM60.7 117.533V114.373C60.7 112.533 59.9 111.613 58.3 111.613C56.7133 111.613 55.92 112.533 55.92 114.373V117.533H60.7ZM68 107.046H53.9V100.926C53.9 99.3793 54.2733 98.1859 55.02 97.3459C55.7533 96.5059 56.7867 96.0859 58.12 96.0859C59.1733 96.0859 60.0467 96.3593 60.74 96.9059C61.42 97.4526 61.88 98.2393 62.12 99.2659C62.3333 98.5859 62.8467 98.0259 63.66 97.5859L68 95.2259V98.0459L63.5 100.486C63.06 100.726 62.76 101.013 62.6 101.346C62.44 101.666 62.36 102.079 62.36 102.586V104.486H68V107.046ZM60.46 104.486V101.366C60.46 99.4993 59.7 98.5659 58.18 98.5659C56.6733 98.5659 55.92 99.4993 55.92 101.366V104.486H60.46ZM68.2 87.1127C68.2 88.4727 67.9 89.666 67.3 90.6927C66.7 91.706 65.86 92.4927 64.78 93.0527C63.6867 93.6127 62.4067 93.8927 60.94 93.8927C59.46 93.8927 58.18 93.6127 57.1 93.0527C56.02 92.4927 55.1867 91.706 54.6 90.6927C54 89.6793 53.7 88.486 53.7 87.1127C53.7 85.7393 54 84.546 54.6 83.5327C55.1867 82.5193 56.02 81.7327 57.1 81.1727C58.18 80.6127 59.4533 80.3327 60.92 80.3327C62.4 80.3327 63.6867 80.6127 64.78 81.1727C65.86 81.7327 66.7 82.5193 67.3 83.5327C67.9 84.546 68.2 85.7393 68.2 87.1127ZM66 87.1127C66 85.8193 65.5533 84.8127 64.66 84.0927C63.7667 83.3727 62.5267 83.0127 60.94 83.0127C59.34 83.0127 58.1 83.3727 57.22 84.0927C56.34 84.7993 55.9 85.806 55.9 87.1127C55.9 88.406 56.34 89.4127 57.22 90.1327C58.1 90.8527 59.34 91.2127 60.94 91.2127C62.5267 91.2127 63.7667 90.8527 64.66 90.1327C65.5533 89.4127 66 88.406 66 87.1127ZM68 75.1889H56.04V80.0289H53.9V67.7889H56.04V72.6289H68V75.1889ZM68.2 60.7064C68.2 62.0664 67.9 63.2597 67.3 64.2864C66.7 65.2997 65.86 66.0864 64.78 66.6464C63.6867 67.2064 62.4067 67.4864 60.94 67.4864C59.46 67.4864 58.18 67.2064 57.1 66.6464C56.02 66.0864 55.1867 65.2997 54.6 64.2864C54 63.2731 53.7 62.0797 53.7 60.7064C53.7 59.3331 54 58.1397 54.6 57.1264C55.1867 56.1131 56.02 55.3264 57.1 54.7664C58.18 54.2064 59.4533 53.9264 60.92 53.9264C62.4 53.9264 63.6867 54.2064 64.78 54.7664C65.86 55.3264 66.7 56.1131 67.3 57.1264C67.9 58.1397 68.2 59.3331 68.2 60.7064ZM66 60.7064C66 59.4131 65.5533 58.4064 64.66 57.6864C63.7667 56.9664 62.5267 56.6064 60.94 56.6064C59.34 56.6064 58.1 56.9664 57.22 57.6864C56.34 58.3931 55.9 59.3997 55.9 60.7064C55.9 61.9997 56.34 63.0064 57.22 63.7264C58.1 64.4464 59.34 64.8064 60.94 64.8064C62.5267 64.8064 63.7667 64.4464 64.66 63.7264C65.5533 63.0064 66 61.9997 66 60.7064ZM68 48.7827H56.04V53.6227H53.9V41.3827H56.04V46.2227H68V48.7827ZM68 36.1469H61.52L53.9 41.5669V38.5869L59.24 34.8269L53.9 31.0469V28.1869L61.54 33.5869H68V36.1469ZM68 26.4405H53.9V20.3205C53.9 18.7738 54.2867 17.5805 55.06 16.7405C55.8333 15.9005 56.9133 15.4805 58.3 15.4805C59.6867 15.4805 60.7733 15.9005 61.56 16.7405C62.3333 17.5805 62.72 18.7738 62.72 20.3205V23.8805H68V26.4405ZM60.7 23.8805V20.7205C60.7 18.8805 59.9 17.9605 58.3 17.9605C56.7133 17.9605 55.92 18.8805 55.92 20.7205V23.8805H60.7ZM68 13.3936H53.9V4.01359H55.94V10.9336H59.82V4.45359H61.86V10.9336H65.96V4.01359H68V13.3936Z" fill="#003650"/>
+				
+					<path id="pipe-two" class="prototypePipe" d="M74.4998 1538.13V1.5H91.7731V1538.35C91.7731 1554.39 105.781 1567.14 120.937 1567.14H191V1587.05 H120.937C95.3446 1586.94 74.4998 1566.32 74.4998 1538.13Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-one" class="prototypePipe" d="M98.9021 1454.5L98.9021 1460.44L66.4999 1460.44L66.4999 1454.5L98.9021 1454.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-two" class="prototypePipe" d="M98.9021 936.869L98.9021 942.81L66.4999 942.81L66.4999 936.869L98.9021 936.869Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-three" class="prototypePipe" d="M98.9021 367.066L98.9021 373.007L66.4999 373.007L66.4999 367.066L98.9021 367.066Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-four" class="prototypePipe" d="M189.5 1560.5H194.989V1594.79H189.5V1560.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-one" class="modynPipe" d="M26.5 326.813V1.5H43.7733V327.037C43.7733 343.081 57.7816 355.829 72.9369 355.829H191.5V376.983H72.9369C47.3448 375.628 26.5 355.006 26.5 326.813Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-one" class="modynPipe" d="M19.5 307.44V301.5H51.9022V307.44H19.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-two" class="modynPipe" d="M190.5 349.5H195.989V383.787H190.5V349.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<circle id="circle-one" cx="215" cy="367" r="12" fill="#F79D5E"/>
+					<circle id="circle-two" cx="215" cy="1577" r="12" fill="#F79D5E"/>
+				</svg>				
+			</div>
 
-			<p> This is a gold medal criterion. </p>
+			<div id="contentcol" class="contentcol">
+				<div class="overview">
+					To develop REMINE’s proof of concept, we showed that we were able to increase the binding affinity of the copper-binding protein CopC for copper using molecular dynamics. Our success demonstrates that this approach can be applied to rarer metals to make REMINE more customizable and valuable. We also developed a method to prototype and test a small-scale packed column bioreactor in the lab.
+				</div>
+
+				<div class="molecdyna">
+					MOLECULAR DYNAMICS
+				</div>
+				
+				<div class='info'>
+					<p>Our work engineering the copper binding protein Mst-CopC yielded several promising candidates expected to have better copper binding affinity than the original Mst-CopC.</p>
+					<p>However, it was necessary to independently test these proteins to ensure that they really did perform better than the original Mst-CopC. </p>
+					<p>Ideally, this proof of concept would be performed in the lab. Our engineered proteins would be heterologously expressed in E. coli and their copper-binding affinity assessed (see the <a href="2020.igem.org/Team:Waterloo/Measurement">measurement page</a>). Since lab access was not possible, we instead used molecular dynamics as an independent method for assessing the copper affinities of our engineered proteins (see the <a href="2020.igem.org/Team:Waterloo/Engineering">engineering</a> and <a href="2020.igem.org/Team:Waterloo/Model">model</a> pages).</p>
+					<p>A ten nanosecond simulation of each engineered candidate was performed in the molecular dynamics software GROMACS, which implements a standard Verlet integration scheme in order to simulate the motion of all molecules in the system at an atomic resolution. In order to compute the forces between molecules a forcefield library such as Amber or Charmm must be used. For our purposes it was most suitable to use the Charmm36 (Vanommeslaeghe, 2010) forcefield which has parameters for copper ions in solution.</p>
+					<img src="https://2020.igem.org/wiki/images/1/13/T--Waterloo--GROMACS_GIF.gif" alt="Animation of Cu2+ in H85D binding site">
+					<div class='caption'>Figure 1. Molecular dynamics animation of Cu<sup>2+</sup> (bronze coloured sphere) in the binding site of the Mst-CopC H85D mutant.</div>
+					<p>From these simulations, the total interaction energy between the protein and the copper ion was computed. It was found that the Mst-CopC with the mutations Y34F, F3H, S81D, and H85D had the strongest interaction energy, which corresponds to a high relative binding affinity when compared to the interaction energies computed from the other candidates. The relative binding affinity (compared to unmodified Mst-CopC) is 3.14, meaning that our engineered Mst-CopC does indeed have a higher copper affinity than the original. Other candidates with the H85D mutation also performed well. </p>
+					<p>These results therefore demonstrate that several of our proposed mutations to Mst-CopC did indeed result in a higher copper affinity, meaning that our rational protein strategy was successful. This suggests that Mst-CopC with the mutations Y34F, F3H, S81D, and H85D would be the best candidate for our packed column reactor. However, all of our Mst-CopC mutants should be thoroughly tested in the lab to confirm our molecular dynamics results before implementation in industry.</p>
+				</div>
+
+				<div class="prototype">
+					PROTOTYPE
+				</div>
+
+				<div class='info'>
+					<p>This procedure provides a method for constructing a small scale packed column similar to our large scale process. This prototype would evaluate several aspects of our design:</p>
+					<ol>
+						<li>It would demonstrate that our fusion protein is able to bind and stay bound to the cellulose packing of the column.</li>
+						<li>It would evaluate our protein’s ability to capture dissolved copper from an example waste stream, and to elute that copper when desired. </li>
+						<li>It would allow us to measure the copper binding and elution rates and calculate better parameters for our model. This would allow us to improve our model and create a better industrial scale design.</li>
+					</ol>
+					<p>The following materials and methods were selected so that we could use an off-the-shelf pump-based fast protein liquid chromatography column, since a gravity column chromatography system would be too divergent from the process model. </p>
+					<p>Since our real industrial process must treat 46.9 L/s of waste and will do so with a ~16 000 L reactor, we will scale the process accordingly and treat 1 mL/min of waste with our 5 mL column. Since the column has a volume of 5 mL, we expect 1.55 mL based on a calculated void fraction of 0.31.</p>
+					<h1>Materials</h1>
+					<ul>
+						<li>8.3 g 51 µm diameter crystalline cellulose powder (Sigma Aldrich)</li>
+						<li>5 mL XK 50/60 chromatography column (Cytiva Life Sciences) </li>
+						<li>Peristaltic pump</li>
+						<li>Copper and cellulose fusion protein (purified); the molar amount of protein required must  be calculated using the specific surface area of the cellulose powder</li>
+						<li>1 mM tetraphenylporphine solute (Itoh et al., 1975)</li>
+						<li>Binding buffer: 50 mM phosphate buffer (adjusted to pH 7.2)</li>
+						<li>Elution buffer: 50 mM citrate buffer (adjusted to pH 4.8)</li>
+						<li>Example waste: 30 mg Cu/L CuCl<sub>2</sub> dissolved in binding buffer</li>
+					</ul>		
+					<h1>Method</h1>
+					<ol>
+						<li>In a beaker, combine the purified fusion protein with 8.3 g crystalline cellulose powder hydrated with 15 mL of binding buffer. Allow to incubate for an hour at 4°C, swirling occasionally, to allow the fusion protein to thoroughly bind to the cellulose.</li>
+						<li>Centrifuge at 15 000 rpm for 15 minutes to recover the cellulose pellet before washing with 15 mL of binding buffer.  Repeat twice for a total of three washes.</li>
+						<li>Transfer the suspension to the XK 50/60 chromatography column. Open the outlet of the column to allow the cellulose bed to settle by gravity. Refill the column with the binding buffer. </li>
+						<li>We hypothesise that the column can treat approximately 200 times its void volume of our example waste, which is about 300 mL. In order to test this, we will feed 300 mL of example waste through the column at a rate of 1 mL/min using a peristaltic pump.  While feeding the example waste, collect the column’s eluate in 5 mL aliquots. </li>
+						<li>Wash the column with another 10 mL of binding buffer at a flow rate of 1 mL/min.</li>
+						<li>To elute, feed the column with 10 mL of elution buffer at a rate of 1 mL/min. Collect 1 mL aliquots of the flowthrough.</li>
+						<li>Measure the copper concentration of each aliquot using the spectrophotometric method described by Itoh et al. (1975). Also measure the absorbance at 280 nm of each aliquot to determine the amount of dissolved protein.</li>
+					</ol>
+					<h1>Data Analysis & Expected Results</h1>
+					<p>The concentrations of protein in the aliquots taken throughout the process are representative of how well our fusion protein stays bound to the cellulose packing throughout the process. If protein concentrations in the reactor outflow are more than negligible, this means that our fusion protein’s cellulose-binding domain might be failing to bind the cellulose packing. Further investigation would be required to improve cellulose binding. </p>
+					<p>The concentrations of copper in the aliquots taken while feeding the example waste are representative of the copper concentration that would be released to the environment in our industrial scale design. Therefore, these copper concentrations must all be below 1.3 mg/L for the design to have worked successfully. If all outflow copper concentrations are higher than this, we could consider a longer column or slower flow rate, giving the copper more time and available proteins to bind to. If copper concentration is initially low but rises later on, this means that we have saturated all available copper binding sites, and that the column will need to be eluted and reset after less than 200 times the void volume of waste. </p>
+					<p>The concentration of copper in the aliquots taken during elution are representative of the copper concentration that would be recovered when bound copper is eluted from our column. This is the concentration of the purified copper that could be recycled for other applications. Further research can be conducted to determine whether this eluted copper concentration is suitable for other applications. </p>
+				</div>
+				<div class="refs">
+					<p class="referencesHead">References</p>
+					<p class="references">Itoh, J.-I., Yotsuyanagi, T., and Aomura, K. 1975. Spectrophotometric determination of copper with tetraphenylporphine trisulfonate. Anal. Chim. Acta 74: 53–60.</p>
+					<p class="references">Rodriguez, B., Kavoosi, M., Koska, J., Creagh, A. L., Kilburn, D. G., & Haynes, C. A. (2004). Inexpensive and Generic Affinity Purification of Recombinant Proteins Using a Family 2a CBM Fusion Tag. <i>Biotechnology Progress, 20</i>(5), 1479–1489. https://doi.org/10.1021/bp0341904 </p>
+					<p class="references">Vanommeslaeghe, K. Hatcher, E. Acharya, C. Kundu, S. Zhong, S. Shim, J. E. Darian, E. Guvench, O. Lopes, P. Vorobyov, I. and MacKerell, Jr. A.D. "CHARMM General Force Field (CGenFF): A force field for drug-like molecules compatible with the CHARMM all-atom additive biological force fields," Journal of Computational Chemistry 31: 671-90, 2010, PMC2888302</p>
+				</div>
+	
+			</div> 
+				
 		</article>
     </main>
   <footer></footer>
