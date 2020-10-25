@@ -36,4 +36,10 @@ $(document).ready(function(){
     pipeScroll("prototypePipe", ".prototype");
     pipeScroll("proteinPipe", ".protein");
     pipeScroll("processPipe", ".process");
+    pipeScroll("lPipe", ".lab");
+    pipeScroll("procdesPipe", ".procdes");
+    pipeScroll("hPipe", ".hp");
+    pipeScroll("adPipe", ".advisors");
+    pipeScroll("consultPipe", ".consultations");
+    pipeScroll("workPipe", ".work");
 });

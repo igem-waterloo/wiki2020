@@ -1,22 +1,33 @@
 window.onload=function(){
-  document.getElementById("speakall").onclick = function() {speak('article')};
+  document.getElementById("play").onclick = function() {play('article')};
   document.getElementById("pause").onclick = function() {pause()};
-  document.getElementById("resume").onclick = function() {resume()};
-  document.getElementById("stop").onclick = function() {stop()};
+  document.getElementById("restart").onclick = function() {restart('article')};
 }
 
-function speak(obj) {
-    $(obj).articulate('speak');
+  function play(obj) {
+    var speaking = $().articulate('isSpeaking');
+    var paused = $().articulate('isPaused');
+  
+    if (speaking) {
+      if (paused) {
+        $().articulate('resume');
+      } 
+    } else {
+      $(obj).articulate('speak');
+    };
   };
   
   function pause() {
     $().articulate('pause');
-  };
-  
-  function resume() {
-    $().articulate('resume');
-  };
-  
-  function stop() {
-    $().articulate('stop');
-  };
+  }; 
+
+  function restart(obj) {
+    var speaking = $().articulate('isSpeaking');
+    if (speaking) {
+      $().articulate('stop');
+      $(obj).articulate('speak');
+    }
+    else {
+      $(obj).articulate('speak');
+    }
+  }; 

@@ -163,6 +163,12 @@ function length() {
     else if($('.modelpage').length){
         PipeLength('.protein', '.process', '');
     }
+    else if($('.implpage').length){
+        PipeLength('.lab', '.procdes', '.hp');
+    }
+    else if($('.attrpage').length){
+        PipeLength('.advisors', '.consultations', '.work');
+    }
 }
 
 window.addEventListener("load", function(){

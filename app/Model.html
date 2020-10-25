@@ -396,7 +396,7 @@
 					<p>This yields the total mass conservation equation:</p>
 					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz = -\vec{v}(m(x,y,z_{+}) - m(x,y,z_{-})) + D(\frac{dm}{dz}(x,y,z_+) - \frac{dm}{dz}(x,y,z_-)) + \iiint_V R(x,y,z) dxdydz $$</p>
 					<p>Here we may apply the fundamental theorem of calculus to convert the flux terms into an integral over $$ \partial V $$.</p>
-					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) - R(x,y,z) dxdydz = \iint_{\partial V} -m \vec{v}\cdot \hat{n} + D\nabla m \cdot \hat{n} dxdy $$</p>
+					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz - \iiint_V R(x,y,z) dxdydz = \iint_{\partial V} -m \vec{v}\cdot \hat{n} + D\nabla m \cdot \hat{n} dxdy $$</p>
 					<p>We can apply Gauss’s Divergence Theorem in order to convert the double integrals into triple integrals.</p>
 					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz = \iiint_{V} R(x,y,z) -\nabla(m) \cdot \vec{v} + D\nabla^2 m  dxdydz $$</p>
 					<p>And finally, by applying the Reymond-Dubois lemma we will arrive at the following system of partial differential equations.</p>

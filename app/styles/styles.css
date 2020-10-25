@@ -1033,7 +1033,9 @@ div.probspace, div.considerations, div.nextsteps, div.safe, div.ourlab, div.guid
 div.humprac, div.labdes, div.mathmod,
 div.copper, div.cellulose, div.copperconc,
 div.molecdyna, div.prototype,
-div.protein, div.process {
+div.protein, div.process,
+div.lab, div.procdes, div.hp,
+div.advisors, div.consultations, div.work {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
@@ -1121,6 +1123,14 @@ main {
   margin: 32px 0px !important;
   font-size: 18px !important;
   text-align: left !important;
+}
+
+.contentcol .attr p {
+  margin-bottom: 5px !important;
+}
+
+.attr {
+  margin-bottom: 40px !important;
 }
 
 .contentcol .refs p {
@@ -1460,6 +1470,16 @@ b {
   margin-right: auto !important;
 }
 
+.sponsors {
+  width: 80% !important;
+  margin: 60px 0px !important;
+}
+
+.sponsorsImg {
+  border: 5px solid #5C89A0 !important;
+  padding: 40px !important;
+}
+
 ul.noBullet {
   list-style: none !important;
   margin-left: 0px !important;
@@ -1470,20 +1490,104 @@ ul.noBullet li {
   padding: 4px 0px !important;
 }
 
-.fixed {
-  background-color: black;
-  color: white;
-  text-align: center;
+.CtxtMenu_Attached_0 {
+  display: inline !important;
+}
+
+.accessibility-tool .fixed {
+  background-color: black !important;
+  color: white !important;
   font-size: 10px;
   position: fixed;
   bottom: 0px;
   right: 30px;
-  width: 200px;
-  height: 300px;
+  width: 205px;
+  height: 78px;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 999;
 }
 
-.CtxtMenu_Attached_0 {
-  display: inline !important;
+.accessibility-tool .same {
+  padding: 8px !important;
+}
+
+.accessibility-tool .toolbar-title, .accessibility-tool .arrow {
+  text-align: center !important;
+  margin: 0px 0px !important;
+  color: white !important;
+  font-size: 19px !important;
+  line-height: 20px !important;
+}
+
+.arrow:hover {
+  cursor: pointer !important;
+}
+
+.words h2 {
+  text-align: left !important;
+  margin: 0px !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.words h3 {
+  text-align: left !important;
+  margin: 0px !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.accessibility-tool .shortcut {
+  color: #C2C0FF !important;
+  font-size: 12px !important;
+  text-align: center !important;
+  line-height: 18px !important;
+}
+
+.words .shortcut {
+  font-size: 10px !important;
+  text-align: left !important;
+}
+
+.accessibility-tool .toolbar-read,  .accessibility-tool .toolbar-size {
+  width: 89%; 
+  margin: auto; 
+  border: solid #fff;
+  border-width: 3px !important;
+  border-radius: 10px !important;
+  margin-bottom: 10px !important;
+  padding: 3px 5px !important;
+  visibility: hidden;
+}
+
+.words {
+  float: left;
+  width: 55%;
+  padding: 6px 0px !important;
+}
+
+.toolbar-read .articulate-area, .toolbar-size .size-area {
+  float: left;
+  width: 45%;
+}
+
+.articulate-area svg , .size-area svg {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 12px !important;
+  margin-bottom: 15px !important;
+}
+
+.toolbar-read:after, .toolbar-size:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#pause:hover, #play:hover, #restart:hover {
+  cursor: pointer !important; 
 }
