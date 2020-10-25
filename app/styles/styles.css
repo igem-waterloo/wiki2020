@@ -1283,7 +1283,8 @@ li::before {
   color: #003650 !important;
   font-weight: 400 !important;
   position: absolute !important;
-  top: 4.7% !important;
+  top: clamp(5.375rem, -0.6916666666666664rem + 24.266666666666666vw, 28.125rem)
+  !important;
   width: 65% !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -1325,7 +1326,7 @@ li::before {
   font-weight: 400 !important;
   color: #5C89A0 !important;
   position: absolute !important;
-  top: 38.9% !important;
+  top: clamp(44.5rem, 5.833333333333336rem + 154.66666666666666vw, 189.5rem) !important;
   width: 47% !important;
   margin-left: auto !important;
   margin-right: auto !important;
