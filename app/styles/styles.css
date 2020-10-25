@@ -973,7 +973,7 @@ div.labsubteam {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -983,7 +983,7 @@ div.humansubteam {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -993,7 +993,7 @@ div.mathsubteam {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1003,7 +1003,7 @@ div.inspiration {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1013,7 +1013,7 @@ div.problem {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1023,7 +1023,7 @@ div.solution {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1032,11 +1032,12 @@ div.solution {
 div.probspace, div.considerations, div.nextsteps, div.safe, div.ourlab, div.guidelines,
 div.humprac, div.labdes, div.mathmod,
 div.copper, div.cellulose, div.copperconc,
-div.molecdyna, div.prototype {
+div.molecdyna, div.prototype,
+div.protein, div.process {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: left;
   margin: auto;
   color: #003650;
@@ -1072,15 +1073,34 @@ main {
 
 .info h1 {
   font-weight: 700 !important;
-  font-size: 19px !important;
+  font-size: 24px !important;
   text-align: left !important;
   color: #003650 !important;
   margin-left: 0px !important;
+  line-height: 150% !important;
+}
+
+.info h2 {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  text-align: left !important;
+  color: #003650 !important;
+  margin-left: 0px !important;
+  line-height: 150% !important;
+}
+
+.info h3 {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-align: left !important;
+  color: #003650 !important;
+  margin-left: 0px !important;
+  line-height: 150% !important;
 }
 
 .caption {
   font-weight: 400 !important;
-  font-size: 12px !important;
+  font-size: 15px !important;
   text-align: center !important;
   color: #003650 !important;
   margin-bottom: 5px !important;
@@ -1099,7 +1119,7 @@ main {
 .contentcol .info p {
   color: #003650 !important;
   margin: 32px 0px !important;
-  font-size: 16px !important;
+  font-size: 18px !important;
   text-align: left !important;
 }
 
@@ -1112,11 +1132,11 @@ main {
   font-weight: 800 !important;
   margin: 0px !important;
   padding-top: 60px !important;
-  font-size: 10px !important;
+  font-size: 15px !important;
 }
 
 .references {
-  font-size: 10px !important;
+  font-size: 15px !important;
   margin: 0px !important;
   padding: 0px !important;
   word-wrap: break-word !important;
@@ -1139,11 +1159,13 @@ li::before {
 .contentcol .info ol li p {
   margin-top:0px !important;
   margin-bottom: 15px !important;
+  font-size: 18px !important;
 }
 
 .contentcol .info ol li, .contentcol .info ul li {
   color: #003650 !important;
   line-height: 32px !important;
+  font-size: 18px !important;
 }
 
 .contentcol .info .narrow {
@@ -1156,10 +1178,11 @@ li::before {
   color: #003650 !important;
   border: 5px solid #5C89A0 !important;
   background-color: #CDDCDD !important;
-  padding: 18px !important;
+  padding: 22px !important;
   margin: auto !important;
   margin-bottom: 50px !important;
   line-height: 2rem !important;
+  font-size: 18px !important;
 }
 
 .overview a {
@@ -1189,7 +1212,7 @@ li::before {
 
 .headerCol h1 {
   text-align: left !important;
-  font-size: clamp(2rem, 0.8rem + 1.7vw, 2.9rem) !important;
+  font-size: 40px !important;
   font-weight: 700 !important;
   line-height: 150% !important;
   color: #003650 !important;
@@ -1371,13 +1394,13 @@ li::before {
 }
 
 .text p {
-  font-size: 16px !important;
+  font-size: 18px !important;
   color: #003650 !important;
   margin: 0px 120px 30px 120px !important;
   text-align: left !important;
 }
 
-.text table, .text th {
+.text table, .text th, .info table {
   color: #003650 !important;
 }
 
@@ -1410,7 +1433,7 @@ li::before {
   margin-top: 30px !important;
 }
 
-.text table {
+.text table, .info table {
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -1425,6 +1448,26 @@ b {
 
 .introduce {
   font-weight: 800 !important;
+}
+
+.bottom {
+  margin-bottom: 60px !important;
+}
+
+.map {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+ul.noBullet {
+  list-style: none !important;
+  margin-left: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+ul.noBullet li {
+  padding: 4px 0px !important;
 }
 
 .fixed {

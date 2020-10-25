@@ -154,11 +154,14 @@ function length() {
     else if ($('.edupage').length) {
         PipeLength('.humprac', '.labdes', '.mathmod');
     }
-    if($('.measpage').length){
+    else if($('.measpage').length){
         PipeLength('.copper', '.cellulose', '.copperconc');
     }
-    if($('.proofpage').length){
+    else if($('.proofpage').length){
         PipeLength('.molecdyna', '.prototype', '');
+    }
+    else if($('.modelpage').length){
+        PipeLength('.protein', '.process', '');
     }
 }
 

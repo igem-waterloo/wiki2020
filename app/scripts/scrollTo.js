@@ -34,4 +34,6 @@ $(document).ready(function(){
     pipeScroll("copperconcPipe", ".copperconc");
     pipeScroll("modynPipe", ".molecdyna");
     pipeScroll("prototypePipe", ".prototype");
+    pipeScroll("proteinPipe", ".protein");
+    pipeScroll("processPipe", ".process");
 });
