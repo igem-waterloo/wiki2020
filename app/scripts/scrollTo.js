@@ -42,4 +42,12 @@ $(document).ready(function(){
     pipeScroll("adPipe", ".advisors");
     pipeScroll("consultPipe", ".consultations");
     pipeScroll("workPipe", ".work");
+    pipeScroll("protPipe", ".prot");
+    pipeScroll("fusionPipe", ".fusion");
+    pipeScroll("pdPipe", ".pd");
+    pipeScroll("inclPipe", ".incl");
+    pipeScroll("accessPipe", ".access");
+    pipeScroll("teamsPipe", ".teams");
+    pipeScroll("summerPipe", ".summer");
+    pipeScroll("confPipe", ".conf");
 });

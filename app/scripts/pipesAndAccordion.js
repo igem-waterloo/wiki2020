@@ -169,6 +169,15 @@ function length() {
     else if($('.attrpage').length){
         PipeLength('.advisors', '.consultations', '.work');
     }
+    else if($('.engpage').length){
+        PipeLength('.prot', '.fusion', '.pd');
+    }
+    else if($('.inclpage').length){
+        PipeLength('.incl', '.access', '');
+    }
+    else if($('.collabpage').length){
+        PipeLength('.teams', '.summer', '.conf');
+    }  
 }
 
 window.addEventListener("load", function(){
