@@ -1377,7 +1377,8 @@ li::before {
 #learnmore {
   position: absolute !important;
   top: 96.5% !important;
-  width: 40% !important;
+  width: 20% !important;
+  height: 1.35% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   left: 0 !important;
