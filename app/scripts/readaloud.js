@@ -1,7 +1,21 @@
 window.onload=function(){
-  document.getElementById("play").onclick = function() {play('article')};
+  document.getElementById("play").onclick = function() {
+    if ($('#homepageDiv').length) {
+      play('h1, p')
+    }
+    else {
+      play('article')
+    }
+  };
   document.getElementById("pause").onclick = function() {pause()};
-  document.getElementById("restart").onclick = function() {restart('article')};
+  document.getElementById("restart").onclick = function() {
+    if ($('#homepageDiv').length) {
+      restart('h1, p')
+    }
+    else {
+      restart('article')
+    }
+  };
 }
 
   function play(obj) {

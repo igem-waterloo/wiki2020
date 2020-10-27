@@ -1608,4 +1608,18 @@ ul.noBullet li {
   margin-bottom: 30px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  min-width: 350px !important;
 }
+
+.labPipe:hover, .hpPipe:hover, .mathPipe:hover, .probspacePipe:hover,
+.considPipe:hover, .nextPipe:hover, .safePipe:hover, .ourlabPipe:hover, 
+.guidePipe:hover, .humpracPipe:hover, .labdesPipe:hover, .mathmodPipe:hover, 
+.copperPipe:hover, .cellulosePipe:hover, .copperconcPipe:hover, .modynPipe:hover, 
+.prototypePipe:hover, .proteinPipe:hover, .processPipe:hover, .lPipe:hover, 
+.procdesPipe:hover, .hPipe:hover, .adPipe:hover, .consultPipe:hover, .workPipe:hover,
+.protPipe:hover, .fusionPipe:hover, .pdPipe:hover, .inclPipe:hover, .accessPipe:hover, 
+.teamsPipe:hover, .summerPipe:hover, .confPipe:hover {
+  cursor: pointer !important;
+}
+
+
