@@ -1036,7 +1036,10 @@ div.copper, div.cellulose, div.copperconc,
 div.molecdyna, div.prototype,
 div.protein, div.process,
 div.lab, div.procdes, div.hp,
-div.advisors, div.consultations, div.work {
+div.advisors, div.consultations, div.work, 
+div.prot, div.fusion, div.pd, 
+div.incl, div.access,
+div.teams, div.summer, div.conf {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
@@ -1070,7 +1073,7 @@ main {
 
 .contentcol {
   padding: 0 0 0 0;
-  margin: 0px;
+  margin: 0px 0px 65px 0px;
   float: left;
 }
 
@@ -1402,7 +1405,7 @@ li::before {
 }
 
 .text {
-  margin-bottom: 50px !important;
+  margin-bottom: 90px !important;
 }
 
 .text p {
@@ -1480,6 +1483,7 @@ b {
 .sponsorsImg {
   border: 5px solid #5C89A0 !important;
   padding: 40px !important;
+  min-width: 430px !important;
 }
 
 ul.noBullet {
@@ -1592,4 +1596,18 @@ ul.noBullet li {
 
 #pause:hover, #play:hover, #restart:hover {
   cursor: pointer !important; 
+}
+
+.left {
+  margin-left: 80px !important;
+}
+
+
+.contentcol .info .future {
+  display: block !important;
+  width: 30% !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

@@ -1,53 +1,833 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://2020.igem.org/Template:Waterloo/js/vendor?action=raw&ctype=text/javascript"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://2020.igem.org/Template:Waterloo/js/vendor?action=raw&ctype=text/javascript"></script>
 	<link rel="stylesheet" href="https://2020.igem.org/Template:Waterloo/css/vendor?action=raw&ctype=text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-  <script>
-    $(function() {
-      $('header').load('https://2020.igem.org/Template:Waterloo/header?action=raw&ctype=text/javascript');
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+	<script>
+		$(function() {
+			$('header').load('https://2020.igem.org/Template:Waterloo/header?action=raw&ctype=text/javascript');
 			$('footer').load('https://2020.igem.org/Template:Waterloo/footer?action=raw&ctype=text/javascript');
       $('accessibility').load('https://2020.igem.org/Template:Waterloo/accessibility?action=raw&ctype=text/javascript');
     });
-  </script>
-  <link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
+	</script>
+	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
 	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
   <!--Added MathJax hack to make inline equations work-->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-    tex2jax: {
-    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-    processEscapes: true
-  }
-});
-</script>   </head>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
 
 <body>
-  <div id="igem-navbar-placeholder">
-    <p>Placeholder for iGEM Navbar</p>
-  </div>
-  <header></header>
+	<div class="topElement"></div>
+	<div id="igem-navbar-placeholder">
+		<p>Placeholder for iGEM Navbar</p>
+	</div>
+	<header></header>
     <main id="top">
-      <article>
-        <h1> HOME </h1>
+		<article>
+			<div class="pageHeader"> 
+				<div class="headerCol">
+					<h1 class="engpage"> ENGINEERING </h1>
+				</div>
+				<div class="headerCol2">
+					<img src='/images/buildings.svg'>
+				</div>
+			</div>
 
-        <div class="articulate-area">
-          <button id="speakall">Speak All</button>
-          <button id="pause">Pause</button>
-          <button id="resume">Resume</button>
-          <button id="stop">Stop</button>
+			<div class="pipecol">
+				<svg width="227" height="1442" viewBox="0 0 227 1442" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+					<rect class="protPipe" fill="#CDDCDD" fill-opacity="0" x="5" y="0" width="20" height="178"></rect>
+					<rect class="fusionPipe" fill="#CDDCDD" fill-opacity="0" x="50" y="0" width="20" height="178"></rect>
+					<rect class="pdPipe" fill="#CDDCDD" fill-opacity="0" x="100" y="0" width="20" height="178"></rect>
+					<path id="text-one" class="protPipe" d="M20 168.198H5.9V162.078C5.9 160.532 6.28667 159.338 7.06 158.498C7.83333 157.658 8.91333 157.238 10.3 157.238C11.6867 157.238 12.7733 157.658 13.56 158.498C14.3333 159.338 14.72 160.532 14.72 162.078V165.638H20L20 168.198ZM12.7 165.638V162.478C12.7 160.638 11.9 159.718 10.3 159.718C8.71333 159.718 7.92 160.638 7.92 162.478V165.638H12.7ZM20 155.151H5.9V149.031C5.9 147.485 6.27333 146.291 7.02 145.451C7.75333 144.611 8.78667 144.191 10.12 144.191C11.1733 144.191 12.0467 144.465 12.74 145.011C13.42 145.558 13.88 146.345 14.12 147.371C14.3333 146.691 14.8467 146.131 15.66 145.691L20 143.331V146.151L15.5 148.591C15.06 148.831 14.76 149.118 14.6 149.451C14.44 149.771 14.36 150.185 14.36 150.691V152.591H20V155.151ZM12.46 152.591V149.471C12.46 147.605 11.7 146.671 10.18 146.671C8.67333 146.671 7.92 147.605 7.92 149.471V152.591H12.46ZM20.2 135.218C20.2 136.578 19.9 137.771 19.3 138.798C18.7 139.811 17.86 140.598 16.78 141.158C15.6867 141.718 14.4067 141.998 12.94 141.998C11.46 141.998 10.18 141.718 9.1 141.158C8.02 140.598 7.18667 139.811 6.6 138.798C6 137.785 5.7 136.591 5.7 135.218C5.7 133.845 6 132.651 6.6 131.638C7.18667 130.625 8.02 129.838 9.1 129.278C10.18 128.718 11.4533 128.438 12.92 128.438C14.4 128.438 15.6867 128.718 16.78 129.278C17.86 129.838 18.7 130.625 19.3 131.638C19.9 132.651 20.2 133.845 20.2 135.218ZM18 135.218C18 133.925 17.5533 132.918 16.66 132.198C15.7667 131.478 14.5267 131.118 12.94 131.118C11.34 131.118 10.1 131.478 9.22 132.198C8.34 132.905 7.9 133.911 7.9 135.218C7.9 136.511 8.34 137.518 9.22 138.238C10.1 138.958 11.34 139.318 12.94 139.318C14.5267 139.318 15.7667 138.958 16.66 138.238C17.5533 137.518 18 136.511 18 135.218ZM20 123.294H8.04L8.04 128.134H5.9L5.9 115.894H8.04V120.734H20V123.294ZM20 114.272H5.9V104.892H7.94V111.812H11.82V105.332H13.86V111.812H17.96L17.96 104.892H20L20 114.272ZM20 102.339H5.9V99.7789H20V102.339ZM20 96.7139H5.9V94.7939L15.74 87.2139H5.9V84.8339H20V86.7339L10.12 94.3339H20V96.7139ZM20 76.3623H5.9L5.9 71.1223C5.9 68.7623 6.50667 66.9423 7.72 65.6623C8.93333 64.369 10.6733 63.7223 12.94 63.7223C15.1933 63.7223 16.9333 64.369 18.16 65.6623C19.3867 66.9423 20 68.7623 20 71.1223V76.3623ZM17.88 73.8023V71.2823C17.88 68.029 16.2333 66.4023 12.94 66.4023C9.66 66.4023 8.02 68.029 8.02 71.2823V73.8023H17.88ZM20 61.128H5.9L5.9 51.748H7.94V58.668H11.82V52.188H13.86V58.668H17.96L17.96 51.748H20L20 61.128ZM20.2 44.5297C20.2 45.6364 20.06 46.663 19.78 47.6097C19.4867 48.5564 19.0933 49.3564 18.6 50.0097L16.58 49.2297C17.0467 48.5764 17.4067 47.863 17.66 47.0897C17.9133 46.303 18.04 45.4497 18.04 44.5297C18.04 43.4764 17.8667 42.7097 17.52 42.2297C17.16 41.7497 16.7 41.5097 16.14 41.5097C15.6733 41.5097 15.3067 41.683 15.04 42.0297C14.7733 42.363 14.5533 42.943 14.38 43.7697L13.92 45.9697C13.3867 48.4764 12.1 49.7297 10.06 49.7297C9.18 49.7297 8.41333 49.4964 7.76 49.0297C7.10667 48.563 6.6 47.9164 6.24 47.0897C5.88 46.263 5.7 45.3097 5.7 44.2297C5.7 43.2697 5.84667 42.3697 6.14 41.5297C6.42 40.6897 6.82 39.9897 7.34 39.4297L9.26 40.2097C8.32667 41.3164 7.86 42.663 7.86 44.2497C7.86 45.1697 8.05333 45.8897 8.44 46.4097C8.82667 46.9297 9.33333 47.1897 9.96 47.1897C10.44 47.1897 10.8267 47.0297 11.12 46.7097C11.4 46.3897 11.62 45.843 11.78 45.0697L12.24 42.8897C12.52 41.5697 12.96 40.5897 13.56 39.9497C14.16 39.2964 14.96 38.9697 15.96 38.9697C16.8 38.9697 17.54 39.1964 18.18 39.6497C18.82 40.103 19.32 40.7497 19.68 41.5897C20.0267 42.4164 20.2 43.3964 20.2 44.5297ZM20 36.7725H5.9V34.2125H20V36.7725ZM20.2 24.3675C20.2 25.9275 19.9067 27.2475 19.32 28.3275C18.7333 29.3942 17.9 30.2075 16.82 30.7675C15.74 31.3275 14.46 31.6075 12.98 31.6075C11.4867 31.6075 10.2 31.3208 9.12 30.7475C8.02667 30.1742 7.18667 29.3475 6.6 28.2675C6 27.1875 5.7 25.8942 5.7 24.3875C5.7 23.4008 5.84667 22.4742 6.14 21.6075C6.42 20.7408 6.81333 20.0208 7.32 19.4475L9.32 20.3075C8.82667 20.9342 8.47333 21.5742 8.26 22.2275C8.04667 22.8808 7.94 23.6008 7.94 24.3875C7.94 25.8808 8.37333 27.0142 9.24 27.7875C10.1067 28.5475 11.3533 28.9275 12.98 28.9275C14.62 28.9275 15.8667 28.5342 16.72 27.7475C17.5733 26.9608 18 25.7942 18 24.2475C18 23.8075 17.9667 23.3608 17.9 22.9075C17.82 22.4408 17.7067 21.9808 17.56 21.5275H14.28V24.7675H12.38V19.3875H19.16C19.48 20.0408 19.7333 20.8142 19.92 21.7075C20.1067 22.6008 20.2 23.4875 20.2 24.3675ZM20 16.4209H5.9L5.9 14.5009L15.74 6.92094H5.9V4.54094H20V6.44094L10.12 14.0409H20V16.4209Z" fill="#003650"/>
+					<path id="text-two" class="fusionPipe" d="M68 168.198H53.9V158.978H55.94V165.638H59.92V159.398H61.96V165.638H68V168.198ZM68.2 151.108C68.2 153.041 67.7 154.521 66.7 155.548C65.6867 156.561 64.1933 157.068 62.22 157.068H53.9V154.508H62.2C63.4667 154.508 64.42 154.221 65.06 153.648C65.6867 153.061 66 152.214 66 151.108C66 148.854 64.7333 147.728 62.2 147.728H53.9V145.188H62.22C64.1933 145.188 65.6867 145.688 66.7 146.688C67.7 147.688 68.2 149.161 68.2 151.108ZM68.2 137.342C68.2 138.449 68.06 139.476 67.78 140.422C67.4867 141.369 67.0933 142.169 66.6 142.822L64.58 142.042C65.0467 141.389 65.4067 140.676 65.66 139.902C65.9133 139.116 66.04 138.262 66.04 137.342C66.04 136.289 65.8667 135.522 65.52 135.042C65.16 134.562 64.7 134.322 64.14 134.322C63.6733 134.322 63.3067 134.496 63.04 134.842C62.7733 135.176 62.5533 135.756 62.38 136.582L61.92 138.782C61.3867 141.289 60.1 142.542 58.06 142.542C57.18 142.542 56.4133 142.309 55.76 141.842C55.1067 141.376 54.6 140.729 54.24 139.902C53.88 139.076 53.7 138.122 53.7 137.042C53.7 136.082 53.8467 135.182 54.14 134.342C54.42 133.502 54.82 132.802 55.34 132.242L57.26 133.022C56.3267 134.129 55.86 135.476 55.86 137.062C55.86 137.982 56.0533 138.702 56.44 139.222C56.8267 139.742 57.3333 140.002 57.96 140.002C58.44 140.002 58.8267 139.842 59.12 139.522C59.4 139.202 59.62 138.656 59.78 137.882L60.24 135.702C60.52 134.382 60.96 133.402 61.56 132.762C62.16 132.109 62.96 131.782 63.96 131.782C64.8 131.782 65.54 132.009 66.18 132.462C66.82 132.916 67.32 133.562 67.68 134.402C68.0267 135.229 68.2 136.209 68.2 137.342ZM68 129.585H53.9V127.025H68V129.585ZM68.2 117.64C68.2 119 67.9 120.193 67.3 121.22C66.7 122.233 65.86 123.02 64.78 123.58C63.6867 124.14 62.4067 124.42 60.94 124.42C59.46 124.42 58.18 124.14 57.1 123.58C56.02 123.02 55.1867 122.233 54.6 121.22C54 120.207 53.7 119.013 53.7 117.64C53.7 116.267 54 115.073 54.6 114.06C55.1867 113.047 56.02 112.26 57.1 111.7C58.18 111.14 59.4533 110.86 60.92 110.86C62.4 110.86 63.6867 111.14 64.78 111.7C65.86 112.26 66.7 113.047 67.3 114.06C67.9 115.073 68.2 116.267 68.2 117.64ZM66 117.64C66 116.347 65.5533 115.34 64.66 114.62C63.7667 113.9 62.5267 113.54 60.94 113.54C59.34 113.54 58.1 113.9 57.22 114.62C56.34 115.327 55.9 116.333 55.9 117.64C55.9 118.933 56.34 119.94 57.22 120.66C58.1 121.38 59.34 121.74 60.94 121.74C62.5267 121.74 63.7667 121.38 64.66 120.66C65.5533 119.94 66 118.933 66 117.64ZM68 108.257H53.9V106.337L63.74 98.7569H53.9V96.3769H68V98.2769L58.12 105.877H68V108.257ZM68 87.9053H53.9V81.7853C53.9 80.2386 54.2867 79.0453 55.06 78.2053C55.8333 77.3653 56.9133 76.9453 58.3 76.9453C59.6867 76.9453 60.7733 77.3653 61.56 78.2053C62.3333 79.0453 62.72 80.2386 62.72 81.7853V85.3453H68V87.9053ZM60.7 85.3453V82.1853C60.7 80.3453 59.9 79.4253 58.3 79.4253C56.7133 79.4253 55.92 80.3453 55.92 82.1853V85.3453H60.7ZM68 74.8584H53.9V68.7384C53.9 67.1918 54.2733 65.9984 55.02 65.1584C55.7533 64.3184 56.7867 63.8984 58.12 63.8984C59.1733 63.8984 60.0467 64.1718 60.74 64.7184C61.42 65.2651 61.88 66.0518 62.12 67.0784C62.3333 66.3984 62.8467 65.8384 63.66 65.3984L68 63.0384V65.8584L63.5 68.2984C63.06 68.5384 62.76 68.8251 62.6 69.1584C62.44 69.4784 62.36 69.8918 62.36 70.3984V72.2984H68V74.8584ZM60.46 72.2984V69.1784C60.46 67.3118 59.7 66.3784 58.18 66.3784C56.6733 66.3784 55.92 67.3118 55.92 69.1784V72.2984H60.46ZM68.2 54.9252C68.2 56.2852 67.9 57.4785 67.3 58.5052C66.7 59.5185 65.86 60.3052 64.78 60.8652C63.6867 61.4252 62.4067 61.7052 60.94 61.7052C59.46 61.7052 58.18 61.4252 57.1 60.8652C56.02 60.3052 55.1867 59.5185 54.6 58.5052C54 57.4918 53.7 56.2985 53.7 54.9252C53.7 53.5518 54 52.3585 54.6 51.3452C55.1867 50.3318 56.02 49.5452 57.1 48.9852C58.18 48.4252 59.4533 48.1452 60.92 48.1452C62.4 48.1452 63.6867 48.4252 64.78 48.9852C65.86 49.5452 66.7 50.3318 67.3 51.3452C67.9 52.3585 68.2 53.5518 68.2 54.9252ZM66 54.9252C66 53.6318 65.5533 52.6252 64.66 51.9052C63.7667 51.1852 62.5267 50.8252 60.94 50.8252C59.34 50.8252 58.1 51.1852 57.22 51.9052C56.34 52.6118 55.9 53.6185 55.9 54.9252C55.9 56.2185 56.34 57.2252 57.22 57.9452C58.1 58.6652 59.34 59.0252 60.94 59.0252C62.5267 59.0252 63.7667 58.6652 64.66 57.9452C65.5533 57.2252 66 56.2185 66 54.9252ZM68 43.0014H56.04L56.04 47.8414H53.9L53.9 35.6014H56.04V40.4414H68V43.0014ZM68 33.9795H53.9V24.5995H55.94V31.5195H59.82V25.0395H61.86V31.5195H65.96V24.5995H68V33.9795ZM68 22.0459H53.9V19.4859H68V22.0459ZM68 16.4209H53.9V14.5009L63.74 6.92094H53.9V4.54094H68V6.44094L58.12 14.0409H68V16.4209Z" fill="#003650"/>
+					<path id="text-three" class="pdPipe" d="M116 174.663H101.9V168.543C101.9 166.996 102.287 165.803 103.06 164.963C103.833 164.123 104.913 163.703 106.3 163.703C107.687 163.703 108.773 164.123 109.56 164.963C110.333 165.803 110.72 166.996 110.72 168.543V172.103H116V174.663ZM108.7 172.103V168.943C108.7 167.103 107.9 166.183 106.3 166.183C104.713 166.183 103.92 167.103 103.92 168.943V172.103H108.7ZM116 161.616H101.9V155.496C101.9 153.95 102.273 152.756 103.02 151.916C103.753 151.076 104.787 150.656 106.12 150.656C107.173 150.656 108.047 150.93 108.74 151.476C109.42 152.023 109.88 152.81 110.12 153.836C110.333 153.156 110.847 152.596 111.66 152.156L116 149.796V152.616L111.5 155.056C111.06 155.296 110.76 155.583 110.6 155.916C110.44 156.236 110.36 156.65 110.36 157.156V159.056H116V161.616ZM108.46 159.056V155.936C108.46 154.07 107.7 153.136 106.18 153.136C104.673 153.136 103.92 154.07 103.92 155.936V159.056H108.46ZM116.2 141.683C116.2 143.043 115.9 144.236 115.3 145.263C114.7 146.276 113.86 147.063 112.78 147.623C111.687 148.183 110.407 148.463 108.94 148.463C107.46 148.463 106.18 148.183 105.1 147.623C104.02 147.063 103.187 146.276 102.6 145.263C102 144.25 101.7 143.056 101.7 141.683C101.7 140.31 102 139.116 102.6 138.103C103.187 137.09 104.02 136.303 105.1 135.743C106.18 135.183 107.453 134.903 108.92 134.903C110.4 134.903 111.687 135.183 112.78 135.743C113.86 136.303 114.7 137.09 115.3 138.103C115.9 139.116 116.2 140.31 116.2 141.683ZM114 141.683C114 140.39 113.553 139.383 112.66 138.663C111.767 137.943 110.527 137.583 108.94 137.583C107.34 137.583 106.1 137.943 105.22 138.663C104.34 139.37 103.9 140.376 103.9 141.683C103.9 142.976 104.34 143.983 105.22 144.703C106.1 145.423 107.34 145.783 108.94 145.783C110.527 145.783 111.767 145.423 112.66 144.703C113.553 143.983 114 142.976 114 141.683ZM116.2 125.74C116.2 127.207 115.907 128.467 115.32 129.52C114.72 130.56 113.88 131.36 112.8 131.92C111.707 132.48 110.42 132.76 108.94 132.76C107.46 132.76 106.18 132.48 105.1 131.92C104.02 131.36 103.187 130.56 102.6 129.52C102 128.467 101.7 127.207 101.7 125.74C101.7 124.793 101.847 123.9 102.14 123.06C102.433 122.207 102.853 121.507 103.4 120.96L105.44 121.8C104.933 122.4 104.567 123.013 104.34 123.64C104.1 124.267 103.98 124.94 103.98 125.66C103.98 127.087 104.413 128.173 105.28 128.92C106.133 129.667 107.353 130.04 108.94 130.04C110.527 130.04 111.753 129.667 112.62 128.92C113.487 128.173 113.92 127.087 113.92 125.66C113.92 124.94 113.807 124.267 113.58 123.64C113.34 123.013 112.967 122.4 112.46 121.8L114.5 120.96C115.033 121.507 115.453 122.207 115.76 123.06C116.053 123.9 116.2 124.793 116.2 125.74ZM116 118.726H101.9V109.346H103.94V116.266H107.82V109.786H109.86V116.266H113.96V109.346H116V118.726ZM116.2 102.127C116.2 103.234 116.06 104.261 115.78 105.207C115.487 106.154 115.093 106.954 114.6 107.607L112.58 106.827C113.047 106.174 113.407 105.461 113.66 104.687C113.913 103.901 114.04 103.047 114.04 102.127C114.04 101.074 113.867 100.307 113.52 99.8273C113.16 99.3473 112.7 99.1073 112.14 99.1073C111.673 99.1073 111.307 99.2807 111.04 99.6273C110.773 99.9607 110.553 100.541 110.38 101.367L109.92 103.567C109.387 106.074 108.1 107.327 106.06 107.327C105.18 107.327 104.413 107.094 103.76 106.627C103.107 106.161 102.6 105.514 102.24 104.687C101.88 103.861 101.7 102.907 101.7 101.827C101.7 100.867 101.847 99.9673 102.14 99.1273C102.42 98.2873 102.82 97.5873 103.34 97.0273L105.26 97.8073C104.327 98.914 103.86 100.261 103.86 101.847C103.86 102.767 104.053 103.487 104.44 104.007C104.827 104.527 105.333 104.787 105.96 104.787C106.44 104.787 106.827 104.627 107.12 104.307C107.4 103.987 107.62 103.441 107.78 102.667L108.24 100.487C108.52 99.1673 108.96 98.1873 109.56 97.5473C110.16 96.894 110.96 96.5673 111.96 96.5673C112.8 96.5673 113.54 96.794 114.18 97.2473C114.82 97.7007 115.32 98.3473 115.68 99.1873C116.027 100.014 116.2 100.994 116.2 102.127ZM116.2 89.5102C116.2 90.6168 116.06 91.6435 115.78 92.5902C115.487 93.5368 115.093 94.3368 114.6 94.9902L112.58 94.2102C113.047 93.5568 113.407 92.8435 113.66 92.0702C113.913 91.2835 114.04 90.4302 114.04 89.5102C114.04 88.4568 113.867 87.6902 113.52 87.2102C113.16 86.7302 112.7 86.4902 112.14 86.4902C111.673 86.4902 111.307 86.6635 111.04 87.0102C110.773 87.3435 110.553 87.9235 110.38 88.7502L109.92 90.9502C109.387 93.4568 108.1 94.7102 106.06 94.7102C105.18 94.7102 104.413 94.4768 103.76 94.0102C103.107 93.5435 102.6 92.8968 102.24 92.0702C101.88 91.2435 101.7 90.2902 101.7 89.2102C101.7 88.2502 101.847 87.3502 102.14 86.5102C102.42 85.6702 102.82 84.9702 103.34 84.4102L105.26 85.1902C104.327 86.2968 103.86 87.6435 103.86 89.2302C103.86 90.1502 104.053 90.8702 104.44 91.3902C104.827 91.9102 105.333 92.1702 105.96 92.1702C106.44 92.1702 106.827 92.0102 107.12 91.6902C107.4 91.3702 107.62 90.8235 107.78 90.0502L108.24 87.8702C108.52 86.5502 108.96 85.5702 109.56 84.9302C110.16 84.2768 110.96 83.9502 111.96 83.9502C112.8 83.9502 113.54 84.1768 114.18 84.6302C114.82 85.0835 115.32 85.7302 115.68 86.5702C116.027 87.3968 116.2 88.3768 116.2 89.5102ZM116 76.3623H101.9L101.9 71.1223C101.9 68.7623 102.507 66.9423 103.72 65.6623C104.933 64.369 106.673 63.7223 108.94 63.7223C111.193 63.7223 112.933 64.369 114.16 65.6623C115.387 66.9423 116 68.7623 116 71.1223V76.3623ZM113.88 73.8023V71.2823C113.88 68.029 112.233 66.4023 108.94 66.4023C105.66 66.4023 104.02 68.029 104.02 71.2823V73.8023H113.88ZM116 61.128H101.9V51.748H103.94V58.668H107.82V52.188H109.86V58.668H113.96L113.96 51.748H116L116 61.128ZM116.2 44.5297C116.2 45.6364 116.06 46.663 115.78 47.6097C115.487 48.5564 115.093 49.3564 114.6 50.0097L112.58 49.2297C113.047 48.5764 113.407 47.863 113.66 47.0897C113.913 46.303 114.04 45.4497 114.04 44.5297C114.04 43.4764 113.867 42.7097 113.52 42.2297C113.16 41.7497 112.7 41.5097 112.14 41.5097C111.673 41.5097 111.307 41.683 111.04 42.0297C110.773 42.363 110.553 42.943 110.38 43.7697L109.92 45.9697C109.387 48.4764 108.1 49.7297 106.06 49.7297C105.18 49.7297 104.413 49.4964 103.76 49.0297C103.107 48.563 102.6 47.9164 102.24 47.0897C101.88 46.263 101.7 45.3097 101.7 44.2297C101.7 43.2697 101.847 42.3697 102.14 41.5297C102.42 40.6897 102.82 39.9897 103.34 39.4297L105.26 40.2097C104.327 41.3164 103.86 42.663 103.86 44.2497C103.86 45.1697 104.053 45.8897 104.44 46.4097C104.827 46.9297 105.333 47.1897 105.96 47.1897C106.44 47.1897 106.827 47.0297 107.12 46.7097C107.4 46.3897 107.62 45.843 107.78 45.0697L108.24 42.8897C108.52 41.5697 108.96 40.5897 109.56 39.9497C110.16 39.2964 110.96 38.9697 111.96 38.9697C112.8 38.9697 113.54 39.1964 114.18 39.6497C114.82 40.103 115.32 40.7497 115.68 41.5897C116.027 42.4164 116.2 43.3964 116.2 44.5297ZM116 36.7725H101.9V34.2125H116V36.7725ZM116.2 24.3675C116.2 25.9275 115.907 27.2475 115.32 28.3275C114.733 29.3942 113.9 30.2075 112.82 30.7675C111.74 31.3275 110.46 31.6075 108.98 31.6075C107.487 31.6075 106.2 31.3208 105.12 30.7475C104.027 30.1742 103.187 29.3475 102.6 28.2675C102 27.1875 101.7 25.8942 101.7 24.3875C101.7 23.4008 101.847 22.4742 102.14 21.6075C102.42 20.7408 102.813 20.0208 103.32 19.4475L105.32 20.3075C104.827 20.9342 104.473 21.5742 104.26 22.2275C104.047 22.8808 103.94 23.6008 103.94 24.3875C103.94 25.8808 104.373 27.0142 105.24 27.7875C106.107 28.5475 107.353 28.9275 108.98 28.9275C110.62 28.9275 111.867 28.5342 112.72 27.7475C113.573 26.9608 114 25.7942 114 24.2475C114 23.8075 113.967 23.3608 113.9 22.9075C113.82 22.4408 113.707 21.9808 113.56 21.5275H110.28V24.7675H108.38V19.3875H115.16C115.48 20.0408 115.733 20.8142 115.92 21.7075C116.107 22.6008 116.2 23.4875 116.2 24.3675ZM116 16.4209H101.9V14.5009L111.74 6.92094H101.9V4.54094H116V6.44094L106.12 14.0409H116V16.4209Z" fill="#003650"/>
+				
+					<path id="pipe-three" class="pdPipe" d="M139.773 1.50001L139.773 2983.41C139.773 2999.45 153.781 3012.2 168.937 3012.2H194.801V3032.11H168.937C143.345 3032 122.5 3011.38 122.5 2983.19V1.50011L139.773 1.50001Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-one" class="pdPipe" d="M189.5 3005.5H194.989V3039.79H189.5V3005.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-two" class="pdPipe" d="M146.902 662.377L146.902 668.318L114.5 668.318L114.5 662.377L146.902 662.377Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-three" class="pdPipe" d="M146.902 1975.77L146.902 1981.71L114.5 1981.71L114.5 1975.77L146.902 1975.77Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3" style="visibility: hidden;"/>
+					<path id="pipe-three-four" class="pdPipe" d="M146.902 2958.44L146.902 2964.38L114.5 2964.38L114.5 2958.44L146.902 2958.44Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-two" class="fusionPipe" d="M74.4998 1538.13V1.5H91.7731V1538.35C91.7731 1554.39 105.781 1567.14 120.937 1567.14H191V1587.05 H120.937C95.3446 1586.94 74.4998 1566.32 74.4998 1538.13Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-one" class="fusionPipe" d="M98.9021 1454.5L98.9021 1460.44L66.4999 1460.44L66.4999 1454.5L98.9021 1454.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-two" class="fusionPipe" d="M98.9021 936.869L98.9021 942.81L66.4999 942.81L66.4999 936.869L98.9021 936.869Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-three" class="fusionPipe" d="M98.9021 367.066L98.9021 373.007L66.4999 373.007L66.4999 367.066L98.9021 367.066Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3" style="visibility: hidden;"/>
+					<path id="pipe-two-four" class="fusionPipe" d="M189.5 1560.5H194.989V1594.79H189.5V1560.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-one" class="protPipe" d="M26.5 326.813V1.5H43.7733V327.037C43.7733 343.081 57.7816 355.829 72.9369 355.829H191.5V376.983H72.9369C47.3448 375.628 26.5 355.006 26.5 326.813Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-one" class="protPipe" d="M19.5 307.44V301.5H51.9022V307.44H19.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-two" class="protPipe" d="M190.5 349.5H195.989V383.787H190.5V349.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<circle id="circle-one" cx="215" cy="367" r="12" fill="#F79D5E"/>
+					<circle id="circle-two" cx="215" cy="1577" r="12" fill="#F79D5E"/>
+					<circle id="circle-three" cx="215" cy="3022" r="12" fill="#F79D5E"/>
+				</svg>				
+			</div>
+
+			<div id="contentcol" class="contentcol">
+				<div class="overview">
+					We have used the engineering design cycle for several key parts of our project. First, we used it to improve the copper affinity of the protein CopC. We then used it to design copper- and cellulose-binding fusion proteins to place inside our bioreactor. Lastly, we used the cycle to design an industrial-scale packed column reactor that allows our fusion proteins to treat large volumes of dissolved copper waste water.  
+				</div>
+
+				<div class="prot">
+					PROTEIN DESIGN
+				</div>
+				
+				<div class='info'>
+					<img src="https://2020.igem.org/wiki/images/a/a7/T--Waterloo--Engineering_EngCycle.png" alt="The steps of the engineering cycle">
+          <div class="caption">The steps of the engineering cycle.</div>
+          <p>We applied the engineering design cycle to rationally improve the copper affinity of the protein Mst-CopC. Increasing Mst-CopC’s copper affinity allows our industrial process to remove copper from wastewaters more efficiently. Our industrial process will use Mst-CopC fused to the cellulose binding module CBM2a. However, since Mst-CopC and CBM2a are connected by a long flexible linker, we can consider the Mst-CopC protein in isolation for the purposes of improving copper affinity. Although we were not able to access the lab, molecular dynamics simulations demonstrate that our engineered Mst-CopC has increased copper affinity. </p>
+          <h1>Research</h1>
+          <p>For the “Research” stage, we investigate existing copper binding proteins and evaluate their viability for our industrial process. This eventually leads us to select the protein Mst-CopC.</p>
+          <h2>Criteria For Suitable Metal Binding Proteins</h2>
+          <p>Metals are required for many important cellular processes, giving rise to the prevalence of a diverse range of metal-binding proteins capable of binding a multitude of metals (Major et al., 2016). For the purposes of a cellulose packed column bioreactor (this reactor discussed in the process design section of this page), metal-binding proteins must satisfy several criteria: proteins should preferably have a high binding affinity for the chosen metal, a compact binding domain, and be monomeric as well as periplasmic (Urbina et al., 2019). High binding affinity is preferred to increase the metal recovery from wastewater effluent (Urbina et al., 2019). Selecting monomeric and periplasmic proteins is also critical to ensure proper folding of the selected domain outside of the cell and as part of a recombinant protein (Urbina et al., 2019).</p>
+          <p>Once we had identified copper as an industrially-relevant metal to target, we needed to identify proteins that could bind copper and remove it from industrial wastewaters. We decided on Mst-CopC after considering a range of other copper-binding proteins as described below.</p>
+          <h2>Copper-Binding Proteins</h2>
+          <p>Copper is a cofactor for a myriad of key biological processes, so maintaining balanced copper levels within the cell is critical. To properly regulate copper levels, biology has evolved many systems of copper-binding proteins. These protein families include the Cue, Cus and Cop proteins(Lawton, Kenney, Hurley, &amp; Rosenzweig, 2016).</p>
+          <p>The copper efflux (Cue) proteins prevent cellular copper concentrations from reaching dangerously high levels under aerobic conditions (Lawton et al., 2016). The copper sensing (Cus) proteins function similarly, preventing dangerous copper concentrations under anaerobic conditions (Lawton et al., 2016). Although there exist a number of different Cop proteins, designated A, B, C, D, E, R and S, this group is less understood (Udagedara, Wijekoon, Xiao, Wedd, &amp; Maher, 2019). From this group, CopC is a periplasmic copper binding protein believed to play a role in copper uptake along with the inner membrane CopD proteins (Lawton, 2016), but the exact roles of Cop proteins are still an active research area.</p>
+          <h2>Selecting Mst-CopC</h2>
+          <p>CopC proteins are periplasmic copper-binding proteins that are believed to play a role in the regulation of copper concentrations within bacteria (Lawton, 2016). Different versions of CopC exist in many bacteria yet they all seem to serve similar roles (Lawton, 2016). CopCs are good targets for protein engineering for several reasons. </p>
+          <p>For one, CopCs are monomeric, unlike other more complex oligomeric alternatives such as CSS, COX17, or COX11 (Heaton, George, Garrison, &amp; Winge, 2001; Palumaa, 2013; Timón-Gómez et al., 2018). Oligomeric proteins consist of several non-covalently bound subunits making them impractical for our packed column process as the subunits could become detached. Oligomeric proteins are also more difficult to express, purify, and engineer. CopC is also a relatively small protein with a modest size of 13 042 Da (UniProt). A smaller protein is more desirable, since the expression of small proteins typically proves more successful, especially for fusion proteins. Small proteins are also easier to model and engineer. </p>
+          <p>Additionally, many copper-binding proteins are membrane proteins. Membrane proteins are not suitable for our application since they contain exposed hydrophobic regions, meaning that they cannot be folded in the aqueous environment of our reactor. Expression and purification of membrane proteins are also difficult. Since CopC is a soluble periplasmic protein (Lawton, 2016), it is a good candidate for our technology. </p>
+          <p>CopC has multiple variants, isolated from different bacterial strains such as <i>Methylosinus trichosporium</i> (Mst-CopC), <i>Pseudomonas syringae</i> (Pss-CopC) and <i>Pseudomonas fluorescens</i> (Pf-CopC) (Lawton et al., 2016; Wijekoon, Young, Wedd, &amp; Xiao, 2015). Many of these CopC variants include separate binding sites for Cu<sup>+</sup> and Cu<sup>2+</sup>. However, Mst-CopC only has one Cu<sup>2+</sup> binding site. In comparison to its analogous CopC variants, Mst-CopC lacks the critical residues required to bind Cu<sup>+</sup> (Lawton et al., 2016). Cu<sup>+</sup> binding sites in CopC proteins typically exhibit multiple conserved methionine residues, whereas the Cu<sup>2+</sup> binding site tends to appear more histidine-rich (Lawton et al., 2016). Mst-CopC only coordinates single Cu<sup>2+</sup> ions in a distorted square pyramidal coordination geometry with H23, H107, D105 and an axial positioned water molecule (Lawton et al., 2016). Mst-CopC also possesses a seven stranded 𝛽-barrel, similarly observed in other variants such as Pss-CopC but with slight deviations in the arrangement of the strands (Lawton et al., 2016).  For this reason, we chose Mst-CopC as our starting point for improving copper affinity. The single copper binding site makes this protein much simpler to engineer and model compared to other copper binding proteins.</p>
+          <img src="https://2020.igem.org/wiki/images/6/61/T--Waterloo--Engineering_MstCopC.png" alt="Cartoon structure of Mst-CopC, including the bound Cu2+ ion">
+          <div class="caption">Figure 1. Cartoon structure of Mst-CopC, including the bound Cu<sub>2+</sub> ion. </div>
+          <h1>Imagine</h1> 
+          <p>For the “Imagine” section, we consider useful improvements that we could make to CopC and develop the general approaches that could be used to achieve these improvements. </p>
+          <h2>Motivation for Improving Mst-CopC </h2>
+          <p>Mst-CopC will be implemented in a packed column reactor, which may then be used in industry to recover copper from effluent. From an industrial and environmental standpoint, we want this reactor to be as efficient and robust as possible. To achieve this, we need to ask the following:</p>
+          <ul>
+            <li>How can we improve our fusion protein to bind copper as efficiently as possible?</li>
+            <li>How can we reduce the operating costs of our system, making it appealing for use in industry?</li>
+            <li>How can we ensure that our system binds copper as selectively as possible, thereby maximizing the purity of the recovered metal?</li>
+          </ul>
+          <p>From a biochemical perspective, these questions can be answered by improving the affinity and specificity of our copper-binding protein, Mst-CopC. By modifying Mst-CopC such that its binding affinity to copper increases, we can allow our column to recover copper as efficiently as possible, which in effect reduces operating costs. Additionally, by improving Mst-CopC’s specificity to copper, we can increase the proportion of copper recovered and minimize the proportion of other undesired metals that bind to Mst-CopC, thereby improving the purity of the recovered copper. </p>
+          <p>To improve affinity, key residues involved in binding may be mutated such that the binding site is more well-suited or has higher affinity for copper (Koay et al., 2013). To do so, residues that are predicted to have a marked effect on affinity (either thorough literature or analysis of the protein structure of Mst-CopC) are mutated, and the effect of the mutation on binding affinity/energy is assessed using molecular dynamics simulations and other software tools. To improve specificity, Mst-CopC’s affinity for metals other than copper can be decreased - by definition, by increasing Mst-CopC affinity for copper and decreasing Mst-CopC affinity for other metals, we would improve Mst-CopC’s specificity for copper (Koay et al., 2013). </p>
+          <p>Below we present research into improving CopC’s Cu<sub>2+</sub> affinity, and several other ideas we had for modulating Mst-CopC’s specificity. However, research into each of these specificity ideas showed that they were not feasible, leading us to focus exclusively on improving CopC’s copper affinity.</p>
+          <h2>Investigating Copper Binding Using Multiple Sequence Alignments</h2>
+          <p>A multiple sequence alignment (MSA) is a bioinformatics tool that utilizes an optimization algorithm to identify regions of homology/similarity between different amino acid sequences (Chatzou et al., 2016). As a result, MSA is useful for the study of homology and evolutionary relationships between proteins (Chatzou et al., 2016). With respect to protein binding, MSAs may help to predict key binding residues of an uncharacterized protein by inferring these residues from a highly similar protein. Alternatively, the usefulness of MSAs can be appreciated from the standpoint of identifying potential residue candidates, such that mutating these candidates may result in binding with higher/lower affinity; this is the purpose for which the MSAs were used in this case. Consider two proteins, protein A and protein B, which both bind the same ligand and have known, characterized binding site residues. By comparing differences in binding site residues between these two proteins, one can infer that mutating protein A to more closely match protein B’s binding site residue(s) would be likely to increase or decrease the binding affinity of the original protein A.</p>
+          <p>It can be seen, then, that an MSA might be useful to identify potential residues on Mst-CopC that, when mutated, might increase its affinity towards its ligand, Cu<sup>2+</sup>. The following MSA aligned the sequence of Mst-CopC with 9 other copper-binding proteins in an attempt to identify homologous binding site residues. The Cu<sup>2+</sup>-binding proteins involved in this MSA, preceded by their NCBI accession numbers, were the following:</p>
+          <ul>
+            <li>Template: Accession #; Protein name (<i>native species</i>)</li>
+            <li>AAH10933.1; COX17 (<i>Homo sapiens</i>), binds Cu<sup>+</sup>, copper ligand binded</li>
+            <li>AAH05895.1; COX11 (<i>Homo sapiens</i>, yeast homolog), binds Cu<sup>+</sup></li>
+            <li>AAI05017.1; CSS (<i>Homo sapiens</i>), binds Cu<sup>+</sup> and Cu<sup>2+</sup></li>
+            <li>AAC41458.1; SlyD (<i>E. coli</i>), binds Cu<sup>+</sup></li>
+            <li>AAH15504.1; SCO1 (<i>Homo sapiens</i>), binds Cu<sup>+</sup> </li>
+            <li>Q94BT9.2; Atx1 (<i>Arabidopsis thaliana</i>), binds Cu<sup>+</sup></li>
+            <li>O68481; NosL (<i>A. cycloclastes</i>), binds Cu<sup>+</sup></li>
+            <li>DAA06748.1; Cup1 (<i>Saccharomyces cerevisiae</i>), binds Cu<sup>+</sup> and Cu<sup>2+</sup></li>
+            <li>VWQ03775.1; NikR (<i>E. Coli</i>), binds Cu<sup>2+</sup></li>
+            <li>5ICU_A; CopC (<i>Methylosinus trichosporium</i>), binds Cu<sup>2+</sup></li>
+          </ul>
+          <p>If homologous binding site residues were to be found between Mst-CopC and another protein, then the other protein could be further analyzed to see if any other residues were involved in Cu<sup>2+</sup>-binding, which would be mutation candidates for Mst-CopC. The following image is the MSA for Mst-CopC with the 9 other Cu<sup>2+</sup>-binding proteins:</p>
+          <img src="https://2020.igem.org/wiki/images/e/e4/T--Waterloo--Engineering_MSA_copper_binding.png" alt="Multiple sequence of alignment of Mst-CopC and several other Cu2+ binding proteins.">
+          <div class="caption">Figure 2. Multiple sequence of alignment of Mst-CopC and several other Cu<sup>2+</sup> binding proteins.</div>
+          <p>(This MSA was performed on Geneious using the Clustal Omega algorithm. Residues were coloured based on hydrophobicity, where a scale of red to blue = most hydrophobic to least hydrophobic. Binding residues were annotated in brown under each amino acid sequence.)</p>
+          <p>Unfortunately, this MSA did not help to identify mutation candidates, as there were no copper-binding proteins with binding sites/residues similar to Mst-CopC. In fact, cysteine-based binding sites (especially C-X-C motifs, where C = cysteine and X = another amino acid) were common to all copper-binding proteins except Mst-CopC. The main takeaway from this MSA was that Mst-CopC was more anomalous in terms of binding mechanism that was originally expected and that a more useful MSA to perform would be an MSA aligning Mst-CopC with other CopC proteins, which would be most likely to utilize similar sites of binding that could be readily compared with Mst-CopC. As well, this MSA showed that cysteine was a common copper-binding residue, suggesting that mutating a candidate residue to cysteine may help to facilitate copper-binding and improve affinity.</p>
+          <p>From here, another MSA was done with Mst-CopC and 12 other CopC proteins from other species (henceforth termed CopC variants). As a follow-up to the previous MSA analysis, this was done in the hopes of aligning proteins with overall homologous binding sites to Mst-CopC, while also identifying some binding residue differences that would give rise to mutation candidates. Other than Mst-CopC (accession number 5ICU_A), the following were the CopC variants included in the MSA (preceded by their NCBI accession number):</p>
+          <ul>
+            <li>WP_030140788.1; PfCopC variant (<i>Pseudomonas fluorescens</i>)</li>
+            <li>WP_027898553.1; <i>Pseudomonas syringae</i> multispecies CopC variant (<i>Pseudomonas syringae</i>)</li>
+            <li>WP_026612268.1; YobA (<i>Klebsiella aerogenes</i>)</li>
+            <li>WP_019845025.1; DzCopC variant (<i>Dickeya zeae</i>)</li>
+            <li>WP_015884740.1; Pf-SBW25-CopC variant (<i>Pseudomonas fluorescens</i>)</li>
+            <li>WP_011514843.1; CmCopC variant (<i>Cupriavidus metallidurans</i>)</li>
+            <li>WP_002445015.1; SbCopC variant (<i>Shimwellia blattae</i>)</li>
+            <li>Q56797.1; CopC variant</li>
+            <li>Q47454.1; PcoC variant (<i>Escherichia coli</i>)</li>
+            <li>AAP88297.1; PpCopC variant (<i>Pseudomonas putida</i>)</li>
+            <li>AAN80710.1; YobA variant (<i>Escherichia coli</i> CFT073 strain)</li>
+            <li>AAA25808.1; PsCopC variant (<i>Pseudomonas syringae</i>)</li>
+          </ul>
+          <p>The following is the MSA of Mst-CopC with the 12 other CopC variants:</p>
+          <img src="https://2020.igem.org/wiki/images/5/5c/T--Waterloo--Engineering_MSA_CopC_variants.png" alt="Multiple sequence of alignment of Mst-CopC and several other CopC variants binding proteins.">
+          <div class="caption">Figure 3. Multiple sequence of alignment of Mst-CopC and several other CopC variants binding proteins.</div>
+          <p>(This MSA was performed on Geneious using the Clustal Omega algorithm. Residues were coloured based on hydrophobicity, where a scale of red to blue = most hydrophobic to least hydrophobic. Binding residues were annotated in brown under each amino acid sequence.)</p>
+          <p>Previous literature on Mst-CopC has suggested that mutating residue 3 of the cleaved protein (where “cleaved” refers to the removal of a signal peptide before residue 33 on the “consensus identity” sequence) from phenylalanine to histidine would likely result in a ~100x increase in binding affinity for Cu<sup>2+</sup> (Lawton et al., 2016). This MSA confirms this, as this residue appears in other CopC variants but not Mst-CopC, making a His-3 mutation a prime candidate for improving Mst-CopC binding affinity.</p>
+          <h2>Idea: Decreasing Hg<sup>2+</sup> Affinity </h2>
+          <p>Literature shows that some CopC variants can bind Hg<sup>2+</sup> (Song et al., 2016). This would be undesirable for our industrial process, since the copper we recovered from our column would be contaminated with mercury. For this reason, we considered rational design approaches to decrease Hg<sup>2+</sup> affinity. </p>
+          <p>Pss-CopC consists of a Cu<sup>+</sup> binding site situated at the C-terminal, and a Cu<sup>2+</sup> binding site at the N-terminal (Song et al., 2016). Its Cu<sup>+</sup> binding site is defined by His48 and 2-3 conserved Met residues (Song et al., 2016). The Cu<sup>2+</sup> binding site consists of H1, E27, D89 and H91 (Song et al., 2016). This differs from the conserved residues observed in Mst-CopC for binding Cu<sup>2+</sup>, previously mentioned as H23, H107, D105 and an axial positioned water molecule (Lawton et al., 2016). </p>
+          <p>Given the possibility of Hg<sup>2+</sup> competing for the Pss-CopC Cu<sup>2+</sup> binding site, it was thought to be worth investigating whether Hg<sup>2+</sup> would behave similarly with regards to Mst-CopC. Hg<sup>2+</sup> has an ionic radius of 102 pm while Cu<sup>2+</sup> has an ionic radius of 73 pm (Petrucci, Herring, Madura, &amp; Bissonnette, 2017). Thereby, one such method to improve selectivity was to decrease the Cu<sup>2+</sup> binding site such that it excludes ions larger than that of Cu<sup>2+</sup>. Mst-CopC and Pss-CopC were modelled in PyMOL to visualize the area of the Cu<sup>2+</sup> sites and inform possible mutations to induce that would decrease its size in Mst-CopC.</p>
+          <img src="https://2020.igem.org/wiki/images/3/3c/T--Waterloo--Engineering_Research_MstCopCBindingSite.png" alt="Cartoon drawing of Mst-CopC Cu2+ binding site rendered using PyMOL">
+          <div class="caption">Figure 4. Cartoon drawing of Mst-CopC Cu<sup>2+</sup> binding site rendered using PyMOL.</div>
+          <img src="https://2020.igem.org/wiki/images/b/bc/T--Waterloo--Engineering_Research_PssCopCBindingSite.jpg" alt="Cartoon drawing of Pss-CopC Cu2+ binding site rendered using PyMOL">
+          <div class="caption">Figure 5. Cartoon drawing of Pss-CopC Cu<sup>2+</sup> binding site rendered using PyMOL. </div>
+          <p>When analyzed on PyMOL, it was evident that the Cu<sup>2+</sup> binding site in Pss-CopC was profoundly larger than the Cu<sup>2+</sup> binding site in Mst-CopC. It appears as though in Mst-CopC, the Cu<sup>2+</sup> ion exhibits a rather tight fit, coordinated by three critical residues (and an axial water molecule). However, in Pss-CopC, there is a great distance between the critical Cu<sup>2+</sup> binding residues, which may explain why Pss-CopC is reported to bind other, larger ions in this site. </p>
+          <p>Due to the significant size difference in binding sites, it was concluded that the reported observation of competing ions in Pss-CopC was an unlikely concern for Mst-CopC. Therefore, modifications to decrease the Cu<sup>2+</sup> binding site was deemed a rather ineffective method to make significant changes in binding specificity of Mst-CopC.</p>
+          <h2>Idea: Decreasing Ni<sup>2+</sup> Affinity</h2>
+          <p>Literature shows that the active sites of many copper and nickel binding proteins are very similar in structure and composition (Sudan, et al., 2015). This means that many copper binding proteins also show affinity for nickel. This would be undesirable since the copper we recovered from our reactor column would be contaminated with nickel. For this reason, we considered rational design approaches to decrease Ni<sup>2+</sup> affinity. </p>
+          <p>The first approach used to decrease Ni<sup>2+</sup> affinity to perform a multiple sequence alignment of both copper- nickel-binding proteins. Comparing these two MSAs gave the team a better understanding of the active sites of both copper- and nickel-binding proteins, as well as more tools to further increase CopC&#39;s copper selectivity.</p>
+          <p>Comparing the structure and layout of copper- and nickel- binding proteins gave us more insights into the structure and functionality of each type of protein. First, most copper-binding proteins had coordinating residues centered around amino acids 175 to 200 of the consensus sequence. On the other hand, nickel-binding proteins had coordinating residues centered around amino acids 500 to 550 of the consensus sequence. This means that nickel-binding coordinating residues tend to be closer to the C-terminus of the protein in comparison to copper-binding proteins. Additionally, Ni-binding active sites tended to consist of 3 or 4 amino acids, while most Cu-binding active sites consisted of 5-7 amino acids.</p>
+          <img src="https://2020.igem.org/wiki/images/8/88/T--Waterloo--Nickel_MSA.png" alt="Multiple sequence alignment of nickel-binding proteins">
+          <div class="caption">Figure 6. Multiple sequence alignment of nickel-binding proteins</div>
+          <img src="https://2020.igem.org/wiki/images/e/e4/T--Waterloo--Engineering_MSA_copper_binding.png" alt="Figure 7. Multiple sequence alignment of copper binding proteins">
+          <div class="caption">Figure 7. Multiple sequence alignment of copper binding proteins. </div>
+          <p>(MSAs were performed on Geneious using the Clustal Omega algorithm. Residues were coloured based on hydrophobicity, where a scale of red to blue = most hydrophobic to least hydrophobic. Binding residues were annotated in brown under each amino acid sequence.)</p>
+          <p>Additionally, the nickel affinity of a protein can be regulated through the manipulation of the coordination geometry formed by the coordinating residue and the Ni(2+) ion (Sudan, et al., 2015). For example, after extensive PyMol modelling, Sudan, et al. determined that practically all tripeptide nickel-coordinating residues exhibited trigonal pyramidal geometry when bound to a Ni 2+ion. By having a tripeptide coordinating residue that exhibits any other coordination geometry, it is possible to significantly reduce the nickel affinity of the desired protein.</p>
+          <p>With these concepts in mind, two changes were proposed to decrease copC&#39;s Ni(2+) affinity.</p>
+          <ol>
+            <li>Changing D105 to E105 (residue 83)</li>
+          </ol>
+          <ul class="left">
+            <li>Glutamic acid has a similar structure to aspartic acid, but the R chain is one carbon longer.</li>
+            <li>This makes sense since Ni has a slightly larger atomic radius compared to copper (1.49 Å vs 1.45 Å, respectively.)</li>
+          </ul>
+          <ol start="2">
+            <li>Switching S103 changed to H103 (residue 81)</li>
+          </ol>
+          <ul class="left">
+            <li>Creates square pyramidal geometry</li>
+            <li>According to Sudan, R et al. (2015) practically all Ni (2+)-binding tripeptide coordinating residues Ni exhibited <i>trigonal pyramidal geometry. </i></li>
+            <li>Since it has a different coordination geometry to the one needed to bind Ni, it is likely to drastically decrease nickel affinity. </li>
+          </ul>
+          <h2>Idea: Increasing Nickel Affinity</h2>
+          <p>The past several approaches discuss strategies for decreasing CopC’s affinity toward other metals and increasing the affinity toward copper. This would serve to increase copper specificity, resulting in greater purity of the recovered copper. However, we also thought about changing CopC’s specificity preference to other metals. This would be useful for building an industrial process to treat wastes containing these other metals. Here, we describe research into changing CopC’s specificity preference to nickel. </p>
+          <p>Cu<sup>2+</sup> ions bonding distances occur between 2.0 to 2.6 Å and Ni<sup>2+</sup> between 1.8 to 2.4 Å, which is a very narrow range to optimize for one ion over the other (Balakrishnan et al., 1997). Interchanging copper and nickel binding may change the entire architecture of the binding site as shown in Balakrishnan et al. by inducing changes to the protein structure causing residues to flip out of the active site being replaced by water molecules, potentially to make a smaller pocket for binding (Balakrishnan et al., 1997). For these reasons that nickel has very similar active site size and that nickel can entirely change the active site conformation in a protein, increasing nickel affinity was deemed an unrealistic goal via rational protein design (Balakrishnan et al., 1997). It would be extremely difficult to predict the outcome of binding a new metal in a mutated active site without experimental data. </p>
+          <h1>Design</h1>
+          <p>For the “Design” phase, we use rational protein design and the knowledge developed during the “Imagine” phase to propose specific changes to Mst-CopC that might improve copper binding. </p>
+          <h2>Rational Protein Design</h2>
+          <p>Rational protein design was used to improve copper affinity in the Methylosinus trichosporium (Mst) CopC protein. Mst-CopC’s three dimensional structure determined by Lawton et al. was used as a starting point to begin selecting key residues involved in copper coordination and binding. This was done by analyzing residues adjacent to the copper ion included in the crystal structure that were close enough to aid in direct coordination of the ion. Further insight was obtained by Lawton et al. which showed that two histidines, one aspartic acid, the N-terminus and a water molecule were the primary residues involved in Cu<sup>2+</sup> binding (Lawton et al., 2016). These residues were visualized in PyMOL and adjustments were made using the mutagenesis and measurement tool to determine possible amino acid substitutions that could be made to enhance the binding site affinity for Cu<sup>2+</sup> ions. </p>
+          <h3>Key Residues Involved in Cu<sup>2+</sup> Binding</h3>
+          <p>It was made clear early in designing this protein that histidine, aspartic acid and glutamic acid are key binding residues with histidine’s negatively charged imidazole and the two acids’ negatively charged and deprotonated carboxyl groups at a pH above 7 (Včeláková et al., 2004). Mutations to histidine, aspartic acid and glutamic acid were made and analyzed in PyMOL using the measurement tool to ensure that the most plausible variants of the mutation would not jeopardize the size of the Cu<sup>2+</sup> binding pocket. Some Recommendations for Single Mutations Included:</p>
+          <ul>
+            <li>Changing S81 to H81 or E81 to provide additional binding in the lower portion of the binding pocket, build upon the square planar geometry of the original protein and provide an additional point of attraction  (Lawton et al., 2016). </li>
+          </ul>
+          <img src="https://2020.igem.org/wiki/images/6/60/T--Waterloo--Engineering_MutationsResidue81.png" alt="S81 to H81 or E81">
+          <div class="caption">Figure 8. S81 to H81 or E81.</div>
+          <ul>
+            <li>Changing D83 to H83 to provide another imidazole group to the square planar binding residues since histidine seems to be absolutely essential in CopC Cu<sup>2+</sup> binding domains (Lawton et al., 2016). </li>
+            <li>Changing D83 to E83 in attempt to decrease the size of the binding pocket to potentially push the Cu<sup>2+</sup> ion further into the binding pocket and coordinate more binding residues (Cordero et al., 2008)</li>
+          </ul>
+          <img src="https://2020.igem.org/wiki/images/6/60/T--Waterloo--Engineering_MutationsResidue81.png" alt="Figure 9. D83 to H83 or E83.">
+          <div class="caption">Figure 9. D83 to H83 or E83.</div>
+          <ul>
+            <li>Change G28 to H28 to provide additional binding in the lower portion of the binding pocket, build upon the square planar geometry of the original protein and provide an additional point of attraction </li>
+          </ul>
+          <img src="https://2020.igem.org/wiki/images/9/9c/T--Waterloo--Engineering_MutationsResidueG28H.png" alt="Figure 10. G28 to H2"> 
+          <div class="caption">Figure 10. G28 to H28. </div>
+          <ul>
+            <li>Change S82 to E82 in attempt to pull the binding site down towards the protein more and increase the points of attraction</li>
+          </ul>
+          <img src="https://2020.igem.org/wiki/images/a/ac/T--Waterloo--Engineering_MutationsResidue82.png" alt="Figure 11. S82 to E82"> 
+          <div class="caption">Figure 11. S82 to E82.</div>
+          <ul>
+            <li>Change H85 to D85 in attempt to increase the size of the binding pocket to decrease nickel affinity and allow for deeper copper binding in the pocket which would be stabilized by mutations deep in the pocket (Balakrishnan et al., 1997). </li>
+          </ul>
+          <img src="https://2020.igem.org/wiki/images/1/1a/T--Waterloo--Engineering_MutationsResidue85.png" alt="Figure 12. H85 to D85">
+          <div class="caption">Figure 12. H85 to D85. </div>
+          <p>Sequence comparison between Psf-CopC and Mst-CopC was done since Psf-CopC has a higher Cu<sup>2+</sup> affinity than Mst-CopC, but unfortunately no published three dimensional structure (Lawton et al., 2016). Most mutation suggestions were made based on residues within the binding domain or residues that were highly prevalent across all or the majority of Psf-CopC variants. These mutations included; I86 to K86, V87 to T87, G28 to E28, Y34 to F34 and F3 to H3.</p>
+          <img src="https://2020.igem.org/wiki/images/a/af/T--Waterloo--Engineering_MutationsResidue86.png" alt="Figure 13. I86 to K86.">
+          <div class="caption">Figure 13. I86 to K86. </div>
+          <img src="https://2020.igem.org/wiki/images/4/48/T--Waterloo--Engineering_MutationsResidue87.png" alt="Figure 14. V87 to T87.">
+          <div class="caption">Figure 14. V87 to T87. </div>
+          <img src="https://2020.igem.org/wiki/images/3/3b/T--Waterloo--Engineering_MutationsResidueG28E.png" alt="Figure 15. G28E">
+          <div class="caption">Figure 15. G28E. </div>
+          <img src="https://2020.igem.org/wiki/images/2/25/T--Waterloo--Engineering_MutationsResidue34.png" alt="Figure 16. Y34F.">
+          <div class="caption">Figure 16. Y34F. </div>
+          <img src="https://2020.igem.org/wiki/images/f/fb/T--Waterloo--Engineering_MutationsResidue3.png" alt="Figure 17. F3H.">
+          <div class="caption">Figure 17. F3H.</div>
+          <h2>Analysis of Single Mutations and Recommendations For Further Improvements </h2>
+          <p>Results from Rosetta (see Build below) gave an energy score for the single mutations made to the protein. These mutations were used to design a heat map (see Build below) to aid in determining multiple mutations that could be made to the protein to achieve a relaxed, low energy protein while still keeping key amino acid residues to coordinate Cu<sup>2+</sup> binding. Suggestions from the heat map analysis were reviewed in PyMOL and double mutations were recommended </p>
+          <h3>Recommendations for Multiple Mutations Included</h3>
+          <ul>
+            <li>H85 to D85 and S82 to E82 </li>
+            <li>S82 to E82 and F3 to H3</li>
+            <li>V87 to T87 and F3 to H3 </li>
+            <li>Y34 to F34, F3 to H3, S81 to D81 and H85 to D85</li>
+            <li>Y34 to F34, F3 to H3 and S81 to D81</li>
+            <li>H85 to D85, V87 to T87, I86 to K86 and G28 to E28</li>
+          </ul>
+          <p>These recommendations were developed on the same basis as the single mutations except Rosetta results were used in addition to aid in determining which single mutations provided a more energetically stable protein and could be used in combination to make energetically favourable multiple mutation proteins. </p>
+          <h1>Build</h1>
+          <p>For the “Build” stage, we use the protein modelling software Rosetta to create the mutated proteins chosen in the “Design” stage, and perform a preliminary check for copper affinity. </p>
+          <h2>Rosetta - A Protein Design Tool</h2>
+          <p>To analyze the proposed design changes from the rational design process, software tools were used to provide initial analysis and modelling of the structure. Among various computational protein design platforms, Rosetta was chosen for redesigning the structure and conducting energy analyses. The Rosetta software suite offers algorithms and protocols for macromolecular structure prediction and analysis of protein structures (Leaver-Fay et al., 2011). As a unified software package, it provides a wide range of tools suited for the project: to redesign the protein structure that has an increased binding affinity for Cu<sup>2+</sup> (Kaufmann, Lemmon, DeLuca, Sheehan &amp; Meiler, 2010). </p>
+          <p>Within the Rosetta software suite, the tasks and operations within the libraries are combined as algorithms called <b>protocols</b>. Some of protocols’ major functionalities include protein structure prediction, protein docking, protein design and energy scoring analysis. In this project, the structure of the original protein is known, therefore only energy scoring functions and the protein design protocols are used to assess how the residue-specific mutations increase stability and binding affinity (Leaver-Fay et al., 2011). Some specific functions such as Relax, a protocol for simple all-atom refinement of input structure, and Point Mutant Scan Application, a protocol for mutating the protein structure at specific residues and analyzing its stability, are used in the rational design process (&quot;Applications for Macromolecule Design&quot;, 2020). </p>
+          <h2>Protein Mutation Procedure</h2>
+          <p>Using the Rosetta official documentation and the <a href="http://2016.igem.org/wiki/images/b/b6/TUE_Rosetta_beginners_guide.pdf">Rosetta Guide for the iGEM beginner</a> made by Team iGEM Technion and iGEM TU Eindhoven 2016, a structure analysis procedure was developed. The protocols mentioned in the following steps are written in a shell script.</p>
+          <ol>
+            <li>Obtain the original Protein Data Bank (PDB) file of the Mst-CopC structure. (It is accessible from RCSB PDB.)</li>
+            <li>Prepare the structure.
+              <ol>
+                <li>Clean the PDB file while keeping the ligand. (This removes the information in PDB that Rosetta doesn’t use. (&quot;How to prepare structures for use in Rosetta&quot;, 2020))</li>
+                <li>Run Relax protocol. (This reduces minor steric clashes in the protein-ligand complex. Running this protocol ensures the structure is at its most stable form before making mutations (&quot;Relax application&quot;, 2020).) </li>
+              </ol>
+            </li>
+            <li>Point mutant scan application. (Though the algorithm can scan for point mutants for given residues and determine the change in Gibbs free energy a mutation causes, a mutant file can be used to specify the mutants on specific residues determined in the rational design phase.)</li>
+            <li>Energy scoring analysis for the overall structure and residue-specific energy breakdown. (Residue specific energy and overall energy information will be produced as outputs along with mutated PDB files in step 3.)</li>
+          </ol>
+          <p>At step 2.2 Relax and step 3 Point Mutation, relaxed and mutated protein structures will be produced as PDB files along with the energy score of each output. The scoring function in Rosetta is an optimized energy function that calculates the energy of all atomic interactions in a globular protein (&quot;Scoring Tutorial&quot;, 2020). The score is a weighted sum of energy terms, including some representing physical forces like electrostatics and Van der Waal’s interactions and others statistical terms that indicate if the protein structure looks like any known structures (&quot;Scoring Tutorial&quot;, 2020). A complete list of energy terms and weights used in the scoring function can be found on the <a href="https://www.rosettacommons.org/demos/latest/tutorials/scoring/scoring">Rosetta Scoring Tutorial Documentation</a>. Therefore, instead of presenting the scores in physical energy units like kcal/mol, a custom Rosetta Energy Units (REU) is used due to the presence of the statistical terms. This score allows us to compare stability between scored structures. The lower the score, the more stable a structure is, which is sufficient to evaluate the relative stability of the mutated CopC-Cu<sup>2+</sup> candidates.</p>
+          <h2>Results </h2>
+          <h3>Single residue mutation</h3>
+          <p>The table below shows the overall energy scores in REU and energy term breakdown for all protein candidates mutated on a single residue. The first column of the table indicates the mutation applied to the structure: 5icu is the PDB ID for Mst-CopC, and mutation code &lt;original amino acid&gt;&lt;residue number&gt;&lt;new amino acid&gt; follows the ID. </p>
+          <p>As seen below, the original score of the protein is -320.377. The mutated proteins are sorted in ascending total scores, meaning that they are ordered in decreasing stability. Among all candidates, only the mutation from histidine to aspartic acid at residue 85 (H85D) produced a lower energy score than the original structure. However, most candidate’s scores are between -320 to -290, which means most candidates are relatively stable after mutation and molecular dynamic analysis can be done to further analyze the candidates.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>description</th>
+                <th>total_score</th>
+                <th>description</th>
+                <th>total_score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5icu</td>
+                <td>-320.377</td>
+                <td>5icu.L80D</td>
+                <td>-310.078</td>
+              </tr>
+              <tr>
+                <td>5icu.H85D</td>
+                <td>-327.949</td>
+                <td>5icu.L80V</td>
+                <td>-308.632</td>
+              </tr>
+              <tr>
+                <td>5icu.Y34F</td>
+                <td>-319.826</td>
+                <td>5icu.V79D</td>
+                <td>-308.15</td>
+              </tr>
+              <tr>
+                <td>5icu.F3H</td>
+                <td>-319.02</td>
+                <td>5icu.H85I</td>
+                <td>-304.996</td>
+              </tr>
+              <tr>
+                <td>5icu.S82E</td>
+                <td>-318.491</td>
+                <td>5icu.G29D</td>
+                <td>-299.658</td>
+              </tr>
+              <tr>
+                <td>5icu.V5K</td>
+                <td>-318.478</td>
+                <td>5icu.D83E</td>
+                <td>-298.052</td>
+              </tr>
+              <tr>
+                <td>5icu.I86E</td>
+                <td>-318.333</td>
+                <td>5icu.V79E</td>
+                <td>-297.659</td>
+              </tr>
+              <tr>
+                <td>5icu.I86K</td>
+                <td>-317.939</td>
+                <td>5icu.V79L</td>
+                <td>-295.35</td>
+              </tr>
+              <tr>
+                <td>5icu.I86H</td>
+                <td>-317.353</td>
+                <td>5icu.D83H</td>
+                <td>-291.52</td>
+              </tr>
+              <tr>
+                <td>5icu.H85E</td>
+                <td>-317.217</td>
+                <td>5icu.D83G</td>
+                <td>-291.469</td>
+              </tr>
+              <tr>
+                <td>5icu.I86D</td>
+                <td>-316.911</td>
+                <td>5icu.V79H</td>
+                <td>-273.441</td>
+              </tr>
+              <tr>
+                <td>5icu.V87T</td>
+                <td>-314.902</td>
+                <td>5icu.S2D</td>
+                <td>-270.366</td>
+              </tr>
+              <tr>
+                <td>5icu.G28D</td>
+                <td>-313.721</td>
+                <td>5icu.S81H</td>
+                <td>-264.303</td>
+              </tr>
+              <tr>
+                <td>5icu.L80E</td>
+                <td>-313.472</td>
+                <td>5icu.G29H</td>
+                <td>-261.843</td>
+              </tr>
+              <tr>
+                <td>5icu.S81D</td>
+                <td>-312.271</td>
+                <td>5icu.S81E</td>
+                <td>-259.4</td>
+              </tr>
+              <tr>
+                <td>5icu.R78H</td>
+                <td>-312.167</td>
+                <td>5icu.G29E</td>
+                <td>-256.144</td>
+              </tr>
+              <tr>
+                <td>5icu.L80H</td>
+                <td>-311.984</td>
+                <td>5icu.S81V</td>
+                <td>-246.804</td>
+              </tr>
+              <tr>
+                <td>5icu.G27S</td>
+                <td>-311.112</td>
+                <td>5icu.G29V</td>
+                <td>-216.733</td>
+              </tr>
+              <tr>
+                <td>5icu.G28H</td>
+                <td>-311.068</td>
+                <td>5icu.S2H</td>
+                <td>-137.613</td>
+              </tr>
+              <tr>
+                <td>5icu.G28E</td>
+                <td>-311.022</td>
+                <td>5icu.S2E</td>
+                <td>-99.242</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="caption">Table 1. Rosetta energy scores for the original Mst-CopC “5icu” and mutated candidates.</div>
+          <p>The complete table of results is found <a href="https://2020.igem.org/File:T--Waterloo--Rosetta_Table.pdf">here</a></p>
+          <p>These PDB files also contain per residue energy scores, which can be used to compare the effect each mutation has on each residue. We assembled these scores into heatmaps, where each row corresponds to either a mutation or the original protein, and each column corresponds to a certain residue. This data was difficult to visualize effectively due to the presence of outliers, so certain data transformations were applied to better analyze some aspect of our energy score results. (The heatmap can be found in our github as heatmap_single_relative.png.)</p>
+          <img src="https://2020.igem.org/wiki/images/8/8c/T--Waterloo--heatmap-single-relative.png" alt="Figure 18. Heat map with unmutated protein energy scores subtracted.">
+          <div class="caption">Figure 18. Heat map with unmutated protein energy scores subtracted. </div>
+          <p>One such transformation is the above heatmap, which has subtracted the unmutated proteins energy scores from each mutant (and itself). The resulting scores are therefore relative to the unmutated protein, and show increases or decreases in score, aiding one in finding whether a mutation is beneficial to the energy score of each residue.</p>
+          <img src="https://2020.igem.org/wiki/images/e/e1/T--Waterloo--heatmap-single-scaled.png" alt="Figure 19. Heat map with each column scaled to itself.">
+          <div class="caption">Figure 19. Heat map with each column scaled to itself.</div>
+          <p>Seen above is another heatmap, except that each column has been scaled to the range [0, 1], highlighting changes in energy score. Unlike the previous heatmap, it does not indicate the scale of these changes.</p>
+          <p>Note that in both heatmaps the rows and columns have the same labels, and represent the same things, only the values contained within the map itself have been modified. </p>
+          <p>Using these heatmaps, it is possible to rationally select mutations to simultaneously apply in order to further reduce the overall energy scores. Possible next steps include applying a logarithmic scale to better differentiate between the values in the heatmap.</p>
+          <h3>Double residue mutations</h3>
+          <p>To determine a suitable combination of two mutations, it is computationally feasible to simply run all possible pairs of mutations from our set of rationally selected single mutations. The overall energy scores of each of these “double mutants” was also assembled into a heatmap, as an efficient method of comparing all of these mutants at once.</p>
+          <img src="https://2020.igem.org/wiki/images/5/5d/T--Waterloo--heatmap-double.png" alt="Figure 20. Heat map of double residue mutations.">
+          <div class="caption">Figure 20. Heat map of double residue mutations.</div>
+          <p>Each row and column respond to a particular mutation, with each intersection representing both mutations applied together. The symmetry appears to be inexact, a phenomenon which was likely due to how Rosetta applies multiple mutations.</p>
+          <p>Based on the results from Rosetta and analyzing heatmaps, a list of optimal candidates is compiled. These mutated candidates will be further assessed using more detailed molecular dynamic analysis. </p>
+          <p>The list of mutations passed onto MD included: 
+            <ul>
+              <li>D83E</li>
+              <li>F3H</li>
+              <li>G28E</li>
+              <li>H85D</li>
+              <li>I86K</li>
+              <li>S82E</li>
+              <li>S82E, F3H</li>
+              <li>F3H, V87T</li>
+              <li>H85D, S82E</li>
+              <li>Y34F, F3H, S81D</li>
+              <li>H85D, V87T, I86K, G28E</li>
+              <li>Y34F, F3H, S81D, H85D</li>
+            </ul>
+          </p>
+          <h1>Test</h1>
+          <p>For the “Test” phase, we use molecular dynamics to further evaluate the copper affinity of the most promising Mst-CopC mutants developed in the “Build” stage. </p>
+          <p>Molecular dynamics was used to test the relative binding affinities of these candidate proteins. We used GROMACS (Berendsen et al., 1999) along with the Charmm36 (Vanommeslaeghe et al., 2010) force field parameters which include parameters for copper ions in solution. This allows us to estimate the total interaction energy between the copper ion and the protein, and using the relative magnitudes of these interaction energies allows us to compare the strength of binding. Molecular dynamics provides a more rigorous method for comparing binding strength due to the fact that a molecular dynamics simulation takes into account the motion of every individual atom in the system and their interactions.</p>
+          <p>All GROMACS simulations were run on the Graham computing cluster hosted by ComputeCanada.</p>
+          <p>In order to implement a molecular mechanics simulation, the protein pdb files were converted to the gromacs format using Charmm-GUI, an online tool developed in order to construct topology files and parameter files for proteins using the Charmm force field. Once the required files were attained, the system was placed in solution in a process known as solvation, and the charge in the system was balanced by introducing faraway sodium or chloride ions. The system then undergoes an energy minimization process in which the protein and copper ion are restrained while the solvent molecules settle into place. This avoids extreme behaviour that could occur due to collisions between molecules. The thermodynamics of the system is then set up using standard NVT and NPT equilibration procedures in GROMACS, and then the final simulation is run. </p>
+          <p>A typical ten nanosecond simulation was performed for each candidate protein. The results are found in the table below.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Total Interaction Energy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mst-CopC</td>
+                <td>-540.6373 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>H85D</td>
+                <td>-1278.448 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>F3H</td>
+                <td>-563.9996 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>G28E</td>
+                <td>-607.4388 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>I86K</td>
+                <td>-586.829 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>S82E</td>
+                <td>-588.4093 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>D83E-V87T</td>
+                <td>-853.725 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>H85D-S82E</td>
+                <td>-1392.7281 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>H85D-V87T-I86K-G28E</td>
+                <td>-1246.7286 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>S82E-F3H</td>
+                <td>-557.0123 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>Y34F-F3H-S81D</td>
+                <td>-1145.2119 kJ/mol</td>
+              </tr>
+              <tr>
+                <td>Y34F-F3H-S81D-H85D</td>
+                <td>-1698.6439 kJ/mol</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="caption">Table 2. Molecular dynamics interaction energies for the original Mst-CopC and selected mutation candidates. </div>
+          <p>From the table of results we can see that candidate Y34F-F3H-S81D-H85D has the highest relative binding affinity when compared to Mst-CopC, with a 3.14 improvement in total interaction energy over the original Mst-CopC.</p>
+          <img src="https://2020.igem.org/wiki/images/1/13/T--Waterloo--GROMACS_GIF.gif" alt="Animation of copper in H85D binding site">
+          <div class="caption">Animation of copper in H85D binding site</div>
+          <p>The above animation shows the copper ion in the H85D binding site. This animation was produced using VMD, a free software tool for visualizing molecular dynamics simulations.</p>
+          <h2>Learn</h2>
+          <p>For the “Learn” stage, we discuss the results of our Rosetta and molecular dynamics modelling and what they mean for the success of our engineered proteins. </p>
+          <p>The energy score of the Y34F, F3H and S81D mutant in Rosetta was slightly higher than the original Mst-CopC energy score which was surprising considering there was a significant decrease in the total interaction energy, seen in Table 2 above. A similar incident occurred in the H85D, V87T, I86K and G28E where the mutated protein has a higher energy score in Rosetta, however when run in MD the total interaction energy was again significantly reduced. The H85D and S82E double-mutation was very comparable across Rosetta and MD with significant reductions in both the energy score and total interaction energy. The mutation with the lowest total interaction energy; Y34F, F3H, S81D and H85D, had a very comparable energy score in Rosetta, however when run in MD, there was a significant reduction in the total interaction energy. This seems to be a common trend in Rosetta where the energy score is within +/-20 of the original Mst-CopC and then when analyzed in MD it had a significantly reduced total interaction energy.</p>
+          <p>There is no significant trend between the Rosetta scores and the interaction energies as shown in the plot below. All mutated proteins analyzed on GROMACS have rosetta scores ranging from -290 REU to -327 REU, where some of them are slightly higher than the original Mst-CopC (-320 REU). However, as shown in the interaction energy table, all the analyzed proteins have lower energy than the original Mst-CopC, which indicates that the mutated structures are more stable than the original. This suggests that Rosetta, although does not always correlate with interaction energy, is a useful tool to narrow down the list of rational design mutation candidates and provide an initial estimate to the stability of the mutated protein. Molecular dynamic analysis, which is more time consuming than the Rosetta analysis, is needed to further analyze a subset of selected candidates.</p>
+          <img src="https://2020.igem.org/wiki/images/3/3e/T--Waterloo--Rosetta_MD_graph.png" alt="Figure 21. Rosetta vs MD scores">
+          <div class="caption">Figure 21. Plot of Rosetta energy scores and molecular dynamics total interaction energies for each protein, showing no correlation.</div>
+          <p>Single and double mutations that included I86 to K86, V87 to T87, G28 to E28, Y34 to F34 and F3 to H3 were suggested with inspiration from Psf-CopC, since it has a higher binding affinity than Mst-CopC (Lawton et al., 2016). These residues are not key binding residues, but rather are more likely to be involved in the positioning of the key residues and arranging the protein’s backbone (Lawton et al., 2016). These mutations were used in combination with other mutations that were designed to improve Cu<sup>2+</sup> binding. In Table 2 above, it can be observed that the single mutations by themselves do not reduce the total interaction energy, but are more effective when used in combination. </p>
+          <p>G28E, S81D and S82E were designed to specifically target residues that are key in Cu<sup>2+</sup> binding. These residues were mutated to residues with a more negative charge at a neutral pH to aid in coordination of the positive copper ion. Adding in additional points of attraction from the original 4 in a square planar geometry would allow for a redesign of the coordination geometry to include more coordination ligands (Lawton et al., 2016). </p>
+          <p>H85D proved to be an advantageous mutation for Cu<sup>2+</sup> binding. H85D was originally selected to try and increase the outer rim diameter size of the binding pocket since histidine is significantly larger than aspartic acid. This increase in the rim diameter would potentially allow for the Cu<sup>2+</sup> to penetrate deeper into the protein itself, instead of being mostly exterior. The semi-internalization of the Cu<sup>2+</sup> ion would increase the coordination of the ion and increase binding affinity. There was hesitancy in selecting H85D since it is highly conserved across many CopC proteins from many different organisms. However, the Rosetta scores indicated that this mutation could not be overlooked and it was analyzed further. The total interaction energy for H85D was significantly reduced compared to the original CopC protein. Thus, this mutation was used in combination in subsequent multi-mutation proteins and the results continued to be promising. </p>
+          <p>Inspiration drawn from Psf-CopC seems to have been useful for improving Mst-CopC’s binding affinity. Specific mutations included; Y34F, F3H, S81D and H85D. These mutations in combination produced a protein with a total interaction energy significantly lower than any other protein designed (see molecular dynamic results for data). It is suspected that the Cu<sup>2+</sup> ion will now interact with more ligands due to the additional negatively charged aspartic acid at residue 81. This residue may be even more critical to the stability of the Cu<sup>2+</sup> ion after the mutation from histidine to aspartic acid at residue 85 since this may increase the size of the binding pocket and allow for deeper Cu<sup>2+</sup> ion penetration into the pocket. </p>
+          <img src="https://2020.igem.org/wiki/images/a/ae/T--Waterloo--Engineering_mutatedmstcopc.png" alt="Figure 22. Pink shows the original Mst-CopC and green shows the mutated Y34F, F3H, S81D and H85D Mst-CopC.">
+          <div class="caption">Figure 22. Pink shows the original Mst-CopC and green shows the mutated Y34F, F3H, S81D and H85D Mst-CopC.</div>
+          <h1>Improve</h1>
+          <p>For the “Improve” stage, we reflect on the successes and failures of the approach used in the previous stages and suggest further work that could be done to develop even better Mst-CopC mutants. </p>
+          <p>Time constraints limited the number of protein candidates that we were able to investigate with Rosetta and molecular dynamics. We would therefore like to investigate as many protein candidates as possible. We would specifically like to run single-mutation proteins with V87T, D83E, S81D, and Y34F on molecular dynamics. We did run candidates that included these mutations along with other mutations, but running single mutation proteins would allow us to better understand the effects of these mutations on copper binding. We would also like to run Rosetta and molecular dynamics on Psf-CopC. Since many of our suggested mutations were inspired by Pst-CopC, it would be interesting to determine the interaction energy of the Psf-CopC protein itself. These experiments would provide further insight into our understanding of CopC and its copper binding, allowing us to make more informed design choices. </p>
+          <p>More generally, we can continue to explore the functionalities that Rosetta provides. In this project, the Rosetta scores calculated indicate overall stability of the protein-ligand complex. An additional protocol that we could have investigated is LigandDocking, which takes a receptor structure (typically a protein) and a small molecule, and tries to find a conformation that minimizes the Rosetta score function (&quot;Ligand_Dock Application&quot;). This protocol can be more useful in analyzing the binding affinity of the ligand-protein complex. We can also research additional software tools that analyze metal protein docking. Moreover, we only scored Mst-CopC in Rosetta and GROMACS in our project, but it may be useful to compare Psf-CopC energy scores with Mst-CopC. </p>
+          <p>Lastly, the only way that we can truly determine the success of our designs is to test them experimentally. Each CopC mutant should be heterologously expressed in <i>E. coli</i> and its copper affinity evaluated using the strategies discussed on the measurement page. The results of these experiments would provide useful validation of the predictions made by Rosetta and molecular dynamics, allowing us to further refine these predictions for future work. </p>
         </div>
 
-        <input type="range" min="10" max="40">
+				<div class="fusion">
+					FUSION PROTEIN
+				</div>
 
-        <p class="resizefont"> Testing the speaking feature now. </p>
+				<div class='info'>
+          <h1>Research</h1>
+          <h2>Cellulose Binding Module Selection</h2>
+          <p>To enable our fusion protein to bind cellulose in the column for metal ion capture, we screened common cellulose binding module candidates for desirable characteristics that would serve this function. Notably, CBM2a, CBDct, Cel7a and CelK were considered in the design process of our engineered protein. </p>
+          <p>CBDct is a cellulose binding module that has been used by other iGEM teams and is found on the iGEM Parts Registry. While this supports its functionality, apart from its detailed account of use in iGEM-based projects, it is not as well characterized in literature as CBM2a, for example. </p>
+          <p>Cel7a is a Type I cellulose binding module and is considered an attractive candidate to serve as an anchoring moiety as it boasts a high binding affinity for cellulose (Griffo et al., 2019). There are, however, conflicting reports of whether this module binds reversibly or irreversibly (Jalak &amp; Väljamäe, 2014; Maurer, 2012). </p>
+          <p>CelK, another candidate, is a Type III cellulose binding module that was considered but ultimately rejected as it dimerizes under 4°C conditions (Kataeva, Seidel, Li, &amp; Ljungdahl, 2001). Dimerization of the CBM tags would risk aggregation of the fusion protein in the column and therefore lead to unsuccessful capture of the metal ions. </p>
+          <p>CBM2a was selected as the cellulose binding module for our fusion protein for a number of advantages it poses over the alternatives described above. CBM2a is a Type II, irreversible cellulose binding module derived from <i>Cellulomonas fimi</i> and is commonly reported in literature used in recombinant proteins as a fusion tag (McLean et al., 2000; Rodriguez et al., 2004). For its purposes of fixing the fusion protein onto the column to filter metal ions, the CBM would have to exhibit irreversible binding such that the protein does not dissociate from the column during this process. This module is highly characterized, defined as 110 amino acids long and consists of 2 sheets of 𝛽-sheets in a barrel-type backbone (McLean et al., 2000). Its binding to cellulose is mediated by multiple residues on its binding face, notably three highly conserved solvent-exposed Trp residues (McLean et al., 2000).</p>
+          <h2>Reviewing the Stability of Cellulose</h2>
+          <p>For a successful cellulose packed column, the cellulose must be stable in a variety of conditions such that it does not break down to the point that CBM2a cannot bind it. As a result, we searched literature regarding the stability of cellulose in various conditions.</p>
+          <p><b>Acidic Stability</b></p>
+          <p>At the microcrystalline level, cellulose contains amorphous and crystalline regions (Ioelovich, 2017). In acidic conditions, acid hydrolysis can occur such that the amorphous regions of microcrystalline cellulose are degraded, leaving the smaller crystalline cellulose units intact  as nanocrystalline cellulose (Ioelovich, 2017). CBM2a binds crystalline regions of cellulose, so we expect that CBM2a will successfully bind cellulose even if it has been degraded to its nanocrystalline form by acid hydrolysis (McLean et al., 2000).</p>
+          <p><b>Alkaline Stability</b></p>
+          <p>In a long-term study of cellulose stability in cementitious radioactive waste at pH 13.3, it was shown that complete cellulose degradation in alkaline conditions would take well over 100 years (Glaus &amp; Van Loon, 1970). Another study showed that the amorphous regions of cellulose were more reactive and prone to degradation in alkaline conditions (Li et al., 2017). However, since CBM2a only binds to cellulose’s crystalline regions, alkaline degradation of the amorphous regions should not impede CBM2a binding (McLean et al., 2000). Considering these studies, we can conclude that alkaline degradation of cellulose poses no problems for CBM2a binding in our column reactor.</p>
+          <p><b>Thermal Stability</b></p>
+          <p>Thermal degradation of cellulose only begins between 200˚C-300˚C, depending on the source of cellulose (Trache et al., 2014). Given that the column processes aqueous effluent, it’s safe to assume that our column will not be dealing with temperatures within this range, so thermal degradation of cellulose will not be an issue.</p>
+          <p>From this research, we concluded that cellulose should remain stable within the process conditions expected for a column treating metal-finishing effluent. Any degradation that occurs would not be enough to compromise the functionality of the column.</p>
+          <h1>Design</h1>
+          <h2><i>E. coli</i> Expression Strain</h2>
+          <p><i>E. coli</i> BL21 (DE3) was chosen as the expression strain for the designed proteins since it is generally used as an all purpose strain and in protein expression. It also lacks lon and ompT proteases, which helps limit degradation of recombinant proteins. Additionally, it contains T7 polymerase to be used with an IPTG inducible-T7 promoter.</p>
+          <h2>Assembly of Fusion Protein</h2>  
+          <p>The three parts we submitted to the registry for the Engineering silver medal are:</p>
+          <ol>
+            <li>Mst-CopC (copper-binding), <a href="http://parts.igem.org/Part:BBa_K3381002">BBa_K3381002</a></li>
+            <li>Mst-CopC-CBM2a, <a href="http://parts.igem.org/Part:BBa_K3381005">BBa_K3381005</a></li>
+            <li>Improved Mst-CopC-CBM2a, <a href="http://parts.igem.org/Part:BBa_K3381006">BBa_K3381006</a></li>
+          </ol>
+          <p>For more information on the design of the fusion protein sequences, please visit the design subpage of their parts registry entries.</p>
+          <h2>TEV Protease Site Specificity</h2>
+          <p>TEV protease is a commonly used enzyme in protein purification protocols to cleave affinity tags from proteins as it recognizes the amino acid sequence ENLYFQ/X, where X is typically G or S (Kapust et al., 2002). The extra amino acid X left behind after TEV cleavage can be problematic, as this introduces an extra amino acid into the native protein, which may alter the protein’s biological activity (Kapust et al., 2002). This is especially the case for Mst-CopC, in which the amino group of the N-terminus is directly involved in binding copper (Lawton et al., 2016). Luckily, it has been shown that although X is usually G or S, it can actually be replaced by any amino acid except for proline and TEV protease will still recognize and cleave the site (Kapust et al., 2002). Although this replacement could somewhat compromise cleavage efficiency, replacing X with H (the first amino acid in biologically active Mst-CopC) does not decrease the efficiency tremendously (Kapust et al., 2002). Thus, the recognition sequence in our Mst-CopC fusion protein was changed to ENLYFQ/H so Mst-CopC functions properly after cleavage while maintaining cleavage efficiency (Lawton et al., 2016).</p>
+          <h1>Build</h1>
+          <h2>Construction Plan</h2>
+          <p>The protein expression vector pET 11a from Novagen was chosen since we did not require a cleavable affinity tag as this was already incorporated into the metal binding-CBM fusion parts. Additionally, it contains an IPTG inducible promoter to control expression of the fusion proteins. The parts would be synthesized in their entirety and would be incorporated with standard assembly protocols utilizing the NdeI and BamHI restriction sites, which removes the included T7 affinity tag that was not needed.</p>
+          <h2>Selection of Affinity Tag </h2>
+          <p>After we express our fusion protein, we need to detect and purify it using an affinity tag (Lichty, Malecki, Agnew, Michelson-Horowitz & Tan, 2005). Three affinity tags were considered for our protein: HIS, MBP and GST. Research was conducted on each option.</p>
+          <p><b>HIS</b></p>
+          <ul>
+            <li>Small size, low cost, easy to use (Zhao, Li, &amp; Liang, 2013)</li>
+            <li>Little effect on protein&#39;s native structure (Carson et al., 2007)</li>
+            <li>Purification by immobilized metal-ion affinity chromatography (IMAC) (Lichty, Malecki, Agnew, Michelson-Horowitz, &amp; Tan, 2005)</li>
+            <li>His-tag binds to immobilised nickel or cobalt ions (Scheich, Sievert, &amp; Büssow, 2003)</li>
+          </ul>
+          <p><b>MBP</b></p>
+          <ul>
+            <li>Larger tag</li>
+            <li>Greater influence on protein</li>
+            <li>Positively influence solubility &amp; expression efficiency</li>
+            <li>Size &amp; immunogenicity can complicate downstream application</li>
+            <li>Purified via affinity chromatography on cross-linked amylose resin (Kimple, Brill &amp; Pasker, 2013)</li>
+          </ul>
+          <p><b>GST</b></p>
+          <ul>
+            <li>Larger tag</li>
+            <li>Often increases solubility of fusion protein</li>
+            <li>Purified by affinity chromatography on glutathione Sepharose</li>
+            <li>Very expensive (Kimple, Brill &amp; Pasker, 2013)</li>
+          </ul>
+          <p>GST tags were ruled out as an option due to their expensive price and our lack of experience with them. HIS tags were ultimately selected over MBP tags because they are smaller in size. Given that the metal binding and CBM components of our protein are large, we wanted to avoid further increasing the size of our recombinant protein. Since larger recombinant proteins are at a greater risk of experiencing folding issues, we tried to reduce our protein size where possible (Puetz et. al., 2019)  IMAC columns for HIS-tag affinity purification would be sourced from Cytiva Life Sciences, who provides <a href="https://www.cytivalifesciences.com/en/us/solutions/protein-research/knowledge-center/protein-purification-methods/how-to-combine-chromatography-techniques/his-tagged-protein-purification-protocols">methods</a> for their use.</p>
+          <h1>Test</h1>
+          <p>Although we were unable to access the lab this year due to COVID-19, we researched ways that we would measure the binding affinity of CopC, other metal-binding proteins, and cellulose-binding modules in the lab, as described in our <a href="2020.igem.org/Team:Waterloo/Measurement">Measurement</a> page. We also quantified the binding affinity in-silico, as described above.</p>
+        </div>
+	
+	
+				<div class="pd">
+					PROCESS DESIGN
+				</div>
+				
+				<div class='info'>
+				  <p>Finally, we applied the engineering cycle to the design of our packed column process. We completed the Research, Imagine, and Design steps of the cycle, and planned experiments to build and test our design if we were able to access our lab. </p>
+          <h1>Research</h1>
+          <p>For our “Research” stage, we investigated current metal treatment methods. We selected copper-containing waste from a typical semiconductor manufacturing waste as an example wastestream to treat. </p>
+          <p>Our metal-removal technology will compete with a variety of other aqueous metal waste treatment processes. Some current methods for treating aqueous metal wastes include chemical precipitation, ion exchange, adsorption, and membrane filtration (Fu et al., 2011). Chemical precipitation is particularly widespread because of its relative simplicity and low cost (Fu et al., 2011). In this method, the pH of the metal waste is increased by the addition of a base such as lime, causing the metal ions to precipitate as insoluble hydroxides that can be recovered as solid sludge. Removing water from this sludge can be costly, and the resulting sludge is typically disposed of. This also means that the metals and their value cannot be recovered for other uses. Ion exchange, and membrane filtration are all relatively new technologies with further development required (Fu et al., 2011). For this reason, their costs are often prohibitive for large scale applications. Furthermore, there are few established methods that recover metal ions from industrial wastewaters. For these reasons, we aim to use metal binding proteins to create a novel metal removal process that can quickly, selectively, and cheaply remove metal ions from dissolved wastes. Our process will also allow for metal ions to be recovered and recycled, providing many economic and environmental benefits.</p>
+          <p>Other parts of our project discuss designing of our metal and cellulose binding fusion protein and increasing the binding affinity of Mst-CopC, an example copper-binding protein. However, it is also important to design a suitable industrial process that can use our designed proteins to treat relevant metal wastes. </p>
+          <p>As an example, we will design a reactor to treat copper-containing metal finishing waste at a scale determined to be relevant for a semiconductor manufacturing plant. Metal finishing wastes result from processes including electroplating. In electroplating, metal solutions are used to deposit thin layers of the dissolved metal onto solid surfaces (Arán, 2017). After the process is complete, the remaining solutions must be treated before disposal. Copper is a metal commonly found in metal finishing wastewater, so it is fitting to consider it in our case here (Wei et al., 2013).  </p>
+          <p>However, since dissolved metal wastes are produced by a large variety of industrial processes, the design and modelling process applied here could be used for any other waste stream and dissolved metal(s). </p>
+          <h1>Imagine</h1>
+          <p>For our “Imagine” stage, we brainstormed ways that we could use our metal-binding fusion proteins in large scale industrial applications. We propose a reactor type and the operation stages that would be used. </p>
+          <p>In order to effectively treat large volumes of aqueous waste, we immobilised our cellulose and metal binding fusion protein inside an industrial bioreactor. Some advantages granted by using a bioreactor include: reactor size control and dimension tunability, continuous operation, and a wide variety of sub-types of reactors to base our design off of (Shuler &amp; Kargi, 2002). Furthermore, the bioreactors have long been used for industrial scale processes that operate based on enzymatic or cellular function, so research in this area is well developed. </p>
+          <p>Of the many varieties of bioreactors available, we chose to use a packed column reactor. A packed column reactor consists of a large container filled with some sort of porous packing material, and effluent is fed through the bed, allowing a reactor to occur (Shuler &amp; Kargi 2002). For our reactor, we will use cellulose beads as a packing material. Packed column reactors enable large volumes of waste to be treated in a continuous manner, providing much greater efficiency than batch processes that treat a fixed volume of waste at one time (Shuler &amp; Kargi 2002). For our metal removal application, all removed metal will stay trapped inside the column as waste is fed through. Thus, the metal can be removed at a convenient time, such as during off-peak waste production hours.</p>
+          <p>Since our fusion proteins include a cellulose binding domain that binds cellulose very strongly, the fusion proteins can be immobilised on the cellulose packing by simply feeding them into the column. By immobilising our fusion proteins on the surface of the cellulose packing, we are able to maximize the surface area of reactive sites, thus increasing the treatment rate of the wastewater system. </p>
+          <p>With this general design in mind, we set out to use engineering and modelling tools to decide how to build a suitable reactor to treat our waste stream of interest.</p>
+          <p>We envision that our reactor will operate in two stages:</p>
+          <ol>
+            <li>First, the metal containing wastewater will be flowed through the reactor, allowing the metal in the wastewater to bind to the proteins within. This will produce a stream of clean water that can be discharged to the environment. This is the “binding” stage. </li>
+            <li>Secondly, once the reactor is saturated with metal, we will rinse the reactor with another solution of a different pH, which will cause the metal ions to unbind from the reactor. This will result in a concentrated and pure solution of dissolved metal. This resulting solution could then be recycled for various applications. This is the “elution” stage. </li>
+          </ol>
+          <p>Below is a 3D model that provides an example of our reactor’s general construction. Wastewater will be pumped into the reactor from the bottom, passing through the cellulose packing before exiting through the top of the reactor. </p>  
+          <img src="https://2020.igem.org/wiki/images/a/a0/T--Waterloo--Reactor_Column_Design.jpeg" alt="3D Model of our reactor design">
+          <div class="caption">Figure 23. 3D model of our packed column reactor created using CAD.</div>
+          <h1>Design</h1>
+          <p>For our design stage, we applied computational approaches to model and design our packed column reactor, optimising it to the best of our ability. </p>
+          <h2>Developing our model</h2>
+          <p>We used a variety of mathematical approaches to derive equations that would describe our packed column bioreactor. We eventually found that our reactor would be governed by the following system of differential equations. The solution of this system of differential equations provides useful information for designing our reactor.</p>
+          <p>$$ \frac{dm}{dt} + \vec{v}\cdot \nabla m - D\nabla^2 m = -(\frac{a}{f}) (k_a m (Q-q) - k_d q) $$</p>
+          <p>$$ \frac{dq}{dt} = k_a m (Q-q) - k_d q $$</p>
+          <p>Detailed derivation of these equations and the computational approaches used are described on the <a href="2020.igem.org/Team:Waterloo/Model">model page</a>.</p>
+          <p>Once model equations had been developed, it was necessary to find values for the parameters so that useful results could be computed. These parameters were found directly in literature, or computed from combinations of other parameters. </p>
+          <p>Once model equations had been developed, it was necessary to find values for the parameters so that useful results could be computed. These parameters were found directly in literature, or computed from combinations of other parameters. </p>
+          <p>Parameters are required to describe the scale of the problem that we are trying to address using this reactor. We need to know the volume of waste to be treated per day and the concentration of dissolved copper in that waste. We also need to know the acceptable concentration of dissolved metal in the treatment outflow, so that it can be safely released to the environment.</p>
+          <p>To estimate the amount of copper-containing waste to treat each day, we looked to existing electronics manufacturers that produce metal-finishing wastes. One semiconductor manufacturer in Taiwan reported producing 4.44 million metric tonnes of dissolved metal waste over three manufacturing facilities each year (“TSMC Corporate Social Responsibility Report”, 2019). This would correspond to 1.48 million metric tonnes per year per facility, or about 46.9 L/s at each facility. For this reason, we will design a reactor that can treat an average of 46.9 L/s of waste over the course of each day.  </p>
+          <p>Chiu et al. (1987) states that typical copper concentrations in metal finishing wastewaters can range from 1-30 mg/L. For this reason, we will design our reactor to be able to treat 30 mg/L dissolved copper. </p>
+          <p>The United States Environmental Protection Agency (USEPA) states that the permissible limit for dissolved copper in industrial wastes discharged to the environment is 1.3 mg/L (Al-Saydeh et al., 2017). For this reason, our reactor must be able to reduce the concentration of dissolved copper from 30 mg/L to below 1.3 mg/L. </p>
+          <p>The parameters relevant to the cellulose binding domain and the cellulose packing material are the specific surface area and the surface protein concentration. These were found in McLean (2000) and are listed in the table below. The fraction of volume occupied by cellulose for a typical 3 millimeter diameter packing material is found in (Sen, 2015).</p>
+          <p>Similarly, an equilibrium constant for a variant of CopC was found in Young et al (2015) and a forwards rate constant for a structurally and functionally similar copper binding protein was found in Du, 2013. The equilibrium constant is necessary to determine whether the reaction happens at an appreciable rate relative to the fluid transport speed in the reactor. This rate constant provides an estimate of the reaction timescale which will inform how large our reactor must be.</p>
+          <table>
+						<thead>
+							<tr>
+								<th>Description</th>
+								<th>Variable</th>
+								<th>Value</th>
+								<th>Source</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Input Concentration (Cu)</td>
+								<td>$$m$$</td>
+								<td>30 $$ \frac{mg}{L}$$</td>
+								<td>Chiu, 1984</td>
+							</tr>
+							<tr>
+								<td>Output Concentration (Cu)</td>
+								<td></td>
+								<td>1.3 $$ \frac{mg}{L}$$</td>
+								<td>Saydeh et al, 2017</td>
+							</tr>
+							<tr>
+								<td>Surface Protein Concentration</td>
+								<td>$$Q$$</td>
+								<td>0.35E-6 $$ \frac{mol}{m^2}$$</td>
+								<td>McLean, 2000</td>
+							</tr>
+							<tr>
+								<td>Specific Surface Area</td>
+								<td>$$a$$</td>
+								<td>72600000 $$\frac{1}{m}$$</td>
+								<td>McLean, 2000</td>
+							</tr>
+							<tr>
+								<td>Forwards Rate Constant</td>
+								<td>$$k_a$$</td>
+								<td>0.015 $$\frac{1}{s}$$</td>
+								<td>Du, 2013</td>
+							</tr>
+							<tr>
+								<td>Reverse Rate Constant</td>
+								<td>$$k_d$$</td>
+								<td>3e-16 $$\frac{1}{s}$$</td>
+								<td>Du, 2013 and Young et al, 2015</td>
+							</tr>
+							<tr>
+								<td>Equilibrium Constant</td>
+								<td>$$K_D$$</td>
+								<td>1E-13.7</td>
+								<td>Young et al, 2015</td>
+							</tr>
+							<tr>
+								<td>Void Fraction</td>
+								<td>$$\rho$$</td>
+								<td>0.31</td>
+								<td>Sen, 2016</td>
+							</tr>
+							<tr>
+								<td>Density of Cellulose</td>
+								<td></td>
+								<td>1.5 $$\frac{g}{cm^3}$$</td>
+								<td>National Center for Biotechnology Information, 2020</td>
+							</tr>
+							<tr>
+								<td>Porosity</td>
+								<td>$$\epsilon$$</td>
+								<td>0.69</td>
+								<td>Sen, 2016</td>
+							</tr>
+							<tr>
+								<td>Superficial Reactor Velocity</td>
+								<td>$$v_s$$</td>
+								<td>0.2552</td>
+								<td>Computed based on reactor size. See below</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="caption">Table 3. Parameters, variables, values, and literature sources for each of the parameters used in our model’s equations. </div>
+          <h2>Modelling Results</h2>
+          <p>The following plots are taken from the aforementioned model with the approximation that advective transport phenomena can be neglected when compared to the reaction timescale. This is reasonable because the copper binding protein chosen has a very small equilibrium constant, which implies that the reaction time scale is very fast. This model assumes that the reactor is well mixed, since the cellulose in the reactor will produce very strong eddy diffusion.</p>
+          <img src="https://2020.igem.org/wiki/images/6/6c/T--Waterloo--Model_batch_reactor.png" alt="Batch Reactor Copper Concentration">
+          <div class="caption">Figure 24: Concentration of copper in a batch reactor versus time. Note how the majority of the copper in the solution has been bound within 5 seconds.</div>
+          <img src="https://2020.igem.org/wiki/images/c/c2/T--Waterloo--Model_batch_reactor_occupied.png" alt="Batch Reactor Occupied Protein">
+          <div class="caption">Figure 25: Percentage of occupied protein active sites in batch reactor versus time, assuming one gram of cellulose packing material uniformly distributed throughout the batch reactor.</div>
+          <p>From these two plots we can see that within 5 seconds a vast majority of the copper present in solution has adsorbed onto the CopC binding sites, while only a small fraction of the CopC has actually been used up. This implies that a packed column reactor assuming similar initial inflow concentrations will not saturate too quickly to be of use.</p>
+          <p>It is also visible from the model that the timescale of the reaction is much smaller than the time a copper ion spends in a typical large packed column reactor. This led to numerical problems when solving the partial differential equation model, which we did not have time to fix. Instead, due to the rapid equilibrium approximation we may use the batch reactor to estimate a typical length scale for the reactor.</p>
+          <p>Through some dimensional analysis, we can find that 99.5% of copper ions which spend longer than 5 seconds in the reactor will be adsorbed. This means that we can potentially treat 200 times the volume of the reactor in copper solution before the reactor is saturated. This approximation allows us to choose a scale for our reactor. </p>
+          <p>For the metal finishing waste stream chosen, we will need to treat an average of 46.9 L/s of waste over the course of each day (see “Getting Parameters”), or 4 052 160 L/day. We choose to treat this waste using four 5-hour reactor cycles, allowing for 1-hour breaks in between for elution and other routine maintenance. This means that 1 013 040 L of waste must be treated in each of the four reactor cycles. Since we can treat 200 times the volume of the reactor in each reactor cycle, our reactor must be able to accommodate 1/200th of the waste per cycle, or 5065 L. However, due to the packing of 3 mm cellulose particles,, only 31% of our total reactor volume is actually free space. This means that we need the total volume of our packed column to be 16 339 L to accommodate 5065 L of liquid. Based on a 1:10 height-diameter ratio, this gives a packed column 1.28 m in diameter and 12.8 m in length.I n order to fill the reactor, we would require approximately 17 000kg of cellulose packing material, assuming a 3 mm particle diameter and 31 % void space. </p>
+          <p>In our discussion with Aevitas, they told us that they used an approximately 30 000 L batch reactor to treat their wastes (citation). Although we are using a continuous process with some differences from Aevitas’ process, this confirms that our proposed reactor scale of about 16 000 L is reasonable and within the size range of existing waste treatment processes.  </p>
+          <p>With the above assumptions for our reactor, according to the estimate of 99.5% of all copper ions being depleted after a reactor cycle the effluent concentration should be below 1 µmol/L. This falls well below our goal of an output concentration of 1.3mg/L of copper.</p>
+          <p>Now that the reactor has been designed, we can use the Ergun equation to compute pressure drop. The velocity of fluid in the reactor should then be chosen to be the height divided by 50 seconds, in order to allow the copper ions to stay in the reactor for longer than 5 seconds at a time. This means that the superficial flow velocity in the reactor is 0.2556 m/s. We apply the Ergun equation (Ergun, 1949), a standard tool in chemical engineering, to calculate the resulting pressure drop across our packed column reactor.</p>
+          <p>For our reactor of diameter 1.28 m and length 12.8 m, the pressure drop is 0.126 bar. This means that in order for wastewater to flow through the reactor, we must use a pump to pressurize the reactor inlet to at least 0.126 bar greater than the outlet. This is very reasonable by industrial standards. </p>
+          <h2>Additional Reactor Design Considerations</h2>
+          <p>Refer to the <a href="2020.igem.org/Team:Waterloo/Implementation">Implementation page</a> for a more detailed discussion of our envisioned implementation.</p>
+          <p>The results of our modelling allow us to propose a reactor design that is suitable for treating an example copper containing waste stream from a typical semiconductor manufacturing facility. Although this model provides the reactor scale and dimensions that should be used, several other parameters are required in order to operate the reactor. </p>
+          <p>In particular, we must determine the effect of pH on copper binding in the reactor. pH must be determined for both the initial binding phase and the subsequent elution phase. This would ideally be determined using experiments to characterise our protein’s copper binding at a range of pHs. However, literature provides some information that can be used to make rough estimates. </p>
+          <p>In the binding stage, we want the copper to bind to the copper binding proteins in the reactor as strongly as possible. In CopC, the copper ion is coordinated by histidine, aspartic acid, and glutamic acid (Lawton, 2016). In order for copper binding to occur, these amino acids must all exist in their deprotonated forms so that they are able to use their lone electron pairs to bond to copper. These deprotonated forms are also negatively or neutrally charged, attracting the positively charged copper ion. This deprotonated state can be achieved for all of these amino acids at a pH of 7.2 or higher (Včeláková et al., 2004). This means that the dissolved copper waste fed into the reactor must be at pH 7.2 or higher. Metal finishing waste is generally near neutral pH (van Dijken et al., 1999), so only small adjustments would be needed. This adjustment could be achieved by adding small amounts of concentrated acid or base to the dissolved copper waste before feeding it to the reactor. </p>
+          <p>In the elution stage, we want copper ions to bind to the copper binding proteins in the reactor as weakly as possible, allowing them to be removed from the reactor. To weaken copper binding, we can protonate the histidine, aspartic acid, and glutamic acid involved in copper binding. Protonation prevents these amino acids’ lone pairs from bonding with the copper ion, and also causes the side chains to become neutrally or positively charged, further repelling the copper ion. Protonation of these amino acids can be achieved at pH 4.8 or lower (Včeláková et al., 2004). This means that metal ions can be removed from the reactor by flowing through a solution with a pH of 4.8 or lower. This would result in a concentration and pure copper solution. If necessary, the pH of the recovered metal solution could be further adjusted for recycling by using small volumes of concentrated acid or base.</p>
+          <p>Determining the pH required for the elution and binding stages of our process therefore moves us one step closer to building a functioning industrial process. The pH values determined herein are specific to copper and the CopC protein, but required pH values could be calculated for any metal and metal binding protein. In general, amino acids must be deprotonated to bind metals, so the metal binding step will always require a higher pH than the elution step.  </p>
+          <p>Below is a proposed schematic of our packed column reactor’s proposed implementation, explained further on the <a href="https://2020.igem.org/Team:Waterloo/Implementation">Implementation page</a>.</p>
+          <img src="https://2020.igem.org/wiki/images/4/4c/T--Waterloo--process_imp.png" alt=" A schematic of our packed column reactor’s proposed implementation and operation schedule.">       
+          <div class="caption">Figure 26. A schematic of our packed column reactor’s proposed implementation and operation schedule.</div>
+          <h1> Build, Test & Learn</h1>
+          <p>Although we were not able to build or test a real prototype of our reactor, we have laid out the steps we would have followed if lab access were possible. </p>
+          <p>This procedure provides a method for constructing a small scale packed column similar to our large scale process. This prototype would evaluate several aspects of our design:</p>
+          <ol>
+            <li>It would demonstrate that our fusion protein is able to bind and stay bound to the cellulose packing of the column.</li>
+            <li>It would evaluate our protein’s ability to capture dissolved copper from an example waste stream, and to elute that copper when desired. </li>
+            <li>It would allow us to measure the copper binding and elution rates and calculate better parameters for our model. This would allow us to improve our model and create a better industrial scale design.</li>
+          </ol>
+          <p>The following materials and methods were selected so that we could use an off-the-shelf pump-based fast protein liquid chromatography column, since a gravity column chromatography system would be too divergent from the process model. </p>
+          <p>Since our real industrial process must treat 46.9 L/s of waste and will do so with a ~16 000 L reactor, we will scale the process accordingly and treat 1 mL/min of waste with our 5 mL column. Since the column has a volume of 5 mL, we expect 1.55 mL based on a calculated void fraction of 0.31.</p>
+          <h1>Materials </h1>
+          <ul>
+            <li>8.3 g 51 µm diameter crystalline cellulose powder (Sigma Aldrich)</li>
+            <li>5 mL XK 50/60 chromatography column (Cytiva Life Sciences) </li>
+            <li>Peristaltic pump</li>
+            <li>Copper and cellulose fusion protein (purified); the molar amount of protein required must  be calculated using the specific surface area of the cellulose powder</li>
+            <li>1 mM tetraphenylporphine solute (Itoh et al., 1975)</li>
+            <li>Binding buffer: 50 mM phosphate buffer (adjusted to pH 7.2)</li>
+            <li>Elution buffer: 50 mM citrate buffer (adjusted to pH 4.8)</li>
+            <li>Example waste: 30 mg Cu/L CuCl<sub>2</sub> dissolved in binding buffer</li>
+          </ul>
+          <h1>Method</h1>
+          <ol>
+            <li>In a beaker, combine the purified fusion protein with 8.3 g crystalline cellulose powder hydrated with 15 mL of binding buffer. Allow to incubate for an hour at 4°C, swirling occasionally, to allow the fusion protein to thoroughly bind to the cellulose.</li>
+            <li>Centrifuge at 15 000 rpm for 15 minutes to recover the cellulose pellet before washing with 15 mL of binding buffer.  Repeat twice for a total of three washes.</li>
+            <li>Transfer the suspension to the XK 50/60 chromatography column. Open the outlet of the column to allow the cellulose bed to settle by gravity. Refill the column with the binding buffer. </li>
+            <li>We hypothesise that the column can treat approximately 200 times its void volume of our example waste, which is about 300 mL. In order to test this, we will feed 300 mL of example waste through the column at a rate of 1 mL/min using a peristaltic pump.  While feeding the example waste, collect the column’s eluate in 5 mL aliquots. </li>
+            <li>Wash the column with another 10 mL of binding buffer at a flow rate of 1 mL/min.</li>
+            <li>To elute, feed the column with 10 mL of elution buffer at a rate of 1 mL/min. Collect 1 mL aliquots of the flowthrough.</li>
+            <li>Measure the copper concentration of each aliquot using the spectrophotometric method described by Itoh et al. (1975). Also measure the absorbance at 280 nm of each aliquot to determine the amount of dissolved protein.</li>
+          </ol>
+          <h1>Data Analysis & Expected Results</h1>
+          <p>The concentrations of protein in the aliquots taken throughout the process are representative of how well our fusion protein stays bound to the cellulose packing throughout the process. If protein concentrations in the reactor outflow are more than negligible, this means that our fusion protein’s cellulose-binding domain might be failing to bind the cellulose packing. Further investigation would be required to improve cellulose binding. </p>
+          <p>The concentrations of copper in the aliquots taken while feeding the example waste are representative of the copper concentration that would be released to the environment in our industrial scale design. Therefore, these copper concentrations must all be below 1.3 mg/L for the design to have worked successfully. If all outflow copper concentrations are higher than this, we could consider a longer column or slower flow rate, giving the copper more time and available proteins to bind to. If copper concentration is initially low but rises later on, this means that we have saturated all available copper binding sites, and that the column will need to be eluted and reset after less than 200 times the void volume of waste. </p>
+          <p>The concentration of copper in the aliquots taken during elution are representative of the copper concentration that would be recovered when bound copper is eluted from our column. This is the concentration of the purified copper that could be recycled for other applications. Further research can be conducted to determine whether this eluted copper concentration is suitable for other applications. </p>
+        </div>
         
-        <img src='/images/pic.png' alt="Grey square"> 
-      </article>
-      <accessibility></accessiblity>
+        <div class="refs">
+          <p class="referencesHead">References</p>
+          <p class="references">"Ligand_Dock Application". Rosettacommons.Org, 2020, https://www.rosettacommons.org/docs/latest/application_documentation/docking/ligand-dock. Accessed 22 Oct 2020.</p>
+          <p class="references">Al-Saydeh, S.A., El-Naas, M.H., and Zaidi, S.J. 2017. Copper removal from industrial wastewater: A comprehensive review. J. Ind. Eng. Chem. 56: 35–44. The Korean Society of Industrial and Engineering Chemistry. doi:10.1016/j.jiec.2017.07.026.</p>
+          <p class="references">Applications for Macromolecule Design. (2020). Retrieved 14 October 2020, from https://www.rosettacommons.org/docs/latest/application_documentation/design/design-applications </p>
+          <p class="references">Arán, D., Antelo, J., Lodeiro, P., Macías, F., and Fiol, S. 2017. Use of Waste-Derived Biochar to Remove Copper from Aqueous Solution in a Continuous-Flow System. Ind. Eng. Chem. Res. 56(44): 12755–12762. doi:10.1021/acs.iecr.7b03056.</p>
+          <p class="references">Balakrishnan, R., Ramasubbu, N., Varughese, K. I., & Parthasarathy, R. (1997). Crystal structures of the copper and nickel complexes of RNase A: Metal-induced interprotein interactions and identification of a novel copper binding motif. Proceedings of the National Academy of Sciences, 94(18), 9620-9625. doi:10.1073/pnas.94.18.9620</p>
+          <p class="references">Berendsen, et al. 1995. GROMACS: A message-passing parallel molecular dynamics implementation. Comp. Phys. Comm. 91: 43-56.. doi:10.1016/0010-4655(95)00042-E</p>
+          <p class="references">Carson, M., Johnson, D. H., McDonald, H., Brouillette, C. & DeLucas, L. J. (2007). Acta Cryst. D63, 295-301.</p>
+          <p class="references">Chatzou, M., Magis, C., Chang, J., Kemena, C., Bussotti, G., Erb, I. & Notredame, C. (2015, November 27). Multiple sequence alignment modeling: Methods and applications. Retrieved October 16, 2020, from https://doi.org/10.1093/bib/bbv099</p>
+          <p class="references">Chiu, H.S.S., Tsang, K.L., and Lee, R.M.L. 1984. Treatment of electroplating wastes. Water Sanit. Asia Pacific Proc. 10th WEDC Conf.: 115–119.</p>
+          <p class="references">Cordero, B., Gómez, V., Platero-Prats, A. E., Revés, M., Echeverría, J., Cremades, E., . . . Alvarez, S. (2008). Covalent radii revisited. Dalton Transactions, (21), 2832. doi:10.1039/b801115j</p>
+          <p class="references">Glaus, M. A. & Van Loon, L. R. (1970, January 01). Cellulose Degradation at Alkaline Conditions: Long-Term Experiments at Elevated Temperatures. Retrieved October 16, 2020, from https://inis.iaea.org/search/search.aspx?orig_q=RN%3A36011143</p>
+          <p class="references">Griffo, A., Rooijakkers, B. J. M., Hähl, H., Jacobs, K., Linder, M. B., & Laaksonen, P. (2019). Binding forces of cellulose binding modules on cellulosic nanomaterials. Biomacromolecules, 20(2), 769-777. doi:10.1021/acs.biomac.8b01346</p>
+          <p class="references">Harper, S., & Speicher, D. W. (2011). Purification of proteins fused to glutathione S-transferase. Methods in molecular biology (Clifton, N.J.), 681, 259–280. https://doi.org/10.1007/978-1-60761-913-0_14 </p>
+          <p class="references">Heaton, D. N., George, G. N., Garrison, G., & Winge, D. R. (2001). The mitochondrial copper metallochaperone Cox17 exists as an oligomeric, polycopper complex. Biochemistry, 40(3), 743-751. doi:10.1021/bi002315x</p>
+          <p class="references">How to prepare structures for use in Rosetta. (2020). Retrieved 14 October 2020, from https://www.rosettacommons.org/docs/latest/rosetta_basics/preparation/preparing-structures  </p>
+          <p class="references">iGEM Technion 2016, & iGEM TU Eindhoven 2016. (2016). Retrieved 14 October 2020, from http://2016.igem.org/wiki/images/5/59/Rosetta_Guide_for_the_iGEM_Beginner.pdf </p>
+          <p class="references">Ioelovich, M. (2017, March 31). Study on Acidic Degradation of Cellulose. Retrieved October 16, 2020, from https://www.eurekaselect.com/148252/article</p>
+          <p class="references">Itoh, J.-I., Yotsuyanagi, T., and Aomura, K. 1975. Spectrophotometric determination of copper with tetraphenylporphine trisulfonate. Anal. Chim. Acta 74: 53–60.</p>
+          <p class="references">J. Puetz and F. M. Wurm, “Recombinant Proteins for Industrial versus Pharmaceutical Purposes: A Review of Process and Pricing,” Processes, vol. 7, no. 8, p. 476, Jul. 2019, doi: 10.3390/pr7080476.</p>
+          <p class="references">Jalak, J., & Väljamäe, P. (2014). Multi-mode binding of cellobiohydrolase Cel7A from trichoderma reesei to cellulose. Plos One, 9(9), e108181. Retrieved from https://doi.org/10.1371/journal.pone.0108181</p>
+          <p class="references">Jesu Jaya Sudan, R., Lesitha Jeeva Kumari, J., & Sudandiradoss, C. (2015). Ab Initio Coordination Chemistry for Nickel Chelation Motifs. PLoS ONE, 10(5). https://link.gale.com/apps/doc/A432243972/AONE?u=uniwater&sid=AONE&xid=4d4767c3</p>
+          <p class="references">Kapust, R. B., Tözsér, J., Copeland, T. D. & Waugh, D. S. (2002, June 28). The P1' specificity of tobacco etch virus protease. Retrieved October 15, 2020, from https://pubmed.ncbi.nlm.nih.gov/12074568/</p>
+          <p class="references">Kataeva, I. A., Seidel, R. D., Li, X. L., & Ljungdahl, L. G. (2001). Properties and mutation analysis of the CelK cellulose-binding domain from the clostridium thermocellum cellulosome. Journal of Bacteriology, 183(5), 1552-1559. doi:10.1128/jb.183.5.1552-1559.2001</p>
+          <p class="references">Kaufmann, K. W., Lemmon, G. H., Deluca, S. L., Sheehan, J. H., & Meiler, J. (2010). Practically useful: What the Rosetta protein modeling suite can do for you. Biochemistry, 49(14), 2987–2998. https://doi.org/10.1021/bi902153g </p>
+          <p class="references">Kimple, M. E., Brill, A. L., & Pasker, R. L. (2013). Overview of affinity tags for protein purification. Current protocols in protein science, 73, 9.9.1–9.9.23. https://doi.org/10.1002/0471140864.ps0909s73</p>
+          <p class="references">Koay, M. S., Janssen, B. M., & Merkx, M. (2013). Tuning the metal binding site specificity of a fluorescent sensor protein: From copper to zinc and back. Dalton Trans., 42(9), 3230-3232. doi:10.1039/c2dt32082g</p>
+          <p class="references">Lawton, T. J., Kenney, G. E., Hurley, J. D., & Rosenzweig, A. C. (2016). The CopC Family: Structural and Bioinformatic Insights into a Diverse Group of Periplasmic Copper Binding Proteins. Biochemistry, 55(15), 2278-2290. doi:10.1021/acs.biochem.6b00175</p>
+          <p class="references">Leaver-Fay, A., Tyka, M., Lewis, S. M., Lange, O. F., Thompson, J., Jacak, R., Kaufman, K., Renfrew, P. D., Smith, C. A., Sheffler, W., Davis, I. W., Cooper, S., Treuille, A., Mandell, D. J., Richter, F., Ban, Y. E. A., Fleishman, S. J., Corn, J. E., Kim, D. E., … Bradley, P. (2011). Rosetta3: An object-oriented software suite for the simulation and design of macromolecules. Methods in Enzymology, 487(C), 545–574. https://doi.org/10.1016/B978-0-12-381270-4.00019-6 </p>
+          <p class="references">Li, Q., Wang, A., Ding, W. & Zhang, Y. (2017). Influencing factors for alkaline degradation of cellulose. Retrieved October 16, 2020, from https://bioresources.cnr.ncsu.edu/resources/influencing-factors-for-alkaline-degradation-of-cellulose/</p>
+          <p class="references">Lichty, J. J., Malecki, J. L., Agnew, H. D., Michelson-Horowitz, D. J., & Tan, S. (2005). Comparison of affinity tags for protein purification. Protein Expression and Purification, 41(1), 98-105. doi:10.1016/j.pep.2005.01.019</p>
+          <p class="references">Major, B., Copper, F. S., & Ccoa, I. (2016). Uncovering the Transmembrane Metal Binding Site of the Novel. MBio, 7(1), 1–11. https://doi.org/10.1128/mBio.01981-15.Editor</p>
+          <p class="references">Maurer, S. A. (2012). Surface-based assays for enzyme adsorption and activity on model cellulose films Retrieved from http://www.riss.kr/pdu/ddodLink.do?id=T13297598</p>
+          <p class="references">McLean, B. W., Bray, M. R., Boraston, A. B., Gilkes, N. R., Haynes, C. A., & Kilburn, D. G. (2000). Analysis of binding of the family 2a carbohydrate-binding module from cellulomonas fimi xylanase 10A to cellulose: Specificity and identification of functionally important amino acid residues. Protein Engineering, Design and Selection, 13(11), 801-809. doi:10.1093/protein/13.11.801</p>
+          <p class="references">Palumaa, P. (2013). Copper chaperones. the concept of conformational control in the metabolism of copper. FEBS Letters, 587(13), 1902-1910. doi:S0014-5793(13)00361-X [pii]</p>
+          <p class="references">Petrucci, R., Herring, G., Madura, J., & Bissonnette, C. (2017). In O'Donnell C. (Ed.), General chemistry principles and modern applications (11th ed.). Toronto: Pearson.</p>
+          <p class="references">Relax application. (2020). Retrieved 14 October 2020, from https://www.rosettacommons.org/docs/latest/application_documentation/structure_prediction/relax </p>
+          <p class="references">Rodriguez, B., Kavoosi, M., Koska, J., Creagh, A. L., Kilburn, D. G., & Haynes, C. A. (2004). Inexpensive and generic affinity purification of recombinant proteins using a family 2a CBM fusion tag. Biotechnology Progress, 20(5), 1479-1489. doi:10.1021/bp0341904 [doi]</p>
+          <p class="references">Scheich, C., Sievert, V., & Büssow, K. (2003). An automated method for high-throughput protein purification applied to a comparison of His-tag and GST-tag affinity chromatography. BMC Biotechnology, 3(1), 12. doi:10.1186/1472-6750-3-12</p>
+          <p class="references">Scoring Tutorial. (2020). Retrieved 14 October 2020, from https://www.rosettacommons.org/demos/latest/tutorials/scoring/scoring </p>
+          <p class="references">Shuler, M.L., and Kargi, F. 2002. Bioprocess Engineering Basic Concepts. In 2nd edition. Prentice Hall PTR, Upper Saddle River, NJ.</p>
+          <p class="references">Song, Z., Dong, J., Yuan, W., Zhang, C., Ren, Y., & Yang, B. (2016). The stability and the metal ions binding properties of mutant A85M of CopC. Journal of Photochemistry and Photobiology B: Biology, 161, 387-395. doi:https://doi.org/10.1016/j.jphotobiol.2016.06.006</p>
+          <p class="references">Timón-Gómez, A., Nývltová, E., Abriata, L. A., Vila, A. J., Hosler, J., & Barrientos, A. (2018). Mitochondrial cytochrome c oxidase biogenesis: Recent developments. Seminars in Cell & Developmental Biology, 76, 163-178. doi:10.1016/j.semcdb.2017.08.055</p>
+          <p class="references">Trache, D., Donnot, A., Khimeche, K., Benelmir, R. & Brosse, N. (2014, January 27). Physico-chemical properties and thermal stability of microcrystalline cellulose isolated from Alfa fibres. Retrieved October 16, 2020, from https://www.sciencedirect.com/science/article/pii/S0144861714000678</p>
+          <p class="references">Udagedara, S. R., Wijekoon, C. J. K., Xiao, Z., Wedd, A. G., & Maher, M. J. (2019). The crystal structure of the CopC protein from pseudomonas fluorescens reveals amended classifications for the CopC protein family. Journal of Inorganic Biochemistry, 195, 194-200. doi:https://doi.org/10.1016/j.jinorgbio.2019.03.007</p>
+          <p class="references">UniProt.UniProtKB - P12376 (COPC_PSEUB). Retrieved from https://www.uniprot.org/uniprot/P12376</p>
+          <p class="references">Urbina, J., Patil, A., Fujishima, K., Paulino-Lima, I., Saltikov, C., & Rothschild, L. (2019, November 11). A new approach to biomining: Bioengineering surfaces for metal recovery from aqueous solutions. Retrieved October 17, 2020, from https://www.ncbi.nlm.nih.gov/pubmed/31712654</p>
+          <p class="references">van Dijken, K., Prince, Y., Wolters, T., Frey, M., Mussati, G., Kalff, P., Hansen, O., Kerndrup, S., Søndergârd, B., Rodrigues, E.L., and Meredith, S. 1999. Electroplating industry. : 97–128. doi:10.1007/978-94-007-0854-9_9.</p>
+          <p class="references">Vanommeslaeghe, K. Hatcher, E. Acharya, C. Kundu, S. Zhong, S. Shim, J. E. Darian, E. Guvench, O. Lopes, P. Vorobyov, I. and MacKerell, Jr. A.D. "CHARMM General Force Field (CGenFF): A force field for drug-like molecules compatible with the CHARMM all-atom additive biological force fields," Journal of Computational Chemistry 31: 671-90, 2010, PMC2888302</p>
+          <p class="references">Včeláková, K., Zusková, I., Kenndler, E., & Gaš, B. (2004). Determination of cationic mobilities and pKa values of 22 amino acids by capillary zone electrophoresis. Electrophoresis, 25(2), 309-317. doi:10.1002/elps.200305751</p>
+          <p class="references">Wei, X., Kong, X., Wang, S., Xiang, H., Wang, J., & Chen, J. (2013). Removal of Heavy Metals from Electroplating Wastewater by Thin-Film Composite Nanofiltration Hollow-Fiber Membranes. *Ind. Eng. Chem. Res., 52*(49), 17583–17590. https://doi.org/10.1021/ie402387u</p>
+          <p class="references">Wijekoon, C. J., Young, T. R., Wedd, A. G., & Xiao, Z. (2015). CopC protein from Pseudomonas fluorescens SBW25 features a conserved novel high-affinity Cu2+binding site. Inorganic chemistry, 54(6), 2950–2959. https://doi.org/10.1021/acs.inorgchem.5b00031</p>
+          <p class="references">Woestenenk, E. A., Hammarström, M., Berg, S. V., Härd, T., & Berglund, H. (2004). His tag effect on solubility of human proteins produced in Escherichia coli: A comparison between four expression vectors. Journal of Structural and Functional Genomics, 5(3), 217-229. doi:10.1023/b:jsfg.0000031965.37625.0e</p>
+          <p class="references">Zhao, X., Li, G., & Liang, S. (2013). Several Affinity Tags Commonly Used in Chromatographic Purification. Journal of Analytical Methods in Chemistry, 2013, 1-8. doi:10.1155/2013/581093</p>
+          <p class="references">Zoroddu, M. A., Medici, S., & Peana, M. (2009). Copper and nickel binding in multi-histidinic peptide fragments. Journal of Inorganic Biochemistry, 103(9), 1214-1220. doi:10.1016/j.jinorgbio.2009.06.008</p>
+        </div>
+
+			</div> 
+				
+    </article>
+    <accessibility></accessiblity>
     </main>
   <footer></footer>
 </body>

@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="/dist/js/vendor.js"></script>
-	<link rel="stylesheet" href="/dist/css/vendor.css">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<script src="https://2020.igem.org/Template:Waterloo/js/vendor?action=raw&ctype=text/javascript"></script>
+	<link rel="stylesheet" href="https://2020.igem.org/Template:Waterloo/css/vendor?action=raw&ctype=text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 	<script>
 		$(function() {
-			$('header').load('/templates/header.html');
-			$('footer').load('/templates/footer.html');
+			$('header').load('https://2020.igem.org/Template:Waterloo/header?action=raw&ctype=text/javascript');
+			$('footer').load('https://2020.igem.org/Template:Waterloo/footer?action=raw&ctype=text/javascript');
+			$('accessibility').load('https://2020.igem.org/Template:Waterloo/accessibility?action=raw&ctype=text/javascript');
 		});
 	</script>
-	<link rel="stylesheet" href="/css/styles.css">
-	<script src="/js/wiki.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
+	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
 	<!--Added MathJax hack to make inline equations work-->
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -25,18 +26,106 @@
 </script>   </head>
 
 <body>
+	<div class="topElement"></div>
 	<div id="igem-navbar-placeholder">
 		<p>Placeholder for iGEM Navbar</p>
 	</div>
 	<header></header>
     <main id="top">
 		<article>
-			<h1> Collaborations </h1>
+			<div class="pageHeader"> 
+				<div class="headerCol">
+					<h1 class="collabpage"> COLLABORATIONS </h1>
+				</div>
+				<div class="headerCol2">
+					<img src='/images/buildings.svg'>
+				</div>
+			</div>
 
-			<p> Sharing and collaboration are core values of iGEM. We encourage you to reach out and work with other teams on difficult problems that you can more easily solve together.</p>
+			<div class="pipecol">
+				<svg width="227" height="1442" viewBox="0 0 227 1442" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+					<rect class="teamsPipe" fill="#CDDCDD" fill-opacity="0" x="5" y="0" width="20" height="75"></rect>
+					<rect class="summerPipe" fill="#CDDCDD" fill-opacity="0" x="50" y="0" width="20" height="160"></rect>
+					<rect class="confPipe" fill="#CDDCDD" fill-opacity="0" x="100" y="0" width="20" height="150"></rect>
+					<path id="text-one" class="teamsPipe" d="M20 67.0248H8.04V71.8648H5.9V59.6248H8.04V64.4648H20V67.0248ZM20 58.003H5.9V48.623H7.94V55.543H11.82V49.063H13.86V55.543H17.96L17.96 48.623H20L20 58.003ZM20 47.8433L5.9 41.4633V39.3633L20 32.9833V35.5833L16.74 36.9833V43.8633L20 45.2433V47.8433ZM8.68 40.4433L14.7 42.9833V37.8633L8.68 40.4033V40.4433ZM20 31.4005H5.9L5.9 29.2605L15.12 24.2605L5.9 19.2805V17.1805H20V19.5005H10.5L17.86 23.5405V25.0405L10.54 29.0805H20V31.4005ZM20.2 9.21719C20.2 10.3239 20.06 11.3505 19.78 12.2972C19.4867 13.2439 19.0933 14.0439 18.6 14.6972L16.58 13.9172C17.0467 13.2639 17.4067 12.5505 17.66 11.7772C17.9133 10.9905 18.04 10.1372 18.04 9.21719C18.04 8.16385 17.8667 7.39719 17.52 6.91719C17.16 6.43719 16.7 6.19719 16.14 6.19719C15.6733 6.19719 15.3067 6.37052 15.04 6.71719C14.7733 7.05052 14.5533 7.63052 14.38 8.45719L13.92 10.6572C13.3867 13.1639 12.1 14.4172 10.06 14.4172C9.18 14.4172 8.41333 14.1839 7.76 13.7172C7.10667 13.2505 6.6 12.6039 6.24 11.7772C5.88 10.9505 5.7 9.99719 5.7 8.91719C5.7 7.95719 5.84667 7.05719 6.14 6.21719C6.42 5.37719 6.82 4.67719 7.34 4.11719L9.26 4.89719C8.32667 6.00385 7.86 7.35052 7.86 8.93719C7.86 9.85719 8.05333 10.5772 8.44 11.0972C8.82667 11.6172 9.33333 11.8772 9.96 11.8772C10.44 11.8772 10.8267 11.7172 11.12 11.3972C11.4 11.0772 11.62 10.5305 11.78 9.75719L12.24 7.57719C12.52 6.25719 12.96 5.27719 13.56 4.63719C14.16 3.98385 14.96 3.65719 15.96 3.65719C16.8 3.65719 17.54 3.88385 18.18 4.33719C18.82 4.79052 19.32 5.43719 19.68 6.27719C20.0267 7.10385 20.2 8.08385 20.2 9.21719ZZ" fill="#003650"/>
+					<path id="text-two" class="summerPipe" d="M68.2 151.815C68.2 152.922 68.06 153.948 67.78 154.895C67.4867 155.842 67.0933 156.642 66.6 157.295L64.58 156.515C65.0467 155.862 65.4067 155.148 65.66 154.375C65.9133 153.588 66.04 152.735 66.04 151.815C66.04 150.762 65.8667 149.995 65.52 149.515C65.16 149.035 64.7 148.795 64.14 148.795C63.6733 148.795 63.3067 148.968 63.04 149.315C62.7733 149.648 62.5533 150.228 62.38 151.055L61.92 153.255C61.3867 155.762 60.1 157.015 58.06 157.015C57.18 157.015 56.4133 156.782 55.76 156.315C55.1067 155.848 54.6 155.202 54.24 154.375C53.88 153.548 53.7 152.595 53.7 151.515C53.7 150.555 53.8467 149.655 54.14 148.815C54.42 147.975 54.82 147.275 55.34 146.715L57.26 147.495C56.3267 148.602 55.86 149.948 55.86 151.535C55.86 152.455 56.0533 153.175 56.44 153.695C56.8267 154.215 57.3333 154.475 57.96 154.475C58.44 154.475 58.8267 154.315 59.12 153.995C59.4 153.675 59.62 153.128 59.78 152.355L60.24 150.175C60.52 148.855 60.96 147.875 61.56 147.235C62.16 146.582 62.96 146.255 63.96 146.255C64.8 146.255 65.54 146.482 66.18 146.935C66.82 147.388 67.32 148.035 67.68 148.875C68.0267 149.702 68.2 150.682 68.2 151.815ZM68.2 138.198C68.2 140.131 67.7 141.611 66.7 142.638C65.6867 143.651 64.1933 144.158 62.22 144.158H53.9V141.598H62.2C63.4667 141.598 64.42 141.311 65.06 140.738C65.6867 140.151 66 139.304 66 138.198C66 135.944 64.7333 134.818 62.2 134.818H53.9V132.278H62.22C64.1933 132.278 65.6867 132.778 66.7 133.778C67.7 134.778 68.2 136.251 68.2 138.198ZM68 129.252H53.9V127.112L63.12 122.112L53.9 117.132V115.032H68V117.352H58.5L65.86 121.392V122.892L58.54 126.932H68V129.252ZM68 111.889H53.9V109.749L63.12 104.749L53.9 99.7687V97.6687H68V99.9887H58.5L65.86 104.029V105.529L58.54 109.569H68V111.889ZM68 94.5655H53.9V85.1855H55.94V92.1055H59.82V85.6255H61.86V92.1055H65.96V85.1855H68V94.5655ZM68 82.6319H53.9V76.5119C53.9 74.9652 54.2733 73.7719 55.02 72.9319C55.7533 72.0919 56.7867 71.6719 58.12 71.6719C59.1733 71.6719 60.0467 71.9452 60.74 72.4919C61.42 73.0385 61.88 73.8252 62.12 74.8519C62.3333 74.1719 62.8467 73.6119 63.66 73.1719L68 70.8119V73.6319L63.5 76.0719C63.06 76.3119 62.76 76.5985 62.6 76.9319C62.44 77.2519 62.36 77.6652 62.36 78.1719V80.0719H68V82.6319ZM60.46 80.0719V76.9519C60.46 75.0852 59.7 74.1519 58.18 74.1519C56.6733 74.1519 55.92 75.0852 55.92 76.9519V80.0719H60.46ZM68 63.4903H53.9V61.3503L63.12 56.3503L53.9 51.3703V49.2703H68V51.5903H58.5L65.86 55.6303V57.1303L58.54 61.1703H68V63.4903ZM68 46.167H53.9V43.607H68V46.167ZM68 42.202L60.82 36.822L53.9 42.002V39.022L58.96 35.362L53.9 31.702V28.702L60.82 33.882L68 28.522V31.522L62.72 35.362L68 39.182V42.202ZM68 27.1045H53.9V17.7245H55.94V24.6445H59.82V18.1645H61.86V24.6445H65.96V17.7245H68V27.1045ZM68 15.1709H53.9V9.05094C53.9 7.50427 54.2733 6.31094 55.02 5.47094C55.7533 4.63094 56.7867 4.21094 58.12 4.21094C59.1733 4.21094 60.0467 4.48427 60.74 5.03094C61.42 5.5776 61.88 6.36427 62.12 7.39094C62.3333 6.71094 62.8467 6.15094 63.66 5.71094L68 3.35094V6.17094L63.5 8.61094C63.06 8.85094 62.76 9.1376 62.6 9.47094C62.44 9.79094 62.36 10.2043 62.36 10.7109V12.6109H68V15.1709ZM60.46 12.6109V9.49094C60.46 7.62427 59.7 6.69094 58.18 6.69094C56.6733 6.69094 55.92 7.62427 55.92 9.49094V12.6109H60.46Z" fill="#003650"/>
+					<path id="text-three" class="confPipe" d="M116.2 140.369C116.2 141.835 115.907 143.095 115.32 144.149C114.72 145.189 113.88 145.989 112.8 146.549C111.707 147.109 110.42 147.389 108.94 147.389C107.46 147.389 106.18 147.109 105.1 146.549C104.02 145.989 103.187 145.189 102.6 144.149C102 143.095 101.7 141.835 101.7 140.369C101.7 139.422 101.847 138.529 102.14 137.689C102.433 136.835 102.853 136.135 103.4 135.589L105.44 136.429C104.933 137.029 104.567 137.642 104.34 138.269C104.1 138.895 103.98 139.569 103.98 140.289C103.98 141.715 104.413 142.802 105.28 143.549C106.133 144.295 107.353 144.669 108.94 144.669C110.527 144.669 111.753 144.295 112.62 143.549C113.487 142.802 113.92 141.715 113.92 140.289C113.92 139.569 113.807 138.895 113.58 138.269C113.34 137.642 112.967 137.029 112.46 136.429L114.5 135.589C115.033 136.135 115.453 136.835 115.76 137.689C116.053 138.529 116.2 139.422 116.2 140.369ZM116.2 127.503C116.2 128.863 115.9 130.057 115.3 131.083C114.7 132.097 113.86 132.883 112.78 133.443C111.687 134.003 110.407 134.283 108.94 134.283C107.46 134.283 106.18 134.003 105.1 133.443C104.02 132.883 103.187 132.097 102.6 131.083C102 130.07 101.7 128.877 101.7 127.503C101.7 126.13 102 124.937 102.6 123.923C103.187 122.91 104.02 122.123 105.1 121.563C106.18 121.003 107.453 120.723 108.92 120.723C110.4 120.723 111.687 121.003 112.78 121.563C113.86 122.123 114.7 122.91 115.3 123.923C115.9 124.937 116.2 126.13 116.2 127.503ZM114 127.503C114 126.21 113.553 125.203 112.66 124.483C111.767 123.763 110.527 123.403 108.94 123.403C107.34 123.403 106.1 123.763 105.22 124.483C104.34 125.19 103.9 126.197 103.9 127.503C103.9 128.797 104.34 129.803 105.22 130.523C106.1 131.243 107.34 131.603 108.94 131.603C110.527 131.603 111.767 131.243 112.66 130.523C113.553 129.803 114 128.797 114 127.503ZM116 118.12H101.9V116.2L111.74 108.62H101.9V106.24H116V108.14L106.12 115.74H116V118.12ZM116 103.159H101.9V93.9392H103.94V100.599H107.92V94.3592H109.96V100.599H116V103.159ZM116 91.9287H101.9V82.5487H103.94V89.4687H107.82V82.9887H109.86V89.4687H113.96V82.5487H116V91.9287ZM116 79.9952H101.9V73.8752C101.9 72.3285 102.273 71.1352 103.02 70.2952C103.753 69.4552 104.787 69.0352 106.12 69.0352C107.173 69.0352 108.047 69.3085 108.74 69.8552C109.42 70.4018 109.88 71.1885 110.12 72.2152C110.333 71.5352 110.847 70.9752 111.66 70.5352L116 68.1752V70.9952L111.5 73.4352C111.06 73.6752 110.76 73.9618 110.6 74.2952C110.44 74.6152 110.36 75.0285 110.36 75.5352V77.4352H116V79.9952ZM108.46 77.4352V74.3152C108.46 72.4485 107.7 71.5152 106.18 71.5152C104.673 71.5152 103.92 72.4485 103.92 74.3152V77.4352H108.46ZM116 66.2842H101.9V56.9042H103.94V63.8242H107.82V57.3442H109.86V63.8242H113.96V56.9042H116V66.2842ZM116 54.3506H101.9V52.4306L111.74 44.8506H101.9V42.4706H116V44.3706L106.12 51.9706H116V54.3506ZM116.2 32.8297C116.2 34.2964 115.907 35.5564 115.32 36.6097C114.72 37.6497 113.88 38.4497 112.8 39.0097C111.707 39.5697 110.42 39.8497 108.94 39.8497C107.46 39.8497 106.18 39.5697 105.1 39.0097C104.02 38.4497 103.187 37.6497 102.6 36.6097C102 35.5564 101.7 34.2964 101.7 32.8297C101.7 31.883 101.847 30.9897 102.14 30.1497C102.433 29.2964 102.853 28.5964 103.4 28.0497L105.44 28.8897C104.933 29.4897 104.567 30.103 104.34 30.7297C104.1 31.3564 103.98 32.0297 103.98 32.7497C103.98 34.1764 104.413 35.263 105.28 36.0097C106.133 36.7564 107.353 37.1297 108.94 37.1297C110.527 37.1297 111.753 36.7564 112.62 36.0097C113.487 35.263 113.92 34.1764 113.92 32.7497C113.92 32.0297 113.807 31.3564 113.58 30.7297C113.34 30.103 112.967 29.4897 112.46 28.8897L114.5 28.0497C115.033 28.5964 115.453 29.2964 115.76 30.1497C116.053 30.9897 116.2 31.883 116.2 32.8297ZM116 25.8155H101.9V16.4355H103.94V23.3555H107.82V16.8755H109.86V23.3555H113.96V16.4355H116V25.8155ZM116.2 9.21719C116.2 10.3239 116.06 11.3505 115.78 12.2972C115.487 13.2439 115.093 14.0439 114.6 14.6972L112.58 13.9172C113.047 13.2639 113.407 12.5505 113.66 11.7772C113.913 10.9905 114.04 10.1372 114.04 9.21719C114.04 8.16385 113.867 7.39719 113.52 6.91719C113.16 6.43719 112.7 6.19719 112.14 6.19719C111.673 6.19719 111.307 6.37052 111.04 6.71719C110.773 7.05052 110.553 7.63052 110.38 8.45719L109.92 10.6572C109.387 13.1639 108.1 14.4172 106.06 14.4172C105.18 14.4172 104.413 14.1839 103.76 13.7172C103.107 13.2505 102.6 12.6039 102.24 11.7772C101.88 10.9505 101.7 9.99719 101.7 8.91719C101.7 7.95719 101.847 7.05719 102.14 6.21719C102.42 5.37719 102.82 4.67719 103.34 4.11719L105.26 4.89719C104.327 6.00385 103.86 7.35052 103.86 8.93719C103.86 9.85719 104.053 10.5772 104.44 11.0972C104.827 11.6172 105.333 11.8772 105.96 11.8772C106.44 11.8772 106.827 11.7172 107.12 11.3972C107.4 11.0772 107.62 10.5305 107.78 9.75719L108.24 7.57719C108.52 6.25719 108.96 5.27719 109.56 4.63719C110.16 3.98385 110.96 3.65719 111.96 3.65719C112.8 3.65719 113.54 3.88385 114.18 4.33719C114.82 4.79052 115.32 5.43719 115.68 6.27719C116.027 7.10385 116.2 8.08385 116.2 9.21719Z" fill="#003650"/>
+				
+					<path id="pipe-three" class="confPipe" d="M139.773 1.50001L139.773 2983.41C139.773 2999.45 153.781 3012.2 168.937 3012.2H194.801V3032.11H168.937C143.345 3032 122.5 3011.38 122.5 2983.19V1.50011L139.773 1.50001Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-one" class="confPipe" d="M189.5 3005.5H194.989V3039.79H189.5V3005.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-two" class="confPipe" d="M146.902 662.377L146.902 668.318L114.5 668.318L114.5 662.377L146.902 662.377Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-three-three" class="confPipe" d="M146.902 1975.77L146.902 1981.71L114.5 1981.71L114.5 1975.77L146.902 1975.77Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3" style="visibility: hidden;"/>
+					<path id="pipe-three-four" class="confPipe" d="M146.902 2958.44L146.902 2964.38L114.5 2964.38L114.5 2958.44L146.902 2958.44Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-two" class="ourlabPipe" d="M74.4998 1538.13V1.5H91.7731V1538.35C91.7731 1554.39 105.781 1567.14 120.937 1567.14H191V1587.05 H120.937C95.3446 1586.94 74.4998 1566.32 74.4998 1538.13Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-one" class="summerPipe" d="M98.9021 1454.5L98.9021 1460.44L66.4999 1460.44L66.4999 1454.5L98.9021 1454.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-two" class="summerPipe" d="M98.9021 936.869L98.9021 942.81L66.4999 942.81L66.4999 936.869L98.9021 936.869Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-two-three" class="summerPipe" d="M98.9021 367.066L98.9021 373.007L66.4999 373.007L66.4999 367.066L98.9021 367.066Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3" style="visibility: hidden;"/>
+					<path id="pipe-two-four" class="summerPipe" d="M189.5 1560.5H194.989V1594.79H189.5V1560.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<path id="pipe-one" class="teamsPipe" d="M26.5 326.813V1.5H43.7733V327.037C43.7733 343.081 57.7816 355.829 72.9369 355.829H191.5V376.983H72.9369C47.3448 375.628 26.5 355.006 26.5 326.813Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-one" class="teamsPipe" d="M19.5 307.44V301.5H51.9022V307.44H19.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+					<path id="pipe-one-two" class="teamsPipe" d="M190.5 349.5H195.989V383.787H190.5V349.5Z" fill="#5C889F" stroke="#C1D3DB" stroke-width="3"/>
+				
+					<circle id="circle-one" cx="215" cy="367" r="12" fill="#F79D5E"/>
+					<circle id="circle-two" cx="215" cy="1577" r="12" fill="#F79D5E"/>
+					<circle id="circle-three" cx="215" cy="3022" r="12" fill="#F79D5E"/>
+				</svg>				
+			</div>
 
-			<p> This is a Silver Medal Criterion #2. You can work with any other team in the competition, including software, hardware, high school and other tracks. You can also work with non-iGEM research groups, but they do not count towards the iGEM team collaboration silver medal criterion. </p>
+			<div id="contentcol" class="contentcol">
+				<div class="overview">
+					We collaborated with two teams this year, Tuebingen and OhioState. We helped each other with protein design, molecular dynamics, and mathematical modeling. We also presented our project at national conferences, namely Calgary’s JulyGEM and cGEM, and even ran our own iGEM social in the summer!
+				</div>
+
+				<div class="teams">
+					TEAMS
+				</div>
+				
+				<div class='info'>
+					<h1>Tuebingen iGEM</h1>
+					<p>We collaborated with Tuebingen iGEM on the protein design and molecular dynamics aspects of our projects. Despite very different project motivations, we and Tuebingen both used rational protein design as a tool to improve the metal affinity of metal-binding proteins. We held several video calls over the term to discuss our work and help troubleshoot each others’ molecular dynamics software issues. </p>
+					<p>We specifically shared advice for using GROMACS (an MD software tool) with quantum mechanical and classical mechanical models and for developing an iterative protein design workflow. Their best advice to us: “repeat until completely bored”. </p>
+					<img src="https://2020.igem.org/wiki/images/e/ed/T--Waterloo--Tuebingen_Collab.png" alt="Zoom call screenshot with Tuebingen">
+					<div class="caption">Zoom call screenshot with Tuebingen</div>
+					<h1>OhioState iGEM</h1>
+					<p>We collaborated with OhioState iGEM on the modelling aspects of their project. OhioState studied strategies for microbial biocontainment, and we helped develop strategies for engineering design, for modelling their proposed systems, and for retrieving relevant parameters from literature. </p>
+					<img src="https://2020.igem.org/wiki/images/e/e6/T--Waterloo--Collaborations_OhioState.png" alt="Zoom call screenshot with OhioState">
+					<div class="caption">Zoom call screenshot with OhioState</div>
+
+				</div>
+
+				<div class="summer">
+					SUMMER MIXER
+				</div>
+
+				<div class='info'>
+					<p>In July, we hosted a Canadian-wide virtual social hour to encourage communication between all members of the teams, meet new people, and build our local synthetic biology community. Over 20 students from six canadian igem teams chatted with three different people about their interests, their iGEM project for this year, and their favourite quarantine activities.</p>
+					<p>The goal of this event was primarily to promote community interaction across the country in a less formal setting given the transition to online conferences and meetings.</p>
+					<img src="https://2020.igem.org/wiki/images/c/cd/T--Waterloo--Collaborations_Lethbridge.png" alt="Zoom call screenshot with Lethbridge">
+					<div class="caption">Zoom call screenshot with Lethbridge</div>
+				</div>
+	
+	
+				<div class="conf">
+					CONFERENCES
+				</div>
+				
+				<div class='info'>
+					<h1>JulyGEM</h1>
+					<p>At the University of Calgary’s second annual JulyGEM event, we gave our first project pitch of the season and received feedback from judges early enough to implement for the iGEM Giant Jamboree. We also competed in fun games with teams made up of iGEM students across the world!</p>
+					<p>Team members also volunteered on the logistics team planning the conference working on fundraising material and event scheduling.</p>
+					<img src="https://2020.igem.org/wiki/images/3/3d/T--Waterloo--Collaborations_JulyGEM.png" alt="Zoom call screenshot with JulyGEM team">
+					<div class="caption">Zoom call screenshot with JulyGEM team</div>
+					<h1>cGEM</h1>
+					<p>In October, we participated in cGEM, a virtual conference showcasing the synthetic biology projects of Canadian iGEM teams. Due to the COVID-19 pandemic resulting in funding uncertainties and various restrictions, the conference was introduced to support Canadian iGEM teams. The conference consisted of a competition where we received valuable feedback on our project design and progress, opportunities to connect with other Canadian teams, and workshops and panels hosted by experts in the field. Waterloo iGEM won a gold medal standing at cGEM!</p>
+					<img src="https://2020.igem.org/wiki/images/2/23/T--Waterloo--Collaborations_cGEM.jpg" alt="Instagram story of our cGEM presentation">
+					<div class="caption">Instagram story of our cGEM presentation</div>
+				</div>
+			</div> 
+				
 		</article>
+		<accessibility></accessiblity>
     </main>
   <footer></footer>
 </body>
