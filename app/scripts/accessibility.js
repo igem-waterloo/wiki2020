@@ -11,19 +11,19 @@ $(document).scroll(function() {
     checkOffset();
 });
 
-window.addEventListener('load', (event) => {  
+window.addEventListener('load', (event) => {
     $('.arrow').click(function() {
         if ($('.toolbar-read').css("visibility") == "hidden") {
             $('.toolbar-read').css("visibility", "visible");
             $('.toolbar-size').css("visibility", "visible");
             $('.accessibility-tool .fixed').css('height', "283px");
-            $('.arrow').css('transform', 'rotate(180deg)');  
+            $('.arrow').css('transform', 'rotate(0deg)');  
         }
         else {
             $('.toolbar-read').css("visibility", "hidden");
             $('.toolbar-size').css("visibility", "hidden");
             $('.accessibility-tool .fixed').css('height', "78px");
-            $('.arrow').css('transform', 'rotate(0deg)'); 
+            $('.arrow').css('transform', 'rotate(180deg)'); 
         }  
     });
 });

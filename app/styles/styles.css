@@ -731,10 +731,10 @@ header {
           }
 
           header #navbar ul li a:not(:only-child):after, header #navbar ul li a:visited:not(:only-child):after {
-            padding-top: 8px;
-            content: ' \2039 '; 
-            font-size: 24px;
-            transform: rotate(270deg);
+            padding-top: 0px !important;
+            padding-left: 8px !important;
+            content: ' \25BE '; 
+            font-size: 20px;
             color: #FB9E36;}
         header #navbar ul li ul {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -898,7 +898,12 @@ footer {
     color: black !important;
     position: absolute !important;
     top: 13px !important;
-    left: 13px !important; }
+    left: 13px !important; 
+  }
+  .social-icons .fa-facebook {
+    left: 16px !important; 
+  }
+
   .social-icons a {
     display: inline-block !important;
     /*@include grid-visual;*/ }
@@ -923,30 +928,29 @@ div.accordion {
 }
 
 div.accordion:after {
-  content: '\2303'; 
-  transform: rotate(180deg);
-  font-size: 26px;
+  content: '\25BE'; 
+  transform: rotate(0deg);
+  font-size: 32px;
   color: #FB9E36;
   float: right;
   margin-left: 5px;
-  font-weight: 800;
 }
 
 div.accordion.active:after {
   content: ""; 
-  transform: rotate(360deg);
-  font-size: 26px;
-  font-weight: 800;
 }
 
 div.panel.show:after {
-  content: "\2303"; 
-  transform: rotate(360deg);
-  font-size: 26px;
-  font-weight: 800;
+  content: "\25BE"; 
+  transform: rotate(180deg);
+  font-size: 32px;
   float: right;
   margin-left: 5px;
   color: #FB9E36;
+}
+
+div.panel.show:hover:after, div.accordion:hover:after {
+  cursor: pointer !important;
 }
 
 /* Style the element that is used for the panel class */
@@ -966,7 +970,7 @@ div.panel {
 
 div.panel.show {
   opacity: 1;
-  max-height: 700px;
+  max-height: min-content !important;
   margin: auto;
 }
 
@@ -1109,7 +1113,7 @@ main {
   font-size: 15px !important;
   text-align: center !important;
   color: #003650 !important;
-  margin-bottom: 5px !important;
+  margin: 0px 100px 5px 100px !important;
 }
 
 
@@ -1410,7 +1414,7 @@ li::before {
 .text p {
   font-size: 18px !important;
   color: #003650 !important;
-  margin: 0px 120px 30px 120px !important;
+  margin: 0px 100px 30px 100px !important;
   text-align: left !important;
 }
 
@@ -1448,6 +1452,7 @@ li::before {
 }
 
 .text table, .info table {
+  max-width: 90% !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -1525,6 +1530,10 @@ ul.noBullet li {
   line-height: 20px !important;
 }
 
+.arrow {
+  transform: rotate(180deg);
+}
+
 .arrow:hover {
   cursor: pointer !important;
 }
@@ -1593,7 +1602,7 @@ ul.noBullet li {
   clear: both;
 }
 
-#pause:hover, #play:hover, #restart:hover {
+#pause:hover, #play:hover, #restart:hover, #minus:hover, #plus:hover {
   cursor: pointer !important; 
 }
 
