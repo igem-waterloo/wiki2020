@@ -429,7 +429,7 @@ template {
 
 #content {
   /*Make content behave like one would expect a body to */
-  width: 100vw;
+  width: 100%;
   padding: 0px;
   border: none;
   color: black;
@@ -1603,7 +1603,7 @@ ul.noBullet li {
 }
 
 #pause:hover, #play:hover, #restart:hover, #minus:hover, #plus:hover {
-  cursor: pointer !important; 
+  cursor: pointer; 
 }
 
 .left {
