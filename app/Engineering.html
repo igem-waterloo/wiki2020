@@ -15,8 +15,7 @@
 	</script>
 	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
 	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
-  <!--Added MathJax hack to make inline equations work-->
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://2020.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -615,8 +614,8 @@
           <p>For our design stage, we applied computational approaches to model and design our packed column reactor, optimising it to the best of our ability. </p>
           <h2>Developing our model</h2>
           <p>We used a variety of mathematical approaches to derive equations that would describe our packed column bioreactor. We eventually found that our reactor would be governed by the following system of differential equations. The solution of this system of differential equations provides useful information for designing our reactor.</p>
-          <p>$$ \frac{dm}{dt} + \vec{v}\cdot \nabla m - D\nabla^2 m = -(\frac{a}{f}) (k_a m (Q-q) - k_d q) $$</p>
-          <p>$$ \frac{dq}{dt} = k_a m (Q-q) - k_d q $$</p>
+          <p>\( \frac{dm}{dt} + \vec{v}\cdot \nabla m - D\nabla^2 m = -(\frac{a}{f}) (k_a m (Q-q) - k_d q) \)</p>
+          <p>\( \frac{dq}{dt} = k_a m (Q-q) - k_d q \)</p>
           <p>Detailed derivation of these equations and the computational approaches used are described on the <a href="2020.igem.org/Team:Waterloo/Model">model page</a>.</p>
           <p>Once model equations had been developed, it was necessary to find values for the parameters so that useful results could be computed. These parameters were found directly in literature, or computed from combinations of other parameters. </p>
           <p>Once model equations had been developed, it was necessary to find values for the parameters so that useful results could be computed. These parameters were found directly in literature, or computed from combinations of other parameters. </p>
@@ -638,67 +637,67 @@
 						<tbody>
 							<tr>
 								<td>Input Concentration (Cu)</td>
-								<td>$$m$$</td>
-								<td>30 $$ \frac{mg}{L}$$</td>
+								<td>\(m\)</td>
+								<td>30 \( \frac{mg}{L} \)</td>
 								<td>Chiu, 1984</td>
 							</tr>
 							<tr>
 								<td>Output Concentration (Cu)</td>
 								<td></td>
-								<td>1.3 $$ \frac{mg}{L}$$</td>
+								<td>1.3 \( \frac{mg}{L} \) </td>
 								<td>Saydeh et al, 2017</td>
 							</tr>
 							<tr>
 								<td>Surface Protein Concentration</td>
-								<td>$$Q$$</td>
-								<td>0.35E-6 $$ \frac{mol}{m^2}$$</td>
+								<td> \( Q \)</td>
+								<td>0.35E-6 \( \frac{mol}{m^2} \) </td>
 								<td>McLean, 2000</td>
 							</tr>
 							<tr>
 								<td>Specific Surface Area</td>
-								<td>$$a$$</td>
-								<td>72600000 $$\frac{1}{m}$$</td>
+								<td>\( a \)</td>
+								<td>72600000 \( \frac{1}{m} \)</td>
 								<td>McLean, 2000</td>
 							</tr>
 							<tr>
 								<td>Forwards Rate Constant</td>
-								<td>$$k_a$$</td>
-								<td>0.015 $$\frac{1}{s}$$</td>
+								<td> \( k_a \)</td>
+								<td>0.015 \( \frac{1}{s} \)</td>
 								<td>Du, 2013</td>
 							</tr>
 							<tr>
 								<td>Reverse Rate Constant</td>
-								<td>$$k_d$$</td>
-								<td>3e-16 $$\frac{1}{s}$$</td>
+								<td>\( k_d \)</td>
+								<td>3e-16 \( \frac{1}{s} \)</td>
 								<td>Du, 2013 and Young et al, 2015</td>
 							</tr>
 							<tr>
 								<td>Equilibrium Constant</td>
-								<td>$$K_D$$</td>
+								<td>\( K_D \)</td>
 								<td>1E-13.7</td>
 								<td>Young et al, 2015</td>
 							</tr>
 							<tr>
 								<td>Void Fraction</td>
-								<td>$$\rho$$</td>
+								<td>\( \rho \)</td>
 								<td>0.31</td>
 								<td>Sen, 2016</td>
 							</tr>
 							<tr>
 								<td>Density of Cellulose</td>
 								<td></td>
-								<td>1.5 $$\frac{g}{cm^3}$$</td>
+								<td>1.5 \( \frac{g}{cm^3}\)</td>
 								<td>National Center for Biotechnology Information, 2020</td>
 							</tr>
 							<tr>
 								<td>Porosity</td>
-								<td>$$\epsilon$$</td>
+								<td>\(\epsilon\)</td>
 								<td>0.69</td>
 								<td>Sen, 2016</td>
 							</tr>
 							<tr>
 								<td>Superficial Reactor Velocity</td>
-								<td>$$v_s$$</td>
+								<td>\(v_s\)</td>
 								<td>0.2552</td>
 								<td>Computed based on reactor size. See below</td>
 							</tr>

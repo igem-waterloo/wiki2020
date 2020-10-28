@@ -15,7 +15,7 @@
 	</script>
 	<link rel="stylesheet" type="text/css" href="https://2020.igem.org/wiki/index.php?title=Template:Waterloo/css/styles&action=raw&ctype=text/css">
 	<script src="https://2020.igem.org/Template:Waterloo/js/wiki?action=raw&ctype=text/javascript"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script src="https://2020.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -349,66 +349,67 @@
 					<h1>Developing Equations For Modelling</h1>
 					<p>In order to model a system undergoing chemical reactions, we must first develop a kinetic rate law for the reactions. For our system, we will use a straightforward dimensional analysis approach similar to the Langmuir isotherm. This is a commonly applied model for adsorption of a reactant onto a protein. </p>
 					<p>To determine the net rate of adsorption of Cu<sup>2+</sup> onto CopC, we add the forward binding rate to the reverse binding rate. A key nuance of this model is that the concentration of CopC is given as a surface concentration. In order to relate the surface concentration to the rate of change of a volumetric concentration, a conversion factor is computed by considering the surface area per volume of BMCC cellulose that the protein is attached to.</p>
-					<p>Suppose the surface area per volume of BMCC is given by a parameter $$ a $$ and that the fraction of the reactor occupied by cellulose is $$ f $$. Let $$ m = [Cu^{2+}] $$, let $$ Q $$ be the initial protein surface concentration, and let $$ q = Q - [CopC] $$. </p>
-					<p>Free protein + Free metal $$ \underset{k_d}{\stackrel{k_a}{\rightleftharpoons}} $$ </p>
+					<p>Suppose the surface area per volume of BMCC is given by a parameter \( a \) and that the fraction of the reactor occupied by cellulose is \( f \). Let \( m = [Cu^{2+}] \), let \( Q \) be the initial protein surface concentration, and let \( q = Q - [CopC] \). </p>
+					<p>Free protein + Free metal \( \underset{k_d}{\stackrel{k_a}{\rightleftharpoons}} \) </p>
 					<ul class="noBullet">
 						<li>Protein-metal complex</li>
-						<li>$$ k_a $$: adsorption rate constant, $$ k_d $$: desorption rate constant</li>
+						<li>\( k_a \): adsorption rate constant, \( k_d \): desorption rate constant</li>
 					</ul>
 					<p>Adsorption (forward) rate:</p>
-					<p>$$ v_a = k_a  m  N $$</p>
+					<p>\( v_a = k_a  m  N \)</p>
 					<ul class="noBullet">
-						<li>Where $$ N = (Q - q) $$</li>
-						<li>So, $$ v_a = k_a m (Q - q) $$</li>
+						<li>Where \( N = (Q - q) \)</li>
+						<li>So, \( v_a = k_a m (Q - q) \)</li>
 					</ul>
 					<p>Desorption (reverse) rate:</p>
-					<p>$$ v_d = k_d q $$</p>
+					<p> \( v_d = k_d q \)</p>
 					<ul class="noBullet">
 						<li>Variables:</li>
-						<li>$$ v $$: rate ($$ \frac{mol}{m^2  s} $$)</li>
-						<li>$$ m $$: free metal concentration ($$ \frac{mol}{L} $$)</li>
-						<li>$$ k_a $$: adsorption rate constant ($$ \frac{L}{mol s} $$)</li>
-						<li>$$ k_d $$: desorption rate constant ($$ \frac{1}{s} $$)</li>
-						<li>$$ N $$: free sites ($$ \frac{mol}{m s} $$)</li>
-						<li>$$ Q $$: total sites ($$ \frac{mol}{m s} $$)</li>
-						<li>$$ q $$: occupied sites ($$ \frac{mol}{m s} $$)</li>
+						<li>\(  v \): rate (\( \frac{mol}{m^2  s} \))</li>
+						<li>\( m \): free metal concentration (\( \frac{mol}{L} \))</li>
+						<li>\( k_a \): adsorption rate constant (\( \frac{L}{mol s} \))</li>
+						<li>\( k_d \): desorption rate constant (\( \frac{1}{s} \))</li>
+						<li>\( N \): free sites (\( \frac{mol}{m s} \))</li>
+						<li>\( Q \): total sites (\( \frac{mol}{m s} \))</li>
+						<li>\( q \): occupied sites (\( \frac{mol}{m s} \))</li>
 					</ul>	
 					<p>Net rate:</p>
-					<p>$$ \frac{dq}{dt} = v_a - v_d = k_a m (Q - q) - k_d q $$</p>
-					<p>$$ \frac{dq}{dt} $$ is a rate in $$ \frac{mol}{m^2 s} $$ (this is how much metal adsorbs to a given surface area each second)</p>
-					<p>But, we’re interested in the change $$ \frac{dm}{dt} $$, i.e. the change in metal concentration per second</p>
-					<p>For a given volume in the packed bed $$ V $$, a portion is liquid ($$ V_{aq} $$) and a portion is packing material ($$ V_p $$)</p>
-					<p>There is also a specific surface area, i.e., the packing surface area ($$ s $$), per total volume ($$ V $$)</p>
-					<p>Define specific surface area $$ \rho = \frac{s}{V} \left( \frac{m^2}{m^3} = \frac{1}{m} \right) $$</p>
+					<p>\( \frac{dq}{dt} = v_a - v_d = k_a m (Q - q) - k_d q \)</p>
+					<p>\( \frac{dq}{dt} \) is a rate in \(\frac{mol}{m^2 s} \) (this is how much metal adsorbs to a given surface area each second)</p>
+					<p>But, we’re interested in the change \(\frac{dm}{dt} \), i.e. the change in metal concentration per second</p>
+					<p>For a given volume in the packed bed \( V \), a portion is liquid (\( V_{aq} \)) and a portion is packing material (\( V_p \))</p>
+					<p>There is also a specific surface area, i.e., the packing surface area (\(s \)), per total volume (\( V \))</p>
+					<p>Define specific surface area \(\rho = \frac{s}{V} \left( \frac{m^2}{m^3} = \frac{1}{m} \right) \)</p>
 					<ul class="noBullet">
-						<li>And void fraction $$ f = \frac{V_{aq}}{V} \left( \frac{m^3}{m^3} = 1 \right) $$</li>
-						<li>To convert $$ \frac{dq}{dt} $$ to $$ \frac{dm}{dt} $$,</li>
+						<li>And void fraction \( f = \frac{V_{aq}}{V} \left( \frac{m^3}{m^3} = 1 \right) \)</li>
+						<li>To convert \( \frac{dq}{dt} \) to \( \frac{dm}{dt} \),</li>
 					</ul>
-					<p>$$ \frac{dm}{dt} = -\frac{dq}{dt} \left( \frac{s}{V} \right) \left( \frac{V}{V_{eq}} \right) = -\frac{dq}{dt} \frac{\rho}{f} $$</p>
-					<p>So, $$ \frac{dm}{dt} = -\frac{\rho}{f} \left( k_a m (Q - q) - k_d q \right) $$</p>
+					<p>\(  \frac{dm}{dt} = -\frac{dq}{dt} \left( \frac{s}{V} \right) \left( \frac{V}{V_{eq}} \right) = -\frac{dq}{dt} \frac{\rho}{f} \)</p>
+					<p>So, \( \frac{dm}{dt} = -\frac{\rho}{f} \left( k_a m (Q - q) - k_d q \right) \)</p>
 					<p>Then the net adsorption rate is given by</p>
-					<p>$$ \frac{dm}{dt} = -(a/f) (k_a m (Q-q) - k_d q) $$</p>
+					<p>\( \frac{dm}{dt} = -(a/f) (k_a m (Q-q) - k_d q) \)</p>
 					<p>Using this model allows computation of important properties of well-mixed reactors, such as a batch reactor where there is no inflowing or outflowing material. For a nominal input concentration of Cu<sup>2+</sup> solution the results and a list of relevant parameters can be found below. </p>					
 					<p>However, we aim to design a packed column reactor with a constant flow of new material, requiring us to consider transport phenomena. In order to incorporate transport phenomena this model needs to be extended to a partial differential equation. This can be done by employing the conservation of mass law as well as a constitutive equation called Fick’s law which governs the rate of diffusion of solute in the reactor. These transport-reaction models are described in the Encyclopaedia of Systems Biology published by Springer (Clairambault, 2013).</p>
-					<p>To begin deriving the transport equation, one must first write down the governing conservation and constitutive relations. The conservation of mass equation for a three dimensional reactor of fixed volume $$ V $$ is given by the following equation, where $$ \partial V_{\pm} $$ denotes the inflow (+) and outflow (-) boundaries of the reactor. </p>
-					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz =  \Phi(x,y)|_{\partial V_+} - \Phi(x,y)|_{\partial V_-} + \iiint_V R(x,y,z) dxdydz$$</p>
-					<p>Here $$ R $$ is the reaction rate described by the kinetic model. The flux terms $$ \Phi $$ can be computed by combining the advective flux and the diffusive flux. The advective term describes mass travelling through the reactor at a velocity $$ \vec{v} $$ (which can be a function of position), and can be written as $$ \Phi = \vec{v} m $$. The diffusive term describes mass entering and exiting the reactor due to the concentration gradient, which is described by Fick’s Law:</p>
-					<p> $$ \Phi_{diffusion} = D \frac{dm}{dz} $$</p>
+					<p>To begin deriving the transport equation, one must first write down the governing conservation and constitutive relations. The conservation of mass equation for a three dimensional reactor of fixed volume \( V \) is given by the following equation, where \( \partial V_{\pm} \) denotes the inflow (+) and outflow (-) boundaries of the reactor. </p>
+					<p>\( \frac{d}{dt} \iiint_V m(x,y,z) dxdydz =  \Phi(x,y)|_{\partial V_+} - \Phi(x,y)|_{\partial V_-} + \iiint_V R(x,y,z) dxdydz \)</p>
+					<p>Here \( R \) is the reaction rate described by the kinetic model. The flux terms \( \Phi \) can be computed by combining the advective flux and the diffusive flux. The advective term describes mass travelling through the reactor at a velocity \( \vec{v} \) (which can be a function of position), and can be written as \( \Phi = \vec{v} m \). The diffusive term describes mass entering and exiting the reactor due to the concentration gradient, which is described by Fick’s Law:</p>
+					<p> \( \Phi_{diffusion} = D \frac{dm}{dz} \)</p>
 					<p>This yields the total mass conservation equation:</p>
-					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz = -\vec{v}(m(x,y,z_{+}) - m(x,y,z_{-})) + D(\frac{dm}{dz}(x,y,z_+) - \frac{dm}{dz}(x,y,z_-)) + \iiint_V R(x,y,z) dxdydz $$</p>
-					<p>Here we may apply the fundamental theorem of calculus to convert the flux terms into an integral over $$ \partial V $$.</p>
-					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz - \iiint_V R(x,y,z) dxdydz = \iint_{\partial V} -m \vec{v}\cdot \hat{n} + D\nabla m \cdot \hat{n} dxdy $$</p>
+					<p>\( \frac{d}{dt} \iiint_V m(x,y,z) dxdydz \) </p>
+					<p>\( = -\vec{v}(m(x,y,z_{+}) - m(x,y,z_{-})) + D(\frac{dm}{dz}(x,y,z_+) - \frac{dm}{dz}(x,y,z_-)) + \iiint_V R(x,y,z) dxdydz \)</p>
+					<p>Here we may apply the fundamental theorem of calculus to convert the flux terms into an integral over \( \partial V \).</p>
+					<p>\( \frac{d}{dt} \iiint_V m(x,y,z) dxdydz - \iiint_V R(x,y,z) dxdydz = \iint_{\partial V} -m \vec{v}\cdot \hat{n} + D\nabla m \cdot \hat{n} dxdy \)</p>
 					<p>We can apply Gauss’s Divergence Theorem in order to convert the double integrals into triple integrals.</p>
-					<p>$$ \frac{d}{dt} \iiint_V m(x,y,z) dxdydz = \iiint_{V} R(x,y,z) -\nabla(m) \cdot \vec{v} + D\nabla^2 m  dxdydz $$</p>
+					<p>\( \frac{d}{dt} \iiint_V m(x,y,z) dxdydz = \iiint_{V} R(x,y,z) -\nabla(m) \cdot \vec{v} + D\nabla^2 m  dxdydz \)</p>
 					<p>And finally, by applying the Reymond-Dubois lemma we will arrive at the following system of partial differential equations.</p>
-					<p>$$ \frac{dm}{dt} + \vec{v}\cdot \nabla m - D\nabla^2 m = -(\frac{a}{f}) (k_a m (Q-q) - k_d q) $$</p>
-					<p>$$ \frac{dq}{dt} = k_a m (Q-q) - k_d q $$</p>
+					<p>\( \frac{dm}{dt} + \vec{v}\cdot \nabla m - D\nabla^2 m = -(\frac{a}{f}) (k_a m (Q-q) - k_d q) \)</p>
+					<p>\( \frac{dq}{dt} = k_a m (Q-q) - k_d q \)</p>
 					<p>Unfortunately due to numerical problems, a solution to this system has not been completely developed. More work on improving numerical stability must be done before this will produce significant results. The main issue faced in solving this model using the finite element method is the timescale discrepancy between the transport and the reaction rate. From our review of the literature it appears that a typical reaction rate for our system will be much faster than the speed at which solution is transported by the advective term in the above equation. This implies that a very high resolution simulation must be performed, and advanced computational techniques may be required. However, we found that transport effects may be neglected locally in the reactor by a quasi-steady state approximation which is explained below. This allows us to still compute meaningful results from the model despite not having an exact solution.</p>
 					<p>Once a reactor has been designed, we can use the Ergun equation (Ergun, 1949), a standard tool in chemical engineering, to determine the pressure drop across the packed column. Pressure drop corresponds to the positive pressure required at the input end of the reactor to drive fluid flow through the reactor. This positive pressure would need to be applied using a pump. An approximate version of the Ergun equation suitable for a liquid packed column is listed below (Wu, 2007). All parameters necessary for computation of this pressure drop can be found in the parameter list above and the description of the reactor.</p>
-					<p>$$ \frac{\Delta P}{L} = \frac{72 \mu \tau (1 - \epsilon)^2 v_s}{D^2_P \epsilon^3} + \frac{3 \tau (1 - \epsilon) \rho v^2_s \left(\frac{3}{2} + \frac{1}{\beta^4} - \frac{5}{2 \beta^2} \right)}{4 \epsilon^3 D_p} $$</p>
+					<p>\( \frac{\Delta P}{L} = \frac{72 \mu \tau (1 - \epsilon)^2 v_s}{D^2_P \epsilon^3} + \frac{3 \tau (1 - \epsilon) \rho v^2_s \left(\frac{3}{2} + \frac{1}{\beta^4} - \frac{5}{2 \beta^2} \right)}{4 \epsilon^3 D_p} \)</p>
 					<p>Where L is the height of the reactor, and tau and beta are the tortuosity and pore-to-throat ratio which are defined as follows.</p>
-					<p>$$  \tau = \frac{1}{2}\left[1 +\frac{1}{2} \sqrt{1 - \epsilon} +\sqrt{1 - \epsilon}\frac{\sqrt{\left(\frac{1}{\sqrt{1 - \epsilon}} - 1\right)^2 + \frac{1}{4}}}{1 - \sqrt{1 - \epsilon}}\right] $$</p>
-					<p>$$ \beta = \frac{1}{1 - \sqrt{1 - \epsilon}} $$</p>
+					<p>\(  \tau = \frac{1}{2}\left[1 +\frac{1}{2} \sqrt{1 - \epsilon} +\sqrt{1 - \epsilon}\frac{\sqrt{\left(\frac{1}{\sqrt{1 - \epsilon}} - 1\right)^2 + \frac{1}{4}}}{1 - \sqrt{1 - \epsilon}}\right] \)</p>
+					<p>\( \beta = \frac{1}{1 - \sqrt{1 - \epsilon}} \)</p>
 					<h1>Computational Approaches</h1>
 					<p>To simulate the partial differential equation model, we decided to use <a href="https://fenicsproject.org">FEniCS</a>, a computing platform which solves partial differential equations and has an easy-to-use Python interface. To use FEniCS in a computational environment on Windows (used by most of us), it needs to be installed on the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a> (WSL). To use FEniCS on macOS, the macOS Anaconda package can be used. For editing while using WSL, we found <a href="https://code.visualstudio.com">VS Code</a> with the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote - WSL extension</a> to be most useful. Last, for source code management, we used a <a href="https://github.com/igem-waterloo/uwaterloo-igem-2020">Git repository</a> for the team. This environment set-up allowed us to work efficiently and collaborate easily. Our main FEniCS simulation code can be found <a href="https://github.com/igem-waterloo/uwaterloo-igem-2020/blob/master/Fenics/reaction_system.py">here</a>.</p>
 					<h1>Getting Parameters</h1>
@@ -431,67 +432,67 @@
 						<tbody>
 							<tr>
 								<td>Input Concentration (Cu)</td>
-								<td>$$m$$</td>
-								<td>30 $$ \frac{mg}{L}$$</td>
+								<td>\(m\)</td>
+								<td>30 \( \frac{mg}{L}\)</td>
 								<td>Chiu, 1984</td>
 							</tr>
 							<tr>
 								<td>Output Concentration (Cu)</td>
 								<td></td>
-								<td>1.3 $$ \frac{mg}{L}$$</td>
+								<td>1.3 \( \frac{mg}{L}\)</td>
 								<td>Saydeh et al, 2017</td>
 							</tr>
 							<tr>
 								<td>Surface Protein Concentration</td>
-								<td>$$Q$$</td>
-								<td>0.35E-6 $$ \frac{mol}{m^2}$$</td>
+								<td>\(Q\)</td>
+								<td>0.35E-6 \( \frac{mol}{m^2}\)</td>
 								<td>McLean, 2000</td>
 							</tr>
 							<tr>
 								<td>Specific Surface Area</td>
-								<td>$$a$$</td>
-								<td>72600000 $$\frac{1}{m}$$</td>
+								<td>\(a\)</td>
+								<td>72600000 \(\frac{1}{m}\)</td>
 								<td>McLean, 2000</td>
 							</tr>
 							<tr>
 								<td>Forwards Rate Constant</td>
-								<td>$$k_a$$</td>
-								<td>0.015 $$\frac{1}{s}$$</td>
+								<td>\(k_a\)</td>
+								<td>0.015 \(\frac{1}{s}\)</td>
 								<td>Du, 2013</td>
 							</tr>
 							<tr>
 								<td>Reverse Rate Constant</td>
-								<td>$$k_d$$</td>
-								<td>3e-16 $$\frac{1}{s}$$</td>
+								<td>\(k_d\)</td>
+								<td>3e-16 \(\frac{1}{s}\)</td>
 								<td>Du, 2013 and Young et al, 2015</td>
 							</tr>
 							<tr>
 								<td>Equilibrium Constant</td>
-								<td>$$K_D$$</td>
+								<td>\(K_D\)</td>
 								<td>1E-13.7</td>
 								<td>Young et al, 2015</td>
 							</tr>
 							<tr>
 								<td>Void Fraction</td>
-								<td>$$\rho$$</td>
+								<td>\(\rho\)</td>
 								<td>0.31</td>
 								<td>Sen, 2016</td>
 							</tr>
 							<tr>
 								<td>Density of Cellulose</td>
 								<td></td>
-								<td>1.5 $$\frac{g}{cm^3}$$</td>
+								<td>1.5 \(\frac{g}{cm^3}\)</td>
 								<td>National Center for Biotechnology Information, 2020</td>
 							</tr>
 							<tr>
 								<td>Porosity</td>
-								<td>$$\epsilon$$</td>
+								<td>\(\epsilon\)</td>
 								<td>0.69</td>
 								<td>Sen, 2016</td>
 							</tr>
 							<tr>
 								<td>Superficial Reactor Velocity</td>
-								<td>$$v_s$$</td>
+								<td>\(v_s\)</td>
 								<td>0.2552</td>
 								<td>Computed based on reactor size. See below</td>
 							</tr>
