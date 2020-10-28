@@ -305,7 +305,7 @@ window.onload=function(){
     }
   });
   
-  Mousetrap.bind('command+alt+]', function() { 
+  Mousetrap.bind(['command+alt+[', 'ctrl+alt+['], function() { 
     if (!$('#homepageDiv').length && !$('.teampage').length) {
         var v = parseInt($('article p').css('font-size')) - 2;
         if (v >= 10){
@@ -320,7 +320,7 @@ window.onload=function(){
       } 
   });
 
-  Mousetrap.bind('command+alt+[', function() { 
+  Mousetrap.bind(['command+alt+]', 'ctrl+alt+]'], function() { 
     if (!$('#homepageDiv').length && !$('.teampage').length) {
         var v = parseInt($('article p').css('font-size')) + 2;
         if (v <=36){
