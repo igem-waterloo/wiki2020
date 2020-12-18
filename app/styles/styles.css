@@ -552,6 +552,16 @@ img {
   overflow-wrap: break-word;
 }
 
+@media only screen and (max-width: 600px) { 
+  #teammate {
+    padding: 0 0.5em;
+  }
+  .teaminfo {
+    font-size: 0.7em;
+    padding: 0 0.5em;
+  }
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -665,12 +675,13 @@ header {
     background-color: #42748E;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
     header #navbar .logo {
-      width: calc(30%);
+      width: calc(30%) !important;
       float: left;
     }
     header #navbar .logo > img {
       float: left;
       padding: 0 1em;
+      min-width: 168px;
     }
     header #navbar ul {
       list-style: none;
@@ -678,9 +689,28 @@ header {
       padding: 0px;
     }
     header #navbar > ul {
-      width: calc(70%);
+      width: calc(70%) !important;
       display: flex;
       justify-content: space-evenly;
+    }
+    @media only screen and (max-width: 900px) { 
+      #navbar .web {
+        display: none;
+      }
+      #navbar .mobileIcon {
+        display: block !important;
+      }
+    }
+
+    #navbar .mobileIcon {
+      display: none;
+    }
+    #navbar .hamburger1 {
+      float: right;
+      padding-top: 13px !important;
+    }
+    #navbar .hamburger1 img {
+      padding-right: 10px;
     }
       header #navbar ul li {
         float: right;
@@ -816,7 +846,7 @@ footer {
     @media only screen and (max-width: 900px) {
       footer div.spacer {
         width: 0 !important;
-        visibility: hidden !important;
+        display: none !important;
       }
       footer div.social-container {
         width: 150px !important;
@@ -919,12 +949,12 @@ footer {
 div.accordion {
   background-color: #fff;
   color: #003650;
-  padding: 18px;
-  width: 85%;
+  padding: 18px 0px;
+  width: 100%;
   text-align: left;
   border: none;
   outline: none;
-  margin: auto;
+  margin: 0px;
 }
 
 div.accordion:after {
@@ -955,14 +985,14 @@ div.panel.show:hover:after, div.accordion:hover:after {
 
 /* Style the element that is used for the panel class */
 div.panel {
-  padding: 18px;
+  padding: 18px 0px;
   background-color: #fff;
   color: #003650;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  width: 85%;
-  margin: auto;
+  width: 100%;
+  margin: 0px;
   text-align: left;
   border: none;
   outline: none;
@@ -995,6 +1025,16 @@ div.humansubteam {
 }
 
 div.mathsubteam {
+  width: 100%;
+  padding: 12px 0px;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: left;
+  margin: auto;
+  color: #003650;
+}
+
+div.wikisubteam {
   width: 100%;
   padding: 12px 0px;
   font-weight: 700;
@@ -1081,6 +1121,17 @@ main {
   float: left;
 }
 
+@media only screen and (max-width: 800px) { 
+  .pipecol {
+    display: none;
+  }
+
+  .contentcol {
+    padding: 0px 100px 0px 100px;
+    width: 100% !important;
+  }
+}
+
 .info h1 {
   font-weight: 700 !important;
   font-size: 24px !important;
@@ -1158,6 +1209,8 @@ main {
   margin: 0px !important;
   padding: 0px !important;
   word-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
 }
 
 .contentcol .info img {
@@ -1418,6 +1471,54 @@ li::before {
   text-align: left !important;
 }
 
+@media only screen and (max-width: 500px) { 
+  .text p {
+    margin: 0px 30px 30px 30px !important;
+  }
+  .headerCol h1 {
+    font-size: 30px !important;
+  }
+  .headerCol {
+    padding-left: 30px !important;
+  }
+  .contentcol {
+    padding: 0px 30px 0px 30px;
+  }
+
+  #top .contentcol .info .future {
+    min-width: 300px !important;
+  }
+
+
+  .headerCol2 img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .sponsors .sponsorsImg {
+    min-width: 320px !important;
+  }
+
+  .contentcol .info p.eqn2 {
+    font-size: 13px !important;
+  }
+
+  tr td, tr th {
+    padding: 10px 3px !important;
+  }
+
+  table {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .contentcol .info p.eqn {
+    font-size: 11px !important;
+  }
+}
+
 .text table, .text th, .info table {
   color: #003650 !important;
 }
@@ -1575,6 +1676,12 @@ ul.noBullet li {
   margin-bottom: 10px !important;
   padding: 3px 5px !important;
   visibility: hidden;
+}
+
+@media only screen and (max-width: 800px) { 
+  .accessibility-tool {
+    display: none;
+  }
 }
 
 .words {
