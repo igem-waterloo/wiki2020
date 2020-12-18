@@ -713,9 +713,6 @@ header {
       padding-top: 8px;
       padding-right: 8px;
     }
-    #navbar .hamburger1 img:hover {
-      background-color: #FB9E36; 
-    }
     #navbar .hamburger1 img {
       padding: 10px;
       border-radius: 5px;
@@ -1781,11 +1778,67 @@ video:focus {
   line-height: 150% !important;
 }
 
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 500px) { 
   video {
     padding: 30px;
   }
   .video h2 {
     padding-left: 30px;
   }
+}
+
+.mobileNav {
+  position: fixed;
+  top: 62px;
+  right: 10px;
+  width: 200px;
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) { 
+  .mobileNav {
+    visibility: visible;
+  }
+}
+
+.mobileNav ul {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.mobileNav ul li {
+  background-color: white;
+  height: 2.2em;
+}
+
+.mobileNav ul li a {
+  padding-left: 18px;
+  color: #003650;
+  width: 100% !important;
+  height: 2.2em !important;
+  position: absolute;
+}
+
+.mobileNav ul li a.topList {
+  font-weight: 800;
+}
+
+.mobileNav ul li a:hover, .mobileNav ul li a:active, .mobileNav ul li a:focus, .mobileNav ul li:hover,
+.mobileNav ul li:active, .mobileNav ul li:focus {
+    background-color: #CDDCDD;
+}
+
+.mobileNav ul li a.downList:after, .mobileNav ul li a.downList:visited:after {
+  padding-top: 0px !important;
+  padding-right: 8px !important;
+  content: ' \25BE '; 
+  font-size: 18px;
+  color: #FB9E36;
+  float:right;
+}
+
+.item {
+  display: none;
 }
