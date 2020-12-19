@@ -341,10 +341,10 @@ window.onload=function(){
     
       if (speaking) {
         if (paused) {
-          $().articulate('resume');
+          $().articulate('ignore','mobileHeader').articulate('resume');
         } 
       } else {
-        $(obj).articulate('speak');
+        $(obj).articulate('ignore','mobileHeader').articulate('speak');
       };
     };
     
@@ -356,10 +356,10 @@ window.onload=function(){
       var speaking = $().articulate('isSpeaking');
       if (speaking) {
         $().articulate('stop');
-        $(obj).articulate('speak');
+        $(obj).articulate('ignore','mobileHeader').articulate('speak');
       }
       else {
-        $(obj).articulate('speak');
+        $(obj).articulate('ignore','mobileHeader').articulate('speak');
       }
     }; 
   

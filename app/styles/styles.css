@@ -1104,8 +1104,7 @@ p.resizefont {
 
 #homepageDiv {
   width: 100% !important;
-  text-align: center !important;
-  background-image: url("https://2020.igem.org/wiki/images/f/f4/T--Waterloo--2020_home.svg") !important;
+  background-image: url("https://2020.igem.org/wiki/images/d/d6/T--Waterloo--2020_homepagenobutton.svg") !important;
   background-repeat: no-repeat !important;
   background-attachment: scroll !important;
   background-size: 100% !important;
@@ -1322,146 +1321,11 @@ li::before {
   min-width: 400px !important;
 }
 
-.slogan {
-  color: #003650 !important;
-  font-weight: 800 !important;
-  position: absolute !important;
-  top: 4.3% !important;
-  width: 80% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 0.5em !important;
-  left: 0 !important;
-  right: 0 !important;
-  line-height: 130% !important;
-  font-size: clamp(.5rem, 0.16rem + 3vw, 2.5rem) !important;
-}
-
-.whatif {
-  font-weight: 700 !important;
-  color: #fff !important;
-  position: absolute !important;
-  top: 41.1% !important;
-  width: 55% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  left: 0 !important;
-  right: 0 !important;
-  line-height: 1.6em !important;
-  font-size: clamp(0.5rem, 0.33125rem + 2.625vw, 3.275rem) !important;
-}
-
-.interested {
-  font-weight: 400 !important;
-  position: absolute !important;
-  top: 94.5% !important;
-  width: 80% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  left: 0 !important;
-  right: 0 !important;
-  font-size: clamp(0.3rem, 0.2rem + 1.3vw, 2.9rem) !important;
-}
-
-.hp1 {
-  color: #003650 !important;
-  font-weight: 400 !important;
-  position: absolute !important;
-  top: clamp(5.375rem, -0.6916666666666664rem + 24.266666666666666vw, 28.125rem)
-  !important;
-  width: 65% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  left: 0 !important;
-  right: 0 !important;
-  line-height: 1.6em !important;
-  text-align: center !important;
-  font-size: clamp(0.3rem, 0.2rem + 1.2vw, 1.8rem) !important;
-}
-
-.hp2 {
-  font-weight: 400 !important;
-  color: #fff !important;
-  position: absolute !important;
-  top: 26.5% !important;
-  left: 55.5% !important;
-  width: 29% !important;
-  line-height: 1.6em !important;
-  text-align: left !important;
-  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
-}
-
-.hp3 {
-  font-weight: 400 !important;
-  color: #fff !important;
-  position: absolute !important;
-  top: 35.5% !important;
-  width: 50% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  left: 0 !important;
-  right: 0 !important;
-  line-height: 1.6em !important;
-  text-align: center !important;
-  font-size: clamp(0.3rem, 0.2rem + 1.3vw, 2.9rem) !important;
-}
-
-.hp4 {
-  font-weight: 400 !important;
-  color: #5C89A0 !important;
-  position: absolute !important;
-  top: clamp(44.5rem, 5.833333333333336rem + 154.66666666666666vw, 189.5rem) !important;
-  width: 47% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  left: 0 !important;
-  right: 0 !important;
-  line-height: 1.6em !important;
-  text-align: center !important;
-  font-size: clamp(0.1rem, 0.05rem + 0.625vw, 0.625rem) !important;
-}
-
-.hp5 {
-  font-weight: 400 !important;
-  color: #fff !important;
-  position: absolute !important;
-  top: 58% !important;
-  left: 44% !important;
-  width: 30% !important;
-  line-height: 1.6em !important;
-  text-align: left !important; 
-  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
-}
-
-.hp6 {
-  font-weight: 400 !important;
-  color: #fff !important;
-  position: absolute !important;
-  top: 70% !important;
-  left: 6% !important;
-  width: 26% !important;
-  line-height: 1.6em !important;
-  text-align: left !important; 
-  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
-}
-
-.hp7 {
-  font-weight: 400 !important;
-  color: #fff !important;
-  position: absolute !important;
-  top: 76% !important;
-  left: 55% !important;
-  width: 27% !important;
-  line-height: 1.6em !important;
-  text-align: left !important; 
-  font-size: clamp(0.3rem, 0.2rem + 1.1vw, 1.5rem) !important;
-}
-
 #learnmore {
   position: absolute !important;
-  top: 96.5% !important;
-  width: 20% !important;
-  height: 1.35% !important;
+  top: 92.96% !important;
+  width: 22.7% !important;
+  height: 1.9% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   left: 0 !important;
@@ -1470,17 +1334,12 @@ li::before {
   cursor: pointer !important;
   color: #fff !important;
   background-color: #fd9756 !important;
-  border-radius: 40px !important;
+  border-radius: 27px !important;
   font-weight: 700 !important;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3vw;
-}
-
-#learnmore > img {
-  padding: 0 1em !important;
-  width: 65%;
 }
 
 .text {
@@ -1514,7 +1373,24 @@ li::before {
   #top .contentcol .info .future {
     min-width: 300px !important;
   }
+  
+  .contentcol .info img {
+    padding: 0 2.5em !important;
+  }
 
+  .text img {
+    padding: 0 2.5em !important;
+  }
+
+  .text .caption {
+    font-size: 13px !important;
+    margin: 0px 40px 5px 40px !important;
+  }
+
+  .info .caption {
+    font-size: 13px !important;
+    margin: 0px 40px 5px 40px !important;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -1535,9 +1411,15 @@ li::before {
   }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 700px) {
+  .contentcol .info p.eqn3 {
+    font-size: 13px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .contentcol .info p.eqn {
-    font-size: 11px !important;
+    font-size: 13px !important;
   }
 }
 
